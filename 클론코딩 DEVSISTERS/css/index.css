@@ -1,0 +1,318 @@
+body, p, figure, h2 {
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "Acumin Pro-Ultra Black";
+  src: url("../fonts/FontsFree-Net-Acumin-Pro-UltraBlack.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  src: url("../fonts/FontsFree-Net-Proxima-Nova-Xbold.otf") format("truetype");
+}
+.bi {
+  position: relative;
+}
+.bi .head {
+  position: fixed;
+  left: 20%;
+  top: 1.5%;
+  z-index: 1;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Proxima Nova Extrabold";
+  font-weight: 800;
+}
+.bi .head h2 {
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+}
+.bi .head a {
+  font-size: 14px;
+  color: white;
+}
+
+article {
+  width: 100vw;
+}
+article figure {
+  position: relative;
+}
+article figure video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+article figcaption {
+  position: absolute;
+  left: 20%;
+  bottom: 8%;
+  white-space: pre-line;
+  font-family: "Acumin Pro-Ultra Black";
+  font-style: italic;
+  font-size: 128px;
+  line-height: 102px;
+  letter-spacing: -5px;
+  color: rgb(255, 95, 0);
+}
+article figcaption span {
+  color: white;
+  text-shadow: 3px 3px 0 rgb(255, 95, 0);
+}
+
+.scroll {
+  position: absolute;
+  right: 20%;
+  bottom: 8%;
+}
+.scroll p {
+  position: relative;
+  width: 24px;
+  height: 42px;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+.scroll p img {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  margin: 0 auto;
+}
+.scroll span {
+  font-size: 10px;
+  color: white;
+}
+
+main .vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0;
+}
+main .vision b {
+  white-space: pre-line;
+  font-size: 24px;
+  font-family: "Pretendard ExtraBold";
+}
+main .vision b span {
+  color: rgb(255, 95, 0);
+}
+main .vision p {
+  width: 609px;
+  height: 322px;
+  animation: ani 2s linear infinite;
+}
+@keyframes ani {
+  0% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-000.webp");
+  }
+  2.0833% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-001.webp");
+  }
+  4.1666% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-002.webp");
+  }
+  6.2499% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-003.webp");
+  }
+  8.3332% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-004.webp");
+  }
+  10.4165% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-005.webp");
+  }
+  12.4998% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-006.webp");
+  }
+  14.5831% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-007.webp");
+  }
+  16.6664% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-008.webp");
+  }
+  18.7497% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-009.webp");
+  }
+  20.833% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-010.webp");
+  }
+  22.9163% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-011.webp");
+  }
+  24.9996% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-012.webp");
+  }
+  27.0829% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-013.webp");
+  }
+  29.1662% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-014.webp");
+  }
+  31.2495% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-015.webp");
+  }
+  33.3328% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-016.webp");
+  }
+  35.4161% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-017.webp");
+  }
+  37.4994% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-018.webp");
+  }
+  39.5827% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-019.webp");
+  }
+  41.666% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-020.webp");
+  }
+  43.7493% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-021.webp");
+  }
+  45.8326% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-022.webp");
+  }
+  47.9159% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-023.webp");
+  }
+  49.9992% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-024.webp");
+  }
+  52.0825% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-025.webp");
+  }
+  54.1658% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-026.webp");
+  }
+  56.2491% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-027.webp");
+  }
+  58.3324% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-028.webp");
+  }
+  60.4157% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-029.webp");
+  }
+  62.499% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-030.webp");
+  }
+  64.5823% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-031.webp");
+  }
+  66.6656% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-032.webp");
+  }
+  68.7489% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-033.webp");
+  }
+  70.8322% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-034.webp");
+  }
+  72.9155% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-035.webp");
+  }
+  74.9988% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-036.webp");
+  }
+  77.0821% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-037.webp");
+  }
+  79.1654% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-038.webp");
+  }
+  81.2487% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-039.webp");
+  }
+  83.332% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-040.webp");
+  }
+  85.4153% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-041.webp");
+  }
+  87.4986% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-042.webp");
+  }
+  89.5819% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-043.webp");
+  }
+  91.6652% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-044.webp");
+  }
+  93.7485% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-045.webp");
+  }
+  95.8318% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-046.webp");
+  }
+  100% {
+    background-size: 600px;
+    background-image: url("../main_page/vision/home-hero-sq-047.webp");
+  }
+}/*# sourceMappingURL=index.css.map */

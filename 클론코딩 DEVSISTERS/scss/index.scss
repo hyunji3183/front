@@ -1,0 +1,114 @@
+@import "_reset";
+
+.bi {
+    position: relative;
+    .head {
+        position: fixed;
+        left: 20%;
+        top: 1.5%;
+        z-index: 1;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Proxima Nova Extrabold";
+        font-weight: 800;
+
+        h2 {
+            font-size: 20px;
+            display: inline-block;
+            color: white;
+        }
+        a {
+            font-size: 14px;
+            color: white;
+        }
+    }
+}
+
+article {
+    width: 100vw;
+    figure {
+        position: relative;
+        video {
+            object-fit: cover;
+        }
+    }
+    figcaption {
+        position: absolute;
+        left: 20%;
+        bottom: 8%;
+        white-space: pre-line;
+        font-family: "Acumin Pro-Ultra Black";
+        font-style: italic;
+        font-size: 128px;
+        line-height: 102px;
+        letter-spacing: -5px;
+        color: rgb(255, 95, 0);
+        span {
+            color: white;
+            text-shadow: 3px 3px 0 rgb(255, 95, 0);
+        }
+    }
+}
+
+.scroll {
+    position: absolute;
+    right: 20%;
+    bottom: 8%;
+    p {
+        position: relative;
+        width: 24px;
+        height: 42px;
+        margin: 0 auto;
+        border: 2px solid white;
+        border-radius: 20px;
+        img {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            margin: 0 auto;
+        }
+    }
+    span {
+        font-size: 10px;
+        color: white;
+    }
+}
+
+main {
+    .vision {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 50px 0;
+        b {
+            white-space: pre-line;
+            font-size: 24px;
+            font-family: "Pretendard ExtraBold";
+            span{
+                color: rgb(255, 95, 0);
+            }
+        }
+        p {
+            width: 609px;
+            height: 322px;
+            animation: ani 2s linear infinite;
+
+            @keyframes ani {
+                @for $i from 0 through 46 {
+                    #{$i * 2.0833%} {
+                        background-size: 600px;
+                        @if ($i < 10) {
+                            background-image: url("../main_page/vision/home-hero-sq-00" + #{$i} + ".webp");
+                        } @else {
+                            background-image: url("../main_page/vision/home-hero-sq-0" + #{$i} + ".webp");
+                        }
+                    }
+                }
+                100% {background-size: 600px; background-image: url('../main_page/vision/home-hero-sq-047.webp'); }
+            }
+        }
+    }
+}

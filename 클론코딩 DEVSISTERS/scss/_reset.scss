@@ -1,0 +1,24 @@
+body,p,figure,h2
+{margin: 0px;}
+
+*{box-sizing: border-box;
+text-transform: uppercase;}
+
+a
+{text-decoration: none;
+color: black;}
+
+ul,li 
+{margin: 0;
+padding: 0;
+list-style-type: none;}
+
+@font-face {
+    font-family: 'Acumin Pro-Ultra Black';
+    src: url('../fonts/FontsFree-Net-Acumin-Pro-UltraBlack.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Proxima Nova Extrabold';
+    src: url('../fonts/FontsFree-Net-Proxima-Nova-Xbold.otf') format("truetype") ;
+}
