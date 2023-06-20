@@ -98,7 +98,23 @@ space-between | space-around | space-evenly
 
 
 
-
+.grow{
+    text-align: center;
+    margin: 150px 0; 
+}
+.grow > ul{
+    width: 1280px; margin: 50px auto;
+    display: flex;
+}
+.grow > ul >li{
+    background-color: rgb(243, 242, 204);
+    border: 1px solid rgb(253, 250, 255);
+    height: 200px; 
+    flex-grow: 1;
+    transition: 1s;
+}
+.grow > ul >li:hover{
+    flex-grow: 10;}
 
 
 
