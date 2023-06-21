@@ -1,4 +1,4 @@
-body, p, figure, h2 {
+body, p, figure, h2, h3 {
   margin: 0px;
 }
 
@@ -26,6 +26,16 @@ ul, li {
   font-family: "Proxima Nova Extrabold";
   src: url("../fonts/FontsFree-Net-Proxima-Nova-Xbold.otf") format("truetype");
 }
+* button {
+  display: block;
+  color: white;
+  background-color: black;
+  font-family: "Proxima Nova Extrabold";
+  font-size: 15.5px;
+  padding: 12px 24px;
+  border-radius: 36px;
+}
+
 .bi {
   position: relative;
 }
@@ -51,29 +61,30 @@ ul, li {
   color: white;
 }
 
-article {
+.title {
   width: 100vw;
 }
-article figure {
+.title figure {
   position: relative;
 }
-article figure video {
+.title figure video {
   -o-object-fit: cover;
      object-fit: cover;
 }
-article figcaption {
+.title figcaption {
   position: absolute;
   left: 20%;
   bottom: 8%;
   white-space: pre-line;
-  font-family: "Acumin Pro-Ultra Black";
+  font-family: "acumin-pro-condensed";
   font-style: italic;
   font-size: 128px;
+  font-weight: 900;
   line-height: 102px;
   letter-spacing: -5px;
   color: rgb(255, 95, 0);
 }
-article figcaption span {
+.title figcaption span {
   color: white;
   text-shadow: 3px 3px 0 rgb(255, 95, 0);
 }
@@ -315,4 +326,57 @@ main .vision p {
     background-size: 600px;
     background-image: url("../main_page/vision/home-hero-sq-047.webp");
   }
+}
+main .LATEST_NEWS h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(255, 95, 0);
+  margin: 40px 340px;
+}
+main .LATEST_NEWS div {
+  display: inline-block;
+}
+main .LATEST_NEWS div .content {
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 384px;
+}
+main .LATEST_NEWS div .content .text {
+  font-family: "Proxima Nova Extrabold";
+}
+main .LATEST_NEWS div .content .text p {
+  margin: 20px;
+  font-family: "Pretendard ExtraBold";
+}
+main .LATEST_NEWS div .content .text ul {
+  margin: 20px;
+}
+main .LATEST_NEWS div .content .text ul li a {
+  font-size: 12px;
+  display: inline-block;
+  margin: 3px 0;
+  padding: 5.5px 12px 5.5px 12px;
+  color: white;
+  background-color: rgb(255, 130, 0);
+  border-radius: 38px;
+}
+main .LATEST_NEWS button {
+  display: block;
+  color: white;
+  background-color: black;
+  font-family: "Proxima Nova Extrabold";
+  font-size: 15.5px;
+  padding: 12px 24px;
+  border-radius: 36px;
+}
+main .OUR_GAMES h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(255, 95, 0);
+  margin: 40px 340px;
 }/*# sourceMappingURL=index.css.map */

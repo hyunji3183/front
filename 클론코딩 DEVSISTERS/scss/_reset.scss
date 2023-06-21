@@ -1,4 +1,4 @@
-body,p,figure,h2
+body,p,figure,h2,h3
 {margin: 0px;}
 
 *{box-sizing: border-box;
@@ -22,3 +22,12 @@ list-style-type: none;}
     font-family: 'Proxima Nova Extrabold';
     src: url('../fonts/FontsFree-Net-Proxima-Nova-Xbold.otf') format("truetype") ;
 }
+
+*button{
+    display: block;
+    color: white;
+    background-color: black;
+    font-family: "Proxima Nova Extrabold";
+    font-size: 15.5px;
+    padding: 12px 24px;
+    border-radius: 36px;}
