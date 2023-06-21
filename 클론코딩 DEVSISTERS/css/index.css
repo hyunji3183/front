@@ -327,6 +327,9 @@ main .vision p {
     background-image: url("../main_page/vision/home-hero-sq-047.webp");
   }
 }
+main .LATEST_NEWS {
+  width: 100%;
+}
 main .LATEST_NEWS h3 {
   font-family: "acumin-pro-condensed";
   font-size: 90px;
@@ -342,7 +345,7 @@ main .LATEST_NEWS div .content {
   border: 1px solid rgb(220, 220, 220);
   border-radius: 10px;
   overflow: hidden;
-  width: 384px;
+  width: 340px;
 }
 main .LATEST_NEWS div .content .text {
   font-family: "Proxima Nova Extrabold";
@@ -379,4 +382,35 @@ main .OUR_GAMES h3 {
   font-weight: 900;
   color: rgb(255, 95, 0);
   margin: 40px 340px;
+}
+main .OUR_GAMES .list div {
+  position: relative;
+}
+main .OUR_GAMES .list .text_1 {
+  color: white;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  text-align: center;
+}
+main .OUR_GAMES .list .text_1 figure img {
+  width: 270px;
+  height: 90px;
+}
+main .OUR_GAMES .list .text_1 figcaption {
+  font-family: "Pretendard Black";
+  font-size: 24px;
+  font-weight: bolder;
+}
+main .OUR_GAMES .list .text_1 p {
+  white-space: pre-line;
+  font-family: "Pretendard SemiBold";
+  line-height: 1.5;
+}
+main .OUR_GAMES .list .text_1 .icon img {
+  margin: 10px;
+}
+main .OUR_GAMES .list .preview-img img {
+  width: 65%;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */

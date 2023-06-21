@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/ifn0pvh.css">
+
+
 </head>
 
 <body>
@@ -59,6 +61,36 @@
         <article class="LATEST_NEWS">
             <h3>LATEST NEWS</h3>
             <div>
+                <script>
+                    const array = ['png', 'jpg', 'jpg', 'jpg', 'jpg', 'png', 'jpg', 'jpg', 'jpg', 'jpg', 'png', 'png'];
+                    for (var i = 1; i <= 12; ++i) {
+                        var imgIndex = i.toString().padStart(2, '0');
+
+                        var str = '<div class="content">\n' +
+                            '<figure>\n' +
+                            '<img src="../main_page/LATEST NEWS/latest news_' + imgIndex + '.' + array[i - 1] + '">\n' +
+                            '</figure>\n' +
+                            '</div>\n';
+                        document.write(str);
+                    }
+                </script>
+
+
+                <!-- <div class="content">
+                    <figure>
+                        <img src="../main_page/LATEST NEWS/latest news_02.jpg">
+                    </figure>
+                    <div class="text">
+                        <p>🎧 쿠키런 음악 | 모험심 가득! 🤩 요거트 사막 속 비밀스러운 슬쩍단의 아지트 🏜 | 슬쩍단의 지하 소굴 배경음악 1시간 듣기 🎶</p>
+                        <ul>
+                            <li>
+                                <a>#COOKIERUN:KINGDOM</a>
+                                <a>#YOUTUBE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="content">
                     <figure>
                         <img src="../main_page/LATEST NEWS/latest news_01.png">
@@ -88,51 +120,24 @@
                                 <a>#UPDATE</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                
-                <div class="content">
-                    <figure>
-                        <img src="../main_page/LATEST NEWS/latest news_01.png">
-                    </figure>
-                    <div class="text">
-                        <p>여행길 옆자리에 앉은 🍩에일리언 도넛과 🌠스타더스트 쿠키의 이야기가 궁금하다면, 지금 바로 쿠키런:킹덤에서 확인하실 수 있습니다.</p>
-                        <ul>
-                            <li>
-                                <a>#COOKIERUN:KINGDOM</a>
-                                <a>#PREVIEW</a>
-                                <a>#UPDATE</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="content">
-                    <figure>
-                        <img src="../main_page/LATEST NEWS/latest news_01.png">
-                    </figure>
-                    <div class="text">
-                        <p>여행길 옆자리에 앉은 🍩에일리언 도넛과 🌠스타더스트 쿠키의 이야기가 궁금하다면, 지금 바로 쿠키런:킹덤에서 확인하실 수 있습니다.</p>
-                        <ul>
-                            <li>
-                                <a>#COOKIERUN:KINGDOM</a>
-                                <a>#PREVIEW</a>
-                                <a>#UPDATE</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    </div> -->
+            </div>
             </div>
             <button>READ ALL</button>
         </article>
 
+
+
+
         <article class="OUR_GAMES">
             <h3>OUR GAMES</h3>
             <figure class="list">
-                <div class="game">
-                    <video width="60%" height="100%" autoplay muted loop poster="../main_page/OUR GAMES/ourgames-ovenbreak-poster.jpg">
+                <div>
+                    <video id="games" width="65%" height="100%" autoplay muted loop
+                        poster="../main_page/OUR GAMES/ourgames-ovenbreak-poster.jpg">
                         <source src="../main_page/OUR GAMES/home_our games_ovenbreak.mp4" type="video/mp4">
                     </video>
+               
                     <div class="text_1">
                         <figure>
                             <img src="../main_page/OUR GAMES/ourgames-ovenbreak-logo.png">
@@ -141,22 +146,84 @@
                         <p>마녀의 오븐을 탈출한 개성 넘치는 쿠키들!
                             매력적인 쿠키&amp;펫과 달리며 즐거운 모험을 떠나요</p>
                         <div class="icon">
-                            <img>
-                            <img>
+                            <img src="../icons/icon-apple.svg">
+                            <img src="../icons/icon-googleplay.svg">
+                        </div>
+                    </div>
+
+                    <!-- <div class="preview-img">
+                        <img id="img_game_preview" src="../main_page/OUR GAMES/ourgames-ovenbreak-poster.jpg">
+                    </div> -->
+                </div>
+
+                <div>
+                    <video id="games" width="65%" height="100%" autoplay muted loop
+                        poster="../main_page/OUR GAMES/ourgames-kingdom-poster.jpg">
+                        <source src="../main_page/OUR GAMES/home_our games_kingdom.mp4" type="video/mp4">
+                    </video>
+                    <div class="text_1">
+                        <figure>
+                            <img src="../main_page/OUR GAMES/ourgames-kingdom-logo.png">
+                        </figure>
+                        <figcaption>처음 '맛'나는 소셜RPG</figcaption>
+                        <p>화려한 스킬의 쿠키들과 새로운 왕국을 건설해보세요
+                            신나는 모험과 박진감 넘치는 전투가 펼쳐집니다</p>
+                        <div class="icon">
+                            <img src="../icons/icon-apple.svg">
+                            <img src="../icons/icon-googleplay.svg">
                         </div>
                     </div>
                 </div>
+
+                <div>
+                    <video id="games" width="65%" height="100%" autoplay muted loop
+                        poster="../main_page/OUR GAMES/ourgames-deadcideclub-poster.jpg">
+                        <source src="../main_page/OUR GAMES/home_our games_dead cide club.mp4" type="video/mp4">
+                    </video>
+                    <div class="text_1">
+                        <figure>
+                            <img src="../main_page/OUR GAMES/ourgames-deadcideclub-logo.png">
+                        </figure>
+                        <figcaption>처음 '맛'나는 소셜RPG</figcaption>
+                        <p>화려한 스킬의 쿠키들과 새로운 왕국을 건설해보세요
+                            신나는 모험과 박진감 넘치는 전투가 펼쳐집니다</p>
+                        <div class="icon">
+                            <img src="../icons/icon-apple.svg">
+                            <img src="../icons/icon-googleplay.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <video id="games" width="65%" height="100%" autoplay muted loop
+                        poster="../main_page/OUR GAMES/ourgames-kingdom-poster.jpg">
+                        <source src="../main_page/OUR GAMES/home_our games_kingdom.mp4" type="video/mp4">
+                    </video>
+                    <div class="text_1">
+                        <figure>
+                            <img src="../main_page/OUR GAMES/ourgames-kingdom-logo.png">
+                        </figure>
+                        <figcaption>처음 '맛'나는 소셜RPG</figcaption>
+                        <p>화려한 스킬의 쿠키들과 새로운 왕국을 건설해보세요
+                            신나는 모험과 박진감 넘치는 전투가 펼쳐집니다</p>
+                        <div class="icon">
+                            <img src="../icons/icon-apple.svg">
+                            <img src="../icons/icon-googleplay.svg">
+                        </div>
+                    </div>
+                </div>
+
+
             </figure>
             <button>MEET ALL GAMES</button>
         </article>
 
 
-        
+
     </main>
     <footer></footer>
-
-
-
+    <script src="../js/video.js"></script>
 </body>
+
 
 </html>

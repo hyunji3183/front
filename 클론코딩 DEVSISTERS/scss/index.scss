@@ -1,5 +1,6 @@
 @import "_reset";
 
+
 .bi {
     position: relative;
     .head {
@@ -88,7 +89,7 @@ main {
             white-space: pre-line;
             font-size: 24px;
             font-family: "Pretendard ExtraBold";
-            span{
+            span {
                 color: rgb(255, 95, 0);
             }
         }
@@ -108,116 +109,118 @@ main {
                         }
                     }
                 }
-                100% {background-size: 600px; background-image: url('../main_page/vision/home-hero-sq-047.webp'); }
+                100% {
+                    background-size: 600px;
+                    background-image: url("../main_page/vision/home-hero-sq-047.webp");
+                }
             }
         }
     }
 
-    .LATEST_NEWS{
-        h3{
-            font-family: 'acumin-pro-condensed';
+    .LATEST_NEWS {width: 100%;
+        h3 {
+            font-family: "acumin-pro-condensed";
             font-size: 90px;
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
             margin: 40px 340px;
         }
-        div{
+        div {
             display: inline-block;
-            
-        .content{
-            border: 1px solid rgb(220, 220, 220);
-            border-radius: 10px;
-            overflow: hidden;
-            width: 384px;
-            figure{
-                img{}
-            }
 
-            .text{
-                font-family: 'Proxima Nova Extrabold';
-                p{
-                    margin: 20px;
-                    font-family: 'Pretendard ExtraBold';
+            .content {
+                border: 1px solid rgb(220, 220, 220);
+                border-radius: 10px;
+                overflow: hidden;
+                width: 340px;
+                figure {
+                    img {
                     }
-                ul{margin: 20px;
-                    li{
-                        a{  font-size: 12px;
-                            display: inline-block;
-                            margin: 3px 0;
-                            padding: 5.5px 12px 5.5px 12px;
-                            color: white;
-                            background-color: rgb(255, 130, 0);
-                            border-radius: 38px;}
+                }
+
+                .text {
+                    font-family: "Proxima Nova Extrabold";
+                    p {
+                        margin: 20px;
+                        font-family: "Pretendard ExtraBold";
+                    }
+                    ul {
+                        margin: 20px;
+                        li {
+                            a {
+                                font-size: 12px;
+                                display: inline-block;
+                                margin: 3px 0;
+                                padding: 5.5px 12px 5.5px 12px;
+                                color: white;
+                                background-color: rgb(255, 130, 0);
+                                border-radius: 38px;
+                            }
+                        }
                     }
                 }
             }
         }
+        button {
+            display: block;
+            color: white;
+            background-color: black;
+            font-family: "Proxima Nova Extrabold";
+            font-size: 15.5px;
+            padding: 12px 24px;
+            border-radius: 36px;
+        }
     }
-    button{
-        display: block;
-        color: white;
-        background-color: black;
-        font-family: "Proxima Nova Extrabold";
-        font-size: 15.5px;
-        padding: 12px 24px;
-        border-radius: 36px;
-    }
-}
 
-
-    .OUR_GAMES{
-        h3{
-            font-family: 'acumin-pro-condensed';
+    .OUR_GAMES {
+        h3 {
+            font-family: "acumin-pro-condensed";
             font-size: 90px;
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
-            margin: 40px 340px;}
+            margin: 40px 340px;
+        }
 
-        .list{
-            .game{
-                
-                }
-                .text-1{
-                    figure{
-                        img{}
-                    }
-                    figcaption{}
-                    p{}
-                    .icon{
-                        img{}
+        .list {
+            div {position: relative;
+                video {
+                    &::before
+                    {}
+                    source {
                     }
                 }
             }
+            .text_1 {
+                color: white;
+                position: absolute;
+                left: 5%; top: 15%;
+                text-align: center;
+                figure {
+                    img {
+                        width: 270px;
+                    }
+                }
+                figcaption {
+                    font-family: "Pretendard Black";
+                    font-size: 24px;
+                    font-weight: bolder;
+                }
+                p {
+                    white-space: pre-line;
+                    font-family: "Pretendard SemiBold";
+                    line-height: 1.5;
+                }
+                .icon {
+                    img {margin: 10px;
+                    }
+                }
+            }
+
+            // .preview-img{
+            //     img{width: 65%; height: 100%;}
+            }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
