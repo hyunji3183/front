@@ -1,6 +1,5 @@
 @import "_reset";
 
-
 .bi {
     position: relative;
     .head {
@@ -28,7 +27,6 @@
 }
 
 .title {
-    width: 100vw;
     figure {
         position: relative;
         video {
@@ -117,14 +115,15 @@ main {
         }
     }
 
-    .LATEST_NEWS {width: 100%;
+    .LATEST_NEWS {
+        width: 100%;
         h3 {
             font-family: "acumin-pro-condensed";
             font-size: 90px;
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
-            margin: 40px 340px;
+            
         }
         div {
             display: inline-block;
@@ -162,15 +161,6 @@ main {
                 }
             }
         }
-        button {
-            display: block;
-            color: white;
-            background-color: black;
-            font-family: "Proxima Nova Extrabold";
-            font-size: 15.5px;
-            padding: 12px 24px;
-            border-radius: 36px;
-        }
     }
 
     .OUR_GAMES {
@@ -180,46 +170,59 @@ main {
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
-            margin: 40px 340px;
+            margin: 1% 18%;
         }
 
         .list {
-            div {position: relative;
+            margin: 1% 18%;
+            div {margin-bottom: 30px;
+                position: relative;
                 video {
-                    &::before
-                    {}
+                    border-radius: 10px;
+                    // object-fit: cover;
                     source {
                     }
                 }
             }
-            .text_1 {
+
+            .text_box {
                 color: white;
                 position: absolute;
-                left: 5%; top: 15%;
+                left: 5%; top: 10%;
                 text-align: center;
+
                 figure {
                     img {
                         width: 270px;
                     }
                 }
                 figcaption {
-                    font-family: "Pretendard Black";
+                    font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
                     font-size: 24px;
-                    font-weight: bolder;
+                    font-weight: 900;
+                    margin-top: 10px;
                 }
                 p {
                     white-space: pre-line;
                     font-family: "Pretendard SemiBold";
+                    font-size: 14.5px;
                     line-height: 1.5;
+                    margin: 10px 0;
                 }
                 .icon {
-                    img {margin: 10px;
+                    img {
+                        margin: 10px;
                     }
                 }
             }
-
-            // .preview-img{
-            //     img{width: 65%; height: 100%;}
+            a {
+                position: absolute;
+                right: -20px;
+                top: 30px;
+                padding: 20px;
+                background-color: rgb(255, 95, 0);
+                color: white;
+                font-family: "Proxima Nova Extrabold";
             }
         }
     }
