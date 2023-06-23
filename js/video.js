@@ -17,6 +17,7 @@ function stopPreview(video) {
 
     video.addEventListener("mouseenter", ()=>
     {
+        
         startPreview(video);
     });
     video.addEventListener("mouseleave", ()=>

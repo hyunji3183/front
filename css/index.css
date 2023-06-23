@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body, p, figure, h2, h3, div {
+body, p, figure, h2, h3, h4, div {
   margin: 0px;
 }
 
@@ -32,8 +32,16 @@ ul, li {
   src: url("../fonts/Pretendard-Black.otf") format("truetype");
 }
 @font-face {
+  font-family: "Pretendard Medium";
+  src: url("../fonts/Pretendard-Medium.otf") format("truetype");
+}
+@font-face {
   font-family: "Pretendard SemiBold";
   src: url("../fonts/Pretendard-SemiBold.otf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard ExtraBold";
+  src: url("../fonts/Pretendard-ExtraBold.otf") format("truetype");
 }
 * button {
   display: block;
@@ -41,7 +49,7 @@ ul, li {
   background-color: black;
   font-family: "Proxima Nova Extrabold";
   font-size: 15.5px;
-  padding: 12px 24px;
+  padding: 16px 24px;
   border-radius: 36px;
 }
 
@@ -334,6 +342,7 @@ main .vision p {
   }
 }
 main .LATEST_NEWS {
+  margin-top: 150px;
   width: 100%;
 }
 main .LATEST_NEWS h3 {
@@ -370,6 +379,10 @@ main .LATEST_NEWS div .content .text ul li a {
   color: white;
   background-color: rgb(255, 130, 0);
   border-radius: 38px;
+  font-family: "Proxima Nova Extrabold";
+}
+main .OUR_GAMES {
+  margin-top: 150px;
 }
 main .OUR_GAMES h3 {
   font-family: "acumin-pro-condensed";
@@ -422,5 +435,151 @@ main .OUR_GAMES .list a {
   padding: 20px;
   background-color: rgb(255, 95, 0);
   color: white;
+  font-family: "Proxima Nova Extrabold";
+}
+main .STUDIOS {
+  margin-top: 150px;
+}
+main .STUDIOS h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(255, 95, 0);
+  margin: 1% 18%;
+}
+main .STUDIOS a {
+  width: 100%;
+  padding: 0 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .STUDIOS a .s-content {
+  width: 350px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+main .STUDIOS a .s-content:nth-of-type(1) {
+  background-color: #FFE7C4;
+}
+main .STUDIOS a .s-content:nth-of-type(2) {
+  background-color: #FF4347;
+}
+main .STUDIOS a .s-content:nth-of-type(3) {
+  background-color: #202121;
+}
+main .STUDIOS a .s-content:nth-of-type(1) figcaption {
+  color: rgb(90, 27, 0);
+  border-top: 1px solid rgb(211, 80, 4);
+}
+main .STUDIOS a .s-content:nth-of-type(2) figcaption {
+  color: white;
+  border-top: 1px solid white;
+}
+main .STUDIOS a .s-content:nth-of-type(3) figcaption {
+  color: white;
+  border-top: 1px solid white;
+}
+main .STUDIOS a .s-content figure img {
+  margin: 30px;
+}
+main .STUDIOS a .s-content figcaption {
+  white-space: pre-line;
+}
+main .STUDIOS a .s-content figcaption b {
+  font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
+  font-size: 24px;
+}
+main .STUDIOS a .s-content figcaption p {
+  font-family: "Pretendard SemiBold";
+  font-size: 16px;
+  margin-top: 30px;
+  line-height: 24px;
+}
+main .OUR_STORIES {
+  margin-top: 150px;
+}
+main .OUR_STORIES h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(255, 95, 0);
+  margin: 1% 18%;
+}
+main .OUR_STORIES .os-content {
+  width: 100%;
+  display: flex;
+}
+main .OUR_STORIES .os-content div {
+  width: 20%;
+  height: 20%;
+  margin-right: 10px;
+  position: relative;
+}
+main .OUR_STORIES .os-content div figure img {
+  width: 100%;
+}
+main .OUR_STORIES .os-content div figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  white-space: pre-line;
+}
+main .OUR_STORIES .os-content div figcaption p {
+  font-family: "Pretendard ExtraBold";
+  color: white;
+  font-size: 16px;
+}
+main .OUR_STORIES .os-content div figcaption a {
+  font-size: 12px;
+  display: inline-block;
+  margin: 3px 0;
+  padding: 5.5px 12px 5.5px 12px;
+  color: white;
+  background-color: rgb(255, 130, 0);
+  border-radius: 38px;
+  font-family: "Proxima Nova Extrabold";
+}
+main .card {
+  margin: 5% 18%;
+  position: relative;
+}
+main .card figure {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+}
+main .card figcaption {
+  width: 100%;
+  background-color: rgb(248, 232, 218);
+  padding: 60px;
+  border-radius: 8px;
+}
+main .card figcaption h4 {
+  white-space: pre-line;
+  font-family: "acumin-pro-condensed";
+  color: #FF5F00;
+  line-height: 58px;
+  font-weight: 900;
+  font-size: 72px;
+  font-style: italic;
+}
+main .card figcaption p {
+  font-family: "Pretendard Medium";
+  font-size: 16px;
+  margin: 30px 0;
+}
+footer {
+  padding: 5%;
+  background-color: rgb(255, 95, 0);
+  color: white;
+}
+footer .b-text strong {
+  margin-top: 100px;
+  font-size: 160px;
   font-family: "Proxima Nova Extrabold";
 }/*# sourceMappingURL=index.css.map */

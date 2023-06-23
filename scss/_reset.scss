@@ -1,4 +1,4 @@
-body,p,figure,h2,h3,div
+body,p,figure,h2,h3,h4,div
 {margin: 0px;}
 
 *{box-sizing: border-box;
@@ -29,8 +29,18 @@ list-style-type: none;}
 }
 
 @font-face {
+    font-family: 'Pretendard Medium';
+    src: url('../fonts/Pretendard-Medium.otf') format("truetype") ;
+}
+
+@font-face {
     font-family: 'Pretendard SemiBold';
     src: url('../fonts/Pretendard-SemiBold.otf') format("truetype") ;
+}
+
+@font-face {
+    font-family: 'Pretendard ExtraBold';
+    src: url('../fonts/Pretendard-ExtraBold.otf') format("truetype") ;
 }
 
 *button{
@@ -39,5 +49,5 @@ list-style-type: none;}
     background-color: black;
     font-family: "Proxima Nova Extrabold";
     font-size: 15.5px;
-    padding: 12px 24px;
+    padding: 16px 24px;
     border-radius: 36px;}

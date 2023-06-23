@@ -2,6 +2,7 @@
 
 .bi {
     position: relative;
+
     .head {
         position: fixed;
         left: 20%;
@@ -19,6 +20,7 @@
             display: inline-block;
             color: white;
         }
+
         a {
             font-size: 14px;
             color: white;
@@ -29,10 +31,12 @@
 .title {
     figure {
         position: relative;
+
         video {
             object-fit: cover;
         }
     }
+
     figcaption {
         position: absolute;
         left: 20%;
@@ -45,6 +49,7 @@
         line-height: 102px;
         letter-spacing: -5px;
         color: rgb(255, 95, 0);
+
         span {
             color: white;
             text-shadow: 3px 3px 0 rgb(255, 95, 0);
@@ -56,6 +61,7 @@
     position: absolute;
     right: 20%;
     bottom: 8%;
+
     p {
         position: relative;
         width: 24px;
@@ -63,6 +69,7 @@
         margin: 0 auto;
         border: 2px solid white;
         border-radius: 20px;
+
         img {
             position: absolute;
             left: 5px;
@@ -70,6 +77,7 @@
             margin: 0 auto;
         }
     }
+
     span {
         font-size: 10px;
         color: white;
@@ -83,14 +91,17 @@ main {
         align-items: center;
         width: 100%;
         margin: 50px 0;
+
         b {
             white-space: pre-line;
             font-size: 24px;
             font-family: "Pretendard ExtraBold";
+
             span {
                 color: rgb(255, 95, 0);
             }
         }
+
         p {
             width: 609px;
             height: 322px;
@@ -100,13 +111,17 @@ main {
                 @for $i from 0 through 46 {
                     #{$i * 2.0833%} {
                         background-size: 600px;
+
                         @if ($i < 10) {
                             background-image: url("../main_page/vision/home-hero-sq-00" + #{$i} + ".webp");
-                        } @else {
+                        }
+
+                        @else {
                             background-image: url("../main_page/vision/home-hero-sq-0" + #{$i} + ".webp");
                         }
                     }
                 }
+
                 100% {
                     background-size: 600px;
                     background-image: url("../main_page/vision/home-hero-sq-047.webp");
@@ -116,15 +131,18 @@ main {
     }
 
     .LATEST_NEWS {
+        margin-top: 150px;
         width: 100%;
+
         h3 {
             font-family: "acumin-pro-condensed";
             font-size: 90px;
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
-            
+
         }
+
         div {
             display: inline-block;
 
@@ -133,19 +151,22 @@ main {
                 border-radius: 10px;
                 overflow: hidden;
                 width: 340px;
+
                 figure {
-                    img {
-                    }
+                    img {}
                 }
 
                 .text {
                     font-family: "Proxima Nova Extrabold";
+
                     p {
                         margin: 20px;
                         font-family: "Pretendard ExtraBold";
                     }
+
                     ul {
                         margin: 20px;
+
                         li {
                             a {
                                 font-size: 12px;
@@ -155,6 +176,7 @@ main {
                                 color: white;
                                 background-color: rgb(255, 130, 0);
                                 border-radius: 38px;
+                                font-family: "Proxima Nova Extrabold";
                             }
                         }
                     }
@@ -164,6 +186,8 @@ main {
     }
 
     .OUR_GAMES {
+        margin-top: 150px;
+
         h3 {
             font-family: "acumin-pro-condensed";
             font-size: 90px;
@@ -175,20 +199,24 @@ main {
 
         .list {
             margin: 1% 18%;
-            div {margin-bottom: 30px;
+
+            div {
+                margin-bottom: 30px;
                 position: relative;
+
                 video {
                     border-radius: 10px;
+
                     // object-fit: cover;
-                    source {
-                    }
+                    source {}
                 }
             }
 
             .text_box {
                 color: white;
                 position: absolute;
-                left: 5%; top: 10%;
+                left: 5%;
+                top: 10%;
                 text-align: center;
 
                 figure {
@@ -196,12 +224,14 @@ main {
                         width: 270px;
                     }
                 }
+
                 figcaption {
                     font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
                     font-size: 24px;
                     font-weight: 900;
                     margin-top: 10px;
                 }
+
                 p {
                     white-space: pre-line;
                     font-family: "Pretendard SemiBold";
@@ -209,12 +239,14 @@ main {
                     line-height: 1.5;
                     margin: 10px 0;
                 }
+
                 .icon {
                     img {
                         margin: 10px;
                     }
                 }
             }
+
             a {
                 position: absolute;
                 right: -20px;
@@ -223,6 +255,216 @@ main {
                 background-color: rgb(255, 95, 0);
                 color: white;
                 font-family: "Proxima Nova Extrabold";
+            }
+        }
+    }
+
+
+    .STUDIOS {
+        margin-top: 150px;
+
+        h3 {
+            font-family: "acumin-pro-condensed";
+            font-size: 90px;
+            font-style: italic;
+            font-weight: 900;
+            color: rgb(255, 95, 0);
+            margin: 1% 18%;
+        }
+
+        a {
+            width: 100%;
+            padding: 0 18%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // transform-origin: ;
+
+            .s-content {
+                width: 350px;
+                text-align: center;
+                padding: 20px;
+                margin: 0 15px;
+                border-radius: 10px;
+
+                &:nth-of-type(1) {
+                    background-color: #FFE7C4;
+                }
+
+                &:nth-of-type(2) {
+                    background-color: #FF4347;
+                }
+
+                &:nth-of-type(3) {
+                    background-color: #202121;
+                }
+
+                &:nth-of-type(1) figcaption {
+                    color: rgb(90, 27, 0);
+                    border-top: 1px solid rgb(211, 80, 4);
+                }
+
+                &:nth-of-type(2) figcaption {
+                    color: white;
+                    border-top: 1px solid white;
+                }
+
+                &:nth-of-type(3) figcaption {
+                    color: white;
+                    border-top: 1px solid white;
+                }
+
+                figure {
+                    img {
+                        margin: 30px;
+                    }
+                }
+
+                figcaption {
+                    white-space: pre-line;
+
+
+
+                    b {
+                        font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-family: "Pretendard SemiBold";
+                        font-size: 16px;
+                        margin-top: 30px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .OUR_STORIES {
+        margin-top: 150px;
+
+        h3 {
+            font-family: "acumin-pro-condensed";
+            font-size: 90px;
+            font-style: italic;
+            font-weight: 900;
+            color: rgb(255, 95, 0);
+            margin: 1% 18%;
+        }
+
+        .os-content {
+            width: 100%;
+            display: flex;
+
+            div {
+                width: 20%;
+                height: 20%;
+                margin-right: 10px;
+                position: relative;
+
+                figure {
+                    img {
+                        width: 100%
+                    }
+                }
+
+                figcaption {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    white-space: pre-line;
+
+                    p {
+                        font-family: "Pretendard ExtraBold";
+                        color: white;
+                        font-size: 16px;
+                    }
+
+                    a {
+                        font-size: 12px;
+                        display: inline-block;
+                        margin: 3px 0;
+                        padding: 5.5px 12px 5.5px 12px;
+                        color: white;
+                        background-color: rgb(255, 130, 0);
+                        border-radius: 38px;
+                        font-family: "Proxima Nova Extrabold";
+                    }
+                }
+            }
+        }
+    }
+
+    .card {
+        margin: 5% 18%;
+        position: relative;
+
+        figure {
+            position: absolute;
+            right: 20%;
+            bottom: 0;
+
+            img {}
+        }
+
+        figcaption {
+            width: 100%;
+            background-color: rgb(248, 232, 218);
+            padding: 60px;
+            border-radius: 8px;
+
+            h4 {
+                white-space: pre-line;
+                font-family: "acumin-pro-condensed";
+                color: #FF5F00;
+                line-height: 58px;
+                font-weight: 900;
+                font-size: 72px;
+                font-style: italic;
+
+            }
+
+            p {
+                font-family: 'Pretendard Medium';
+                font-size: 16px;
+                margin: 30px 0;
+            }
+
+            button {}
+        }
+    }
+}
+
+footer {
+    padding: 5% ;
+    background-color: rgb(255, 95, 0);
+    color: white;
+
+    .text {
+        span {}
+
+        form {
+            select {
+                option {}
+            }
+        }
+    }
+
+    .b-text {
+        strong {
+            margin-top: 100px;
+            font-size: 160px;
+            font-family: "Proxima Nova Extrabold";
+        }
+
+        div {
+            p {}
+
+            figure {
+                a {
+                    img {}
+                }
             }
         }
     }
