@@ -58,24 +58,52 @@ ul, li {
 }
 .bi .head {
   position: fixed;
-  left: 20%;
-  top: 1.5%;
+  left: 0%;
+  top: 0%;
   z-index: 1;
-  width: 60%;
+  width: 100%;
+  height: 40px;
+  padding: 0 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: "Proxima Nova Extrabold";
   font-weight: 800;
 }
+.bi .head:hover .bar {
+  display: block;
+}
+.bi .head::after {
+  display: block;
+  content: "";
+  clear: both;
+}
 .bi .head h2 {
   font-size: 20px;
   display: inline-block;
   color: white;
 }
-.bi .head a {
+.bi .head li {
+  position: relative;
+  float: left;
+}
+.bi .head li a {
+  display: block;
+  padding: 0 15px;
+  height: 20px;
+  line-height: 20px;
   font-size: 14px;
   color: white;
+}
+.bi .head li .bar {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.bi .head li .bar li a {
+  display: block;
 }
 
 .title figure {
@@ -344,6 +372,7 @@ main .vision p {
 main .LATEST_NEWS {
   margin-top: 150px;
   width: 100%;
+  overflow: hidden;
 }
 main .LATEST_NEWS h3 {
   font-family: "acumin-pro-condensed";
@@ -351,27 +380,55 @@ main .LATEST_NEWS h3 {
   font-style: italic;
   font-weight: 900;
   color: rgb(255, 95, 0);
+  margin: 1% 18%;
 }
-main .LATEST_NEWS div {
-  display: inline-block;
+main .LATEST_NEWS .slide {
+  animation-name: infiniteScroll;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-main .LATEST_NEWS div .content {
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+main .LATEST_NEWS .slide div {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .LATEST_NEWS .slide div .content {
   border: 1px solid rgb(220, 220, 220);
   border-radius: 10px;
-  overflow: hidden;
+  margin: 8px;
   width: 340px;
+  height: 400px;
 }
-main .LATEST_NEWS div .content .text {
+main .LATEST_NEWS .slide div .content figure img {
+  width: 340px;
+  height: 200px;
+}
+main .LATEST_NEWS .slide div .content .text {
   font-family: "Proxima Nova Extrabold";
 }
-main .LATEST_NEWS div .content .text p {
-  margin: 20px;
+main .LATEST_NEWS .slide div .content .text p {
   font-family: "Pretendard ExtraBold";
+  position: absolute;
+  left: 5%;
+  top: 60%;
 }
-main .LATEST_NEWS div .content .text ul {
-  margin: 20px;
+main .LATEST_NEWS .slide div .content .text ul li {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
 }
-main .LATEST_NEWS div .content .text ul li a {
+main .LATEST_NEWS .slide div .content .text ul li a {
   font-size: 12px;
   display: inline-block;
   margin: 3px 0;
@@ -380,6 +437,9 @@ main .LATEST_NEWS div .content .text ul li a {
   background-color: rgb(255, 130, 0);
   border-radius: 38px;
   font-family: "Proxima Nova Extrabold";
+}
+main .LATEST_NEWS button {
+  margin: 1% 18%;
 }
 main .OUR_GAMES {
   margin-top: 150px;
@@ -432,8 +492,12 @@ main .OUR_GAMES .list a {
   position: absolute;
   right: -20px;
   top: 30px;
-  padding: 20px;
+  padding: 16px;
   background-color: rgb(255, 95, 0);
+  transform-origin: 100% 100%;
+  transform: skew(-10deg);
+}
+main .OUR_GAMES .list a span {
   color: white;
   font-family: "Proxima Nova Extrabold";
 }
@@ -463,10 +527,10 @@ main .STUDIOS a .s-content {
   border-radius: 10px;
 }
 main .STUDIOS a .s-content:nth-of-type(1) {
-  background-color: #FFE7C4;
+  background-color: #ffe7c4;
 }
 main .STUDIOS a .s-content:nth-of-type(2) {
-  background-color: #FF4347;
+  background-color: #ff4347;
 }
 main .STUDIOS a .s-content:nth-of-type(3) {
   background-color: #202121;
@@ -513,20 +577,29 @@ main .OUR_STORIES h3 {
 main .OUR_STORIES .os-content {
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .OUR_STORIES .os-content div {
-  width: 20%;
-  height: 20%;
-  margin-right: 10px;
   position: relative;
+  margin: 10px 16px;
+}
+main .OUR_STORIES .os-content div figure {
+  width: 270px;
+  height: 270px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  overflow: hidden;
 }
 main .OUR_STORIES .os-content div figure img {
   width: 100%;
+  height: 100%;
 }
 main .OUR_STORIES .os-content div figcaption {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 5%;
+  bottom: 5%;
   white-space: pre-line;
 }
 main .OUR_STORIES .os-content div figcaption p {
@@ -544,13 +617,51 @@ main .OUR_STORIES .os-content div figcaption a {
   border-radius: 38px;
   font-family: "Proxima Nova Extrabold";
 }
+main .OUR_STORIES button {
+  margin: 3% 18%;
+}
+main .icon_g {
+  margin-top: 150px;
+  margin: 1% 18%;
+}
+main .icon_g span {
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(229, 229, 229);
+}
+main .icon_g .icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8% 0;
+}
+main .icon_g .icon .i-content {
+  text-align: center;
+  width: 25%;
+}
+main .icon_g .icon .i-content figure {
+  width: 50%;
+  margin: 0 auto;
+}
+main .icon_g .icon .i-content figcaption h5 {
+  margin: 0;
+  font-family: "Proxima Nova Extrabold";
+  font-size: 28px;
+  line-height: 1.5;
+}
+main .icon_g .icon .i-content figcaption p {
+  white-space: pre-line;
+  font-family: "Pretendard SemiBold";
+  line-height: 1.5;
+}
 main .card {
-  margin: 5% 18%;
+  margin: 10% 18%;
   position: relative;
 }
 main .card figure {
   position: absolute;
-  right: 20%;
+  right: 10%;
   bottom: 0;
 }
 main .card figcaption {
@@ -562,7 +673,7 @@ main .card figcaption {
 main .card figcaption h4 {
   white-space: pre-line;
   font-family: "acumin-pro-condensed";
-  color: #FF5F00;
+  color: #ff5f00;
   line-height: 58px;
   font-weight: 900;
   font-size: 72px;
@@ -574,12 +685,112 @@ main .card figcaption p {
   margin: 30px 0;
 }
 footer {
-  padding: 5%;
+  padding: 5% 18%;
   background-color: rgb(255, 95, 0);
   color: white;
 }
+footer .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .text .link div {
+  margin-bottom: 10px;
+}
+footer .text .link div:nth-of-type(1) span:nth-of-type(1) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(1) span:nth-of-type(2) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(1) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(2) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(3) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(4) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(5) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) a:nth-of-type(2) {
+  font-family: "Pretendard ExtraBold";
+  font-size: 15px;
+  line-height: 15px;
+}
+footer .text .link div a {
+  color: white;
+  font-family: "Pretendard Medium";
+  font-size: 14px;
+  line-height: 14px;
+}
+footer .text .link div svg {
+  width: 6px;
+  vertical-align: middle;
+  margin: 0 6px;
+}
+footer .text form select {
+  width: 180px;
+  padding: 5px 0;
+  appearance: none;
+  color: white;
+  border-width: 0;
+  border-bottom: 2px solid white;
+  font-size: 14px;
+  font-family: "Proxima Nova Extrabold";
+  background-color: transparent;
+  background: url(../icons/arrow_drop.svg) no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+footer .text form select option {
+  background: rgb(255, 95, 0);
+  color: #fff;
+  padding: 3px 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
 footer .b-text strong {
-  margin-top: 100px;
+  display: block;
+  padding-top: 110px;
   font-size: 160px;
   font-family: "Proxima Nova Extrabold";
+}
+footer .b-text div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .b-text div p {
+  font-family: "Pretendard Medium";
+  font-size: 14px;
+  font-weight: 500;
+}
+footer .b-text div figure {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .b-text div figure a {
+  margin: 0 10px;
 }/*# sourceMappingURL=index.css.map */
