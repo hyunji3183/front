@@ -382,53 +382,62 @@ main .LATEST_NEWS h3 {
   color: rgb(255, 95, 0);
   margin: 1% 18%;
 }
-main .LATEST_NEWS .slide {
+main .LATEST_NEWS .slider {
   animation-name: infiniteScroll;
-  animation-duration: 10s;
+  animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+main .LATEST_NEWS .slider:hover {
+  animation-play-state: paused;
 }
 @keyframes infiniteScroll {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-4440px);
   }
 }
-main .LATEST_NEWS .slide div {
+main .LATEST_NEWS .slider div {
   position: relative;
   display: flex;
   overflow: hidden;
-  width: -moz-fit-content;
-  width: fit-content;
+  justify-content: space-between;
+  width: 8880px;
 }
-main .LATEST_NEWS .slide div .content {
+main .LATEST_NEWS .slider div .content {
   border: 1px solid rgb(220, 220, 220);
   border-radius: 10px;
-  margin: 8px;
-  width: 340px;
+  margin: 40px 0 0 0;
+  width: 350px;
   height: 400px;
 }
-main .LATEST_NEWS .slide div .content figure img {
-  width: 340px;
+main .LATEST_NEWS .slider div .content:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  overflow: hidden;
+}
+main .LATEST_NEWS .slider div .content figure img {
+  width: 350px;
   height: 200px;
 }
-main .LATEST_NEWS .slide div .content .text {
+main .LATEST_NEWS .slider div .content .text {
   font-family: "Proxima Nova Extrabold";
 }
-main .LATEST_NEWS .slide div .content .text p {
+main .LATEST_NEWS .slider div .content .text p {
   font-family: "Pretendard ExtraBold";
   position: absolute;
   left: 5%;
   top: 60%;
 }
-main .LATEST_NEWS .slide div .content .text ul li {
+main .LATEST_NEWS .slider div .content .text ul li {
   position: absolute;
   left: 5%;
   bottom: 5%;
 }
-main .LATEST_NEWS .slide div .content .text ul li a {
+main .LATEST_NEWS .slider div .content .text ul li a {
   font-size: 12px;
   display: inline-block;
   margin: 3px 0;

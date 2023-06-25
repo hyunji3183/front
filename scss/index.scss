@@ -172,19 +172,22 @@ main {
             margin: 1% 18%;
         }
 
-        .slide {
+        .slider {
             animation-name: infiniteScroll;
-            animation-duration: 10s;
+            animation-duration: 40s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
-            // &:hover{animation-play-state: paused;}
+
+            &:hover {
+                animation-play-state: paused;
+            }
 
             @keyframes infiniteScroll {
                 0% {
                     transform: translateX(0%);
                 }
                 100% {
-                    transform: translateX(-100%);
+                    transform: translateX(calc(-370px * 12));
                 }
             }
 
@@ -192,18 +195,26 @@ main {
                 position: relative;
                 display: flex;
                 overflow: hidden;
-                width: fit-content;
+                justify-content: space-between;
+                width: calc(370px * 24);
 
                 .content {
                     border: 1px solid rgb(220, 220, 220);
                     border-radius: 10px;
-                    margin: 8px;
-                    width: 340px;
+                    margin: 40px 0 0 0;
+                    width: 350px;
                     height: 400px;
+
+                    &:hover {
+                        transform: translateY(-20px);
+                        box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+                        transition: .5s;
+                        overflow: hidden;
+                    }
 
                     figure {
                         img {
-                            width: 340px;
+                            width: 350px;
                             height: 200px;
                         }
                     }
