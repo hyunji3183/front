@@ -1,7 +1,6 @@
 @import "_reset";
 
 .bi {
-    position: relative;
     .head {
         position: fixed;
         left: 0%;
@@ -31,9 +30,11 @@
             display: inline-block;
             color: white;
         }
+
         li {
             position: relative;
             float: left;
+
             a {
                 display: block;
                 padding: 0 15px;
@@ -42,12 +43,14 @@
                 font-size: 14px;
                 color: white;
             }
+
             .bar {
                 display: none;
                 position: absolute;
                 left: 0;
                 right: 0;
                 text-align: center;
+
                 li {
                     a {
                         display: block;
@@ -58,63 +61,67 @@
     }
 }
 
-.title {
-    figure {
-        position: relative;
-
-        video {
-            object-fit: cover;
-        }
-    }
-
-    figcaption {
-        position: absolute;
-        left: 20%;
-        bottom: 8%;
-        white-space: pre-line;
-        font-family: "acumin-pro-condensed";
-        font-style: italic;
-        font-size: 128px;
-        font-weight: 900;
-        line-height: 102px;
-        letter-spacing: -5px;
-        color: rgb(255, 95, 0);
-
-        span {
-            color: white;
-            text-shadow: 3px 3px 0 rgb(255, 95, 0);
-        }
-    }
-}
-
-.scroll {
-    position: absolute;
-    right: 20%;
-    bottom: 8%;
-
-    p {
-        position: relative;
-        width: 24px;
-        height: 42px;
-        margin: 0 auto;
-        border: 2px solid white;
-        border-radius: 20px;
-
-        img {
-            position: absolute;
-            left: 5px;
-            top: 5px;
-            margin: 0 auto;
-        }
-    }
-
-    span {
-        font-size: 10px;
-        color: white;
-    }
-}
-
 main {
+    .vi {
+        figure {
+            width: 100%;
+            position: relative;
+
+            video {
+                object-fit: cover;
+            }
+
+            figcaption {
+                position: absolute;
+                left: 20%;
+                bottom: 8%;
+                white-space: pre-line;
+                font-family: "acumin-pro-condensed";
+                font-style: italic;
+                font-size: 128px;
+                font-weight: 900;
+                line-height: 102px;
+                letter-spacing: -2px;
+                color: rgb(255, 95, 0);
+
+                span {
+                    color: white;
+                    text-shadow: 3px 3px 0 rgb(255, 95, 0);
+                }
+            }
+
+            .scroll {
+                position: absolute;
+                right: 20%;
+                bottom: 8%;
+
+                p {
+                    position: relative;
+                    width: 24px;
+                    height: 42px;
+                    margin: 0 auto;
+                    border: 2px solid white;
+                    border-radius: 20px;
+
+                    img {
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                        margin: 0 auto;
+                    }
+                }
+
+                span {
+                    font-size: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+
+
     .vision {
         display: flex;
         justify-content: center;
@@ -144,7 +151,9 @@ main {
 
                         @if ($i < 10) {
                             background-image: url("../main_page/vision/home-hero-sq-00" + #{$i} + ".webp");
-                        } @else {
+                        }
+
+                        @else {
                             background-image: url("../main_page/vision/home-hero-sq-0" + #{$i} + ".webp");
                         }
                     }
@@ -186,6 +195,7 @@ main {
                 0% {
                     transform: translateX(0%);
                 }
+
                 100% {
                     transform: translateX(calc(-370px * 12));
                 }
@@ -217,32 +227,34 @@ main {
                             width: 350px;
                             height: 200px;
                         }
-                    }
 
-                    .text {
-                        font-family: "Proxima Nova Extrabold";
 
-                        p {
-                            font-family: "Pretendard ExtraBold";
-                            position: absolute;
-                            left: 5%;
-                            top: 60%;
-                        }
+                        .text {
+                            font-family: "Proxima Nova Extrabold";
 
-                        ul {
-                            li {
+                            p {
+                                font-family: "Pretendard ExtraBold";
                                 position: absolute;
                                 left: 5%;
-                                bottom: 5%;
-                                a {
-                                    font-size: 12px;
-                                    display: inline-block;
-                                    margin: 3px 0;
-                                    padding: 5.5px 12px 5.5px 12px;
-                                    color: white;
-                                    background-color: rgb(255, 130, 0);
-                                    border-radius: 38px;
-                                    font-family: "Proxima Nova Extrabold";
+                                top: 60%;
+                            }
+
+                            ul {
+                                li {
+                                    position: absolute;
+                                    left: 5%;
+                                    bottom: 5%;
+
+                                    a {
+                                        font-size: 12px;
+                                        display: inline-block;
+                                        margin: 3px 0;
+                                        padding: 5.5px 12px 5.5px 12px;
+                                        color: white;
+                                        background-color: rgb(255, 130, 0);
+                                        border-radius: 38px;
+                                        font-family: "Proxima Nova Extrabold";
+                                    }
                                 }
                             }
                         }
@@ -250,6 +262,7 @@ main {
                 }
             }
         }
+
         button {
             margin: 1% 18%;
         }
@@ -278,59 +291,61 @@ main {
                     border-radius: 10px;
 
                     // object-fit: cover;
-                    source {
-                    }
-                }
-            }
-
-            .text_box {
-                color: white;
-                position: absolute;
-                left: 5%;
-                top: 10%;
-                text-align: center;
-
-                figure {
-                    img {
-                        width: 270px;
-                    }
+                    source {}
                 }
 
-                figcaption {
-                    font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
-                    font-size: 24px;
-                    font-weight: 900;
-                    margin-top: 10px;
-                }
-
-                p {
-                    white-space: pre-line;
-                    font-family: "Pretendard SemiBold";
-                    font-size: 14.5px;
-                    line-height: 1.5;
-                    margin: 10px 0;
-                }
-
-                .icon {
-                    img {
-                        margin: 10px;
-                    }
-                }
-            }
-
-            a {
-                position: absolute;
-                right: -20px;
-                top: 30px;
-                padding: 16px;
-                background-color: rgb(255, 95, 0);
-                transform-origin: 100% 100%;
-                transform: skew(-10deg);
-                span {
+                .text_box {
                     color: white;
-                    font-family: "Proxima Nova Extrabold";
+                    position: absolute;
+                    left: 5%;
+                    top: 10%;
+                    text-align: center;
+
+                    p {
+                        img {
+                            width: 270px;
+                        }
+                    }
+
+                    figcaption {
+                        font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
+                        font-size: 24px;
+                        font-weight: 900;
+                        margin-top: 10px;
+
+                        p {
+                            white-space: pre-line;
+                            font-family: "Pretendard SemiBold";
+                            font-size: 14.5px;
+                            line-height: 1.5;
+                            margin: 10px 0;
+                        }
+
+                        .icon {
+                            img {
+                                margin: 10px;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    right: -16px;
+                    top: 25px;
+                    padding: 16px;
+                    background-color: rgb(255, 95, 0);
+                    transform-origin: 100% 100%;
+                    transform: skew(-10deg);
+
+                    span {
+                        color: white;
+                        font-family: "Proxima Nova Extrabold";
+                    }
                 }
             }
+
+
         }
     }
 
@@ -346,19 +361,18 @@ main {
             margin: 1% 18%;
         }
 
-        a {
+        div {
             width: 100%;
-            padding: 0 18%;
+            padding: 0 16%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // transform-origin: ;
 
             .s-content {
                 width: 350px;
                 text-align: center;
                 padding: 20px;
-                margin: 0 15px;
+                margin: auto 15px;
                 border-radius: 10px;
 
                 &:nth-of-type(1) {
@@ -388,30 +402,33 @@ main {
                     border-top: 1px solid white;
                 }
 
-                figure {
-                    img {
-                        margin: 30px;
-                    }
-                }
+                a {padding: 0 10px;
+                    figure {
+                        img {
+                            margin: 30px;
+                        }
 
-                figcaption {
-                    white-space: pre-line;
+                        figcaption {
+                            white-space: pre-line;
 
-                    b {
-                        font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
-                        font-size: 24px;
-                    }
+                            b {
+                                font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
+                                font-size: 24px;
+                            }
 
-                    p {
-                        font-family: "Pretendard SemiBold";
-                        font-size: 16px;
-                        margin-top: 30px;
-                        line-height: 24px;
+                            p {
+                                font-family: "Pretendard SemiBold";
+                                font-size: 16px;
+                                margin-top: 30px;
+                                line-height: 24px;
+                            }
+                        }
                     }
                 }
             }
         }
     }
+
 
     .OUR_STORIES {
         margin-top: 150px;
@@ -430,15 +447,18 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
+
             div {
                 position: relative;
                 margin: 10px 16px;
+
                 figure {
                     width: 270px;
                     height: 270px;
                     object-fit: contain;
                     border-radius: 10px;
                     overflow: hidden;
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -470,6 +490,7 @@ main {
                 }
             }
         }
+
         button {
             margin: 3% 18%;
         }
@@ -478,38 +499,42 @@ main {
     .icon_g {
         margin-top: 150px;
         margin: 1% 18%;
+
         span {
             display: block;
             width: 100%;
             border: 1px solid rgb(229, 229, 229);
         }
+
         .icon {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 8% 0;
+
             .i-content {
                 text-align: center;
-                width: 25%;
-                figure {
-                    width: 50%;
-                    margin: 0 auto;
-                    svg {
-                    }
-                }
+                width: 30%;
 
-                figcaption {
-                    h5 {
-                        margin: 0;
-                        font-family: "Proxima Nova Extrabold";
-                        font-size: 28px;
-                        line-height: 1.5;
-                    }
-                    p {
-                        white-space: pre-line;
-                        font-family: "Pretendard SemiBold";
-                        line-height: 1.5;
+                figure {
+                    margin: 0 auto;
+
+                    svg {}
+
+                    figcaption {
+                        h5 {
+                            margin: 0;
+                            font-family: "Proxima Nova Extrabold";
+                            font-size: 28px;
+                            line-height: 1.5;
+                        }
+
+                        p {
+                            white-space: pre-line;
+                            font-family: "Pretendard SemiBold";
+                            line-height: 1.5;
+                        }
                     }
                 }
             }
@@ -521,37 +546,37 @@ main {
         position: relative;
 
         figure {
-            position: absolute;
-            right: 10%;
-            bottom: 0;
-
-            img {
-            }
-        }
-
-        figcaption {
             width: 100%;
             background-color: rgb(248, 232, 218);
-            padding: 60px;
+            padding: 80px;
             border-radius: 8px;
 
-            h4 {
-                white-space: pre-line;
-                font-family: "acumin-pro-condensed";
-                color: #ff5f00;
-                line-height: 58px;
-                font-weight: 900;
-                font-size: 72px;
-                font-style: italic;
+            img {
+                position: absolute;
+                right: 12%;
+                bottom: 0;
             }
 
-            p {
-                font-family: "Pretendard Medium";
-                font-size: 16px;
-                margin: 30px 0;
-            }
+            figcaption {
 
-            button {
+
+                h4 {
+                    white-space: pre-line;
+                    font-family: "acumin-pro-condensed";
+                    color: #ff5f00;
+                    line-height: 58px;
+                    font-weight: 900;
+                    font-size: 72px;
+                    font-style: italic;
+                }
+
+                p {
+                    font-family: "Pretendard Medium";
+                    font-size: 16px;
+                    margin: 30px 0;
+                }
+
+                button {}
             }
         }
     }
@@ -566,9 +591,11 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .link {
             div {
                 margin-bottom: 10px;
+
                 &:nth-of-type(1) span:nth-of-type(1) {
                     margin: 0 10px;
                     font-size: 10px;
@@ -616,12 +643,14 @@ footer {
                     font-size: 15px;
                     line-height: 15px;
                 }
+
                 a {
                     color: white;
                     font-family: "Pretendard Medium";
                     font-size: 14px;
                     line-height: 14px;
                 }
+
                 svg {
                     width: 6px;
                     vertical-align: middle;
@@ -669,6 +698,7 @@ footer {
             width: 100%;
             justify-content: space-between;
             align-items: center;
+
             p {
                 font-family: "Pretendard Medium";
                 font-size: 14px;
@@ -677,10 +707,11 @@ footer {
 
             figure {
                 object-fit: contain;
+
                 a {
                     margin: 0 10px;
-                    img {
-                    }
+
+                    img {}
                 }
             }
         }

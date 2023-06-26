@@ -53,9 +53,6 @@ ul, li {
   border-radius: 36px;
 }
 
-.bi {
-  position: relative;
-}
 .bi .head {
   position: fixed;
   left: 0%;
@@ -106,14 +103,15 @@ ul, li {
   display: block;
 }
 
-.title figure {
+main .vi figure {
+  width: 100%;
   position: relative;
 }
-.title figure video {
+main .vi figure video {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.title figcaption {
+main .vi figure figcaption {
   position: absolute;
   left: 20%;
   bottom: 8%;
@@ -123,20 +121,19 @@ ul, li {
   font-size: 128px;
   font-weight: 900;
   line-height: 102px;
-  letter-spacing: -5px;
+  letter-spacing: -2px;
   color: rgb(255, 95, 0);
 }
-.title figcaption span {
+main .vi figure figcaption span {
   color: white;
   text-shadow: 3px 3px 0 rgb(255, 95, 0);
 }
-
-.scroll {
+main .vi figure .scroll {
   position: absolute;
   right: 20%;
   bottom: 8%;
 }
-.scroll p {
+main .vi figure .scroll p {
   position: relative;
   width: 24px;
   height: 42px;
@@ -144,17 +141,16 @@ ul, li {
   border: 2px solid white;
   border-radius: 20px;
 }
-.scroll p img {
+main .vi figure .scroll p img {
   position: absolute;
   left: 5px;
   top: 5px;
   margin: 0 auto;
 }
-.scroll span {
+main .vi figure .scroll span {
   font-size: 10px;
   color: white;
 }
-
 main .vision {
   display: flex;
   justify-content: center;
@@ -423,21 +419,21 @@ main .LATEST_NEWS .slider div .content figure img {
   width: 350px;
   height: 200px;
 }
-main .LATEST_NEWS .slider div .content .text {
+main .LATEST_NEWS .slider div .content figure .text {
   font-family: "Proxima Nova Extrabold";
 }
-main .LATEST_NEWS .slider div .content .text p {
+main .LATEST_NEWS .slider div .content figure .text p {
   font-family: "Pretendard ExtraBold";
   position: absolute;
   left: 5%;
   top: 60%;
 }
-main .LATEST_NEWS .slider div .content .text ul li {
+main .LATEST_NEWS .slider div .content figure .text ul li {
   position: absolute;
   left: 5%;
   bottom: 5%;
 }
-main .LATEST_NEWS .slider div .content .text ul li a {
+main .LATEST_NEWS .slider div .content figure .text ul li a {
   font-size: 12px;
   display: inline-block;
   margin: 3px 0;
@@ -471,42 +467,42 @@ main .OUR_GAMES .list div {
 main .OUR_GAMES .list div video {
   border-radius: 10px;
 }
-main .OUR_GAMES .list .text_box {
+main .OUR_GAMES .list div .text_box {
   color: white;
   position: absolute;
   left: 5%;
   top: 10%;
   text-align: center;
 }
-main .OUR_GAMES .list .text_box figure img {
+main .OUR_GAMES .list div .text_box p img {
   width: 270px;
 }
-main .OUR_GAMES .list .text_box figcaption {
+main .OUR_GAMES .list div .text_box figcaption {
   font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
   font-size: 24px;
   font-weight: 900;
   margin-top: 10px;
 }
-main .OUR_GAMES .list .text_box p {
+main .OUR_GAMES .list div .text_box figcaption p {
   white-space: pre-line;
   font-family: "Pretendard SemiBold";
   font-size: 14.5px;
   line-height: 1.5;
   margin: 10px 0;
 }
-main .OUR_GAMES .list .text_box .icon img {
+main .OUR_GAMES .list div .text_box figcaption .icon img {
   margin: 10px;
 }
-main .OUR_GAMES .list a {
+main .OUR_GAMES .list div a {
   position: absolute;
-  right: -20px;
-  top: 30px;
+  right: -16px;
+  top: 25px;
   padding: 16px;
   background-color: rgb(255, 95, 0);
   transform-origin: 100% 100%;
   transform: skew(-10deg);
 }
-main .OUR_GAMES .list a span {
+main .OUR_GAMES .list div a span {
   color: white;
   font-family: "Proxima Nova Extrabold";
 }
@@ -521,52 +517,55 @@ main .STUDIOS h3 {
   color: rgb(255, 95, 0);
   margin: 1% 18%;
 }
-main .STUDIOS a {
+main .STUDIOS div {
   width: 100%;
-  padding: 0 18%;
+  padding: 0 16%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .STUDIOS a .s-content {
+main .STUDIOS div .s-content {
   width: 350px;
   text-align: center;
   padding: 20px;
-  margin: 0 15px;
+  margin: auto 15px;
   border-radius: 10px;
 }
-main .STUDIOS a .s-content:nth-of-type(1) {
+main .STUDIOS div .s-content:nth-of-type(1) {
   background-color: #ffe7c4;
 }
-main .STUDIOS a .s-content:nth-of-type(2) {
+main .STUDIOS div .s-content:nth-of-type(2) {
   background-color: #ff4347;
 }
-main .STUDIOS a .s-content:nth-of-type(3) {
+main .STUDIOS div .s-content:nth-of-type(3) {
   background-color: #202121;
 }
-main .STUDIOS a .s-content:nth-of-type(1) figcaption {
+main .STUDIOS div .s-content:nth-of-type(1) figcaption {
   color: rgb(90, 27, 0);
   border-top: 1px solid rgb(211, 80, 4);
 }
-main .STUDIOS a .s-content:nth-of-type(2) figcaption {
+main .STUDIOS div .s-content:nth-of-type(2) figcaption {
   color: white;
   border-top: 1px solid white;
 }
-main .STUDIOS a .s-content:nth-of-type(3) figcaption {
+main .STUDIOS div .s-content:nth-of-type(3) figcaption {
   color: white;
   border-top: 1px solid white;
 }
-main .STUDIOS a .s-content figure img {
+main .STUDIOS div .s-content a {
+  padding: 0 10px;
+}
+main .STUDIOS div .s-content a figure img {
   margin: 30px;
 }
-main .STUDIOS a .s-content figcaption {
+main .STUDIOS div .s-content a figure figcaption {
   white-space: pre-line;
 }
-main .STUDIOS a .s-content figcaption b {
+main .STUDIOS div .s-content a figure figcaption b {
   font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
   font-size: 24px;
 }
-main .STUDIOS a .s-content figcaption p {
+main .STUDIOS div .s-content a figure figcaption p {
   font-family: "Pretendard SemiBold";
   font-size: 16px;
   margin-top: 30px;
@@ -647,19 +646,18 @@ main .icon_g .icon {
 }
 main .icon_g .icon .i-content {
   text-align: center;
-  width: 25%;
+  width: 30%;
 }
 main .icon_g .icon .i-content figure {
-  width: 50%;
   margin: 0 auto;
 }
-main .icon_g .icon .i-content figcaption h5 {
+main .icon_g .icon .i-content figure figcaption h5 {
   margin: 0;
   font-family: "Proxima Nova Extrabold";
   font-size: 28px;
   line-height: 1.5;
 }
-main .icon_g .icon .i-content figcaption p {
+main .icon_g .icon .i-content figure figcaption p {
   white-space: pre-line;
   font-family: "Pretendard SemiBold";
   line-height: 1.5;
@@ -669,17 +667,17 @@ main .card {
   position: relative;
 }
 main .card figure {
-  position: absolute;
-  right: 10%;
-  bottom: 0;
-}
-main .card figcaption {
   width: 100%;
   background-color: rgb(248, 232, 218);
-  padding: 60px;
+  padding: 80px;
   border-radius: 8px;
 }
-main .card figcaption h4 {
+main .card figure img {
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+}
+main .card figure figcaption h4 {
   white-space: pre-line;
   font-family: "acumin-pro-condensed";
   color: #ff5f00;
@@ -688,7 +686,7 @@ main .card figcaption h4 {
   font-size: 72px;
   font-style: italic;
 }
-main .card figcaption p {
+main .card figure figcaption p {
   font-family: "Pretendard Medium";
   font-size: 16px;
   margin: 30px 0;

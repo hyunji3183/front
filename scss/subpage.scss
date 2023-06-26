@@ -1,0 +1,237 @@
+@import "_reset";
+
+.bi {
+    .head {
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        z-index: 1;
+        width: 100%;
+        height: 40px;
+        padding: 0 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Proxima Nova Extrabold";
+        font-weight: 800;
+
+        &:hover .bar {
+            display: block;
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        h2 {
+            font-size: 20px;
+            display: inline-block;
+            color: white;
+        }
+
+        li {
+            position: relative;
+            float: left;
+
+            a {
+                display: block;
+                padding: 0 15px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 14px;
+                color: white;
+            }
+
+            .bar {
+                display: none;
+                position: absolute;
+                left: 0;
+                right: 0;
+                text-align: center;
+
+                li {
+                    a {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .vi {
+        figure {
+            width: 100%;
+            position: relative;
+
+            video {
+                object-fit: cover;
+            }
+
+            figcaption {
+                p {
+                    position: absolute;
+                    left: 40%;
+                    bottom: 15%;
+                }
+
+                a {
+                    position: absolute;
+                    left: 45%;
+                    bottom: 8%;
+                    text-align: center;
+                    font-family: 'Proxima Nova Extrabold';
+                    font-weight: 800;
+                    font-size: 16px;
+                    color: white;
+                    padding: 14px 26px;
+                    border: 2px solid white;
+                    border-radius: 36px;
+                }
+            }
+        }
+    }
+
+    .store {
+        figure {
+            width: 43%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 6% 28%;
+
+            p {
+                img {
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+            }
+
+            figcaption {
+                h2 {
+                    font-family: 'Pretendard Black';
+                    color: rgb(255, 95, 0);
+                    font-size: 64px;
+                }
+
+                p {
+                    color: rgb(255, 95, 0);
+                    font-size: 24px;
+                    font-family: 'Pretendard ExtraBold';
+                    margin: 12px 0;
+                }
+
+                span {
+                    color: rgb(51, 51, 51);
+                    white-space: pre-line;
+                    font-size: 16px;
+                    font-family: 'Pretendard SemiBold';
+                }
+
+                .app_icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        background-color: black;
+                        padding: 2px 18px;
+                        margin: 12px 8px 0 0;
+                        border-radius: 24px;
+
+                        p {
+                            width: 14px;
+                            margin: 0;
+                            object-fit: contain;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        span {
+                            font-family: Dotum;
+                            font-size: 12px;
+                            color: white;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        figure {
+            text-align: center;
+
+            p {
+                img {}
+            }
+
+            figcaption {
+                white-space: pre-line;
+                margin-bottom: 60px;
+
+                h2 {
+                    font-family: 'Pretendard ExtraBold';
+                    font-size: 32px;
+                }
+
+                p {
+                    font-family: 'Pretendard SemiBold';
+                    font-size: 16px;
+                }
+            }
+
+            div {
+                img {}
+            }
+        }
+    }
+
+    .story {
+        margin-top: 150px;
+        text-align: center;
+        white-space: pre-line;
+        &::after{
+            content: url('../games_ovenbreak/STORY/games-ovenbreak-story-bg.png');
+            background-size: 100%;
+        }
+
+        h4 {
+            font-family: "acumin-pro-condensed";
+            font-size: 90px;
+            font-weight: 900;
+            color: rgb(255, 95, 0);
+        }
+
+        .story-t {
+            p {
+                line-height: 24px;
+                font-family: 'Pretendard SemiBold';
+                font-size: 16px;
+                color: rgb(51, 51, 51);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
