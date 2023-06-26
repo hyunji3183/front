@@ -128,8 +128,11 @@ main .vi figure figcaption a {
   border: 2px solid white;
   border-radius: 36px;
 }
+main .store {
+  width: 100%;
+}
 main .store figure {
-  width: 43%;
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -201,22 +204,60 @@ main .about figure figcaption p {
 }
 main .story {
   margin-top: 150px;
+  width: 100%;
+}
+main .story .story_c {
+  position: relative;
+  overflow: hidden;
+}
+main .story .story_c .story_p p img {
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .story .story_c .story-t {
+  position: absolute;
+  left: 28%;
+  top: 0;
   text-align: center;
   white-space: pre-line;
 }
-main .story::after {
-  content: url("../games_ovenbreak/STORY/games-ovenbreak-story-bg.png");
-  background-size: 100%;
-}
-main .story h4 {
+main .story .story_c .story-t h4 {
   font-family: "acumin-pro-condensed";
   font-size: 90px;
   font-weight: 900;
   color: rgb(255, 95, 0);
 }
-main .story .story-t p {
+main .story .story_c .story-t p {
   line-height: 24px;
   font-family: "Pretendard SemiBold";
   font-size: 16px;
   color: rgb(51, 51, 51);
+}
+main .trailer figure {
+  position: relative;
+  width: 100%;
+}
+main .trailer figure figcaption div {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  white-space: pre-line;
+  text-align: center;
+}
+main .trailer figure figcaption div strong {
+  font-family: "Pretendard Black";
+  font-size: 32px;
+  color: white;
+}
+main .trailer figure figcaption div a {
+  margin-top: 2%;
+  display: inline-block;
+  font-family: "Proxima Nova Extrabold";
+  font-size: 16px;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 36px;
 }/*# sourceMappingURL=subpage.css.map */
