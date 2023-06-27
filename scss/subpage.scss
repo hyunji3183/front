@@ -97,6 +97,7 @@ main {
 
     .store {
         width: 100%;
+
         figure {
             width: 45%;
             display: flex;
@@ -172,8 +173,7 @@ main {
             text-align: center;
 
             p {
-                img {
-                }
+                img {}
             }
 
             figcaption {
@@ -192,8 +192,7 @@ main {
             }
 
             div {
-                img {
-                }
+                img {}
             }
         }
     }
@@ -201,9 +200,11 @@ main {
     .story {
         margin-top: 150px;
         width: 100%;
+
         .story_c {
             position: relative;
             overflow: hidden;
+
             .story_p {
                 p {
                     img {
@@ -219,12 +220,14 @@ main {
                 top: 0;
                 text-align: center;
                 white-space: pre-line;
+
                 h4 {
                     font-family: "acumin-pro-condensed";
                     font-size: 90px;
                     font-weight: 900;
                     color: rgb(255, 95, 0);
                 }
+
                 p {
                     line-height: 24px;
                     font-family: "Pretendard SemiBold";
@@ -240,31 +243,211 @@ main {
         figure {
             position: relative;
             width: 100%;
+            height: 100vh;
 
             video {
-                source {
+                object-fit: cover;
+
+                source {}
+            }
+
+            div {
+                width: inherit;
+                height: 100vh;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.35);
+            }
+
+            figcaption {
+                position: absolute;
+                left: 0;
+                top: 40%;
+                width: 100%;
+                white-space: pre-line;
+                text-align: center;
+
+                strong {
+                    font-family: "Pretendard Black";
+                    font-size: 32px;
+                    color: white;
+                }
+
+                a {
+                    margin-top: 2%;
+                    display: inline-block;
+                    font-family: "Proxima Nova Extrabold";
+                    font-size: 16px;
+                    color: white;
+                    border: 2px solid white;
+                    padding: 12px 24px;
+                    border-radius: 36px;
                 }
             }
-            figcaption {position: absolute;
-                    left: 0;
-                    top: 40%;
-                    width: 100%;
+
+        }
+    }
+
+    .FEATURES {
+        background-color: #2B0F0C;
+        ;
+        color: white;
+        margin: 5% 20%;
+
+        h3 {
+            font-family: "acumin-pro-condensed";
+            font-size: 90px;
+            font-weight: 900;
+            font-style: italic;
+            line-height: 72px;
+            margin-bottom: 6%;
+        }
+
+        .content {
+            margin-bottom: 10%;
+
+            &:nth-of-type(1) .text p {
+                font-family: 'Proxima Nova Extrabold';
+                font-size: 36px;
+                font-weight: 800;
+            }
+
+            .text {
+                p {
+                    font-family: 'Pretendard ExtraBold';
+                    font-size: 32px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    font-family: 'Pretendard SemiBold';
                     white-space: pre-line;
-                div {
-                    strong {
-                        font-family: "Pretendard Black";
-                        font-size: 32px;
-                        color: white;
+                    line-height: 24px;
+                }
+            }
+
+            div {
+                margin-top: 2%;
+
+                video {
+                    border-radius: 10px;
+                    border: 1px solid rgb(51, 51, 51);
+
+                    source {}
+                }
+            }
+        }
+    }
+
+
+    .WORLD_WIDE_FANDOM {
+        background-color: #2B0F0C;
+        color: white;
+        margin: 10% 20%;
+        border: 1px solid red($color: #000000);
+        height: fit-content;
+
+        div {
+            margin-bottom: 10%;
+
+            h3 {
+                font-family: "acumin-pro-condensed";
+                font-size: 90px;
+                font-weight: 900;
+                font-style: italic;
+                line-height: 72px;
+                margin-bottom: 3%;
+            }
+
+            p {
+                font-family: 'Pretendard SemiBold';
+                line-height: 16px;
+            }
+        }
+
+        .count {
+            p {
+                font-family: 'Pretendard ExtraBold';
+                font-size: 24px;
+            }
+
+            h4 {
+                font-family: "acumin-pro-condensed";
+                font-size: 90px;
+                font-weight: 900;
+                color: rgb(255, 95, 0);
+            }
+
+        }
+    }
+
+    .HISTORY {
+        width: 100%;
+
+        h3 {
+            font-family: "acumin-pro-condensed";
+            font-size: 90px;
+            font-weight: 900;
+            font-style: italic;
+            color: rgb(255, 95, 0);
+        }
+
+        p {
+            color: rgb(51, 51, 51);
+            font-size: 16px;
+            font-family: "Pretendard SemiBold";
+        }
+
+        .con {
+            .picture{
+                img{}
+            }
+            .year {
+                margin-top: 10%;
+                width: 80%;
+                ul {
+                    li {
+                        display: flex;
+                        // align-items: center;
+                        strong {
+                            font-family: "acumin-pro-condensed";
+                            font-size: 40px;
+                            color: rgb(255, 95, 0);
+                            width: 8%;
+                        }
                     }
-                    a {
-                        margin-top: 2%;
-                        display: inline-block;
-                        font-family: "Proxima Nova Extrabold";
-                        font-size: 16px;
-                        color: white;
-                        border: 2px solid white;
-                        padding: 12px 24px;
-                        border-radius: 36px;
+
+                    .month {
+                        width: 100%;
+                        padding: 0 0 2% 2%;
+                        border-left: 2px solid rgb(255, 95, 0);
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            transform: translate(-55%, 150%);
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 10px;
+                            background-color: rgb(255, 95, 0);
+
+                            strong {
+                                font-family: "acumin-pro-condensed";
+                                font-size: 40px;
+                                color: rgb(255, 95, 0);
+                                text-transform: uppercase;
+                            }
+
+                            p {
+                                font-family: 'Pretendard Medium';
+                            }
+                        }
                     }
                 }
             }
@@ -293,20 +476,4 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 }

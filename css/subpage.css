@@ -12,6 +12,10 @@ a {
   color: black;
 }
 
+img, video {
+  vertical-align: middle;
+}
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -238,6 +242,19 @@ main .story .story_c .story-t p {
 main .trailer figure {
   position: relative;
   width: 100%;
+  height: 100vh;
+}
+main .trailer figure video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .trailer figure div {
+  width: inherit;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 main .trailer figure figcaption {
   position: absolute;
@@ -245,13 +262,14 @@ main .trailer figure figcaption {
   top: 40%;
   width: 100%;
   white-space: pre-line;
+  text-align: center;
 }
-main .trailer figure figcaption div strong {
+main .trailer figure figcaption strong {
   font-family: "Pretendard Black";
   font-size: 32px;
   color: white;
 }
-main .trailer figure figcaption div a {
+main .trailer figure figcaption a {
   margin-top: 2%;
   display: inline-block;
   font-family: "Proxima Nova Extrabold";
@@ -260,4 +278,131 @@ main .trailer figure figcaption div a {
   border: 2px solid white;
   padding: 12px 24px;
   border-radius: 36px;
+}
+main .FEATURES {
+  background-color: #2B0F0C;
+  color: white;
+  margin: 5% 20%;
+}
+main .FEATURES h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 72px;
+  margin-bottom: 6%;
+}
+main .FEATURES .content {
+  margin-bottom: 10%;
+}
+main .FEATURES .content:nth-of-type(1) .text p {
+  font-family: "Proxima Nova Extrabold";
+  font-size: 36px;
+  font-weight: 800;
+}
+main .FEATURES .content .text p {
+  font-family: "Pretendard ExtraBold";
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main .FEATURES .content .text span {
+  font-family: "Pretendard SemiBold";
+  white-space: pre-line;
+  line-height: 24px;
+}
+main .FEATURES .content div {
+  margin-top: 2%;
+}
+main .FEATURES .content div video {
+  border-radius: 10px;
+  border: 1px solid rgb(51, 51, 51);
+}
+main .WORLD_WIDE_FANDOM {
+  background-color: #2B0F0C;
+  color: white;
+  margin: 10% 20%;
+  border: 1px solid 0;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .WORLD_WIDE_FANDOM div {
+  margin-bottom: 10%;
+}
+main .WORLD_WIDE_FANDOM div h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 72px;
+  margin-bottom: 3%;
+}
+main .WORLD_WIDE_FANDOM div p {
+  font-family: "Pretendard SemiBold";
+  line-height: 16px;
+}
+main .WORLD_WIDE_FANDOM .count p {
+  font-family: "Pretendard ExtraBold";
+  font-size: 24px;
+}
+main .WORLD_WIDE_FANDOM .count h4 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-weight: 900;
+  color: rgb(255, 95, 0);
+}
+main .HISTORY {
+  width: 100%;
+}
+main .HISTORY h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-weight: 900;
+  font-style: italic;
+  color: rgb(255, 95, 0);
+}
+main .HISTORY p {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-family: "Pretendard SemiBold";
+}
+main .HISTORY .con .year {
+  margin-top: 10%;
+  width: 80%;
+}
+main .HISTORY .con .year ul li {
+  display: flex;
+}
+main .HISTORY .con .year ul li strong {
+  font-family: "acumin-pro-condensed";
+  font-size: 40px;
+  color: rgb(255, 95, 0);
+  width: 8%;
+}
+main .HISTORY .con .year ul .month {
+  width: 100%;
+  padding: 0 0 2% 2%;
+  border-left: 2px solid rgb(255, 95, 0);
+  position: relative;
+}
+main .HISTORY .con .year ul .month::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-55%, 150%);
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: rgb(255, 95, 0);
+}
+main .HISTORY .con .year ul .month::before strong {
+  font-family: "acumin-pro-condensed";
+  font-size: 40px;
+  color: rgb(255, 95, 0);
+  text-transform: uppercase;
+}
+main .HISTORY .con .year ul .month::before p {
+  font-family: "Pretendard Medium";
 }/*# sourceMappingURL=subpage.css.map */
