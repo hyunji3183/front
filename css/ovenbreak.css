@@ -122,7 +122,7 @@ main .vi figure figcaption p {
 main .vi figure figcaption a {
   position: absolute;
   left: 45%;
-  bottom: 8%;
+  bottom: 6%;
   text-align: center;
   font-family: "Proxima Nova Extrabold";
   font-weight: 800;
@@ -353,6 +353,7 @@ main .WORLD_WIDE_FANDOM .count h4 {
 }
 main .HISTORY {
   width: 100%;
+  padding-left: 20%;
 }
 main .HISTORY h3 {
   font-family: "acumin-pro-condensed";
@@ -366,8 +367,16 @@ main .HISTORY p {
   font-size: 16px;
   font-family: "Pretendard SemiBold";
 }
+main .HISTORY .con {
+  display: flex;
+  align-items: flex-end;
+}
+main .HISTORY .con .picture {
+  width: 30%;
+}
 main .HISTORY .con .year {
-  margin-top: 10%;
+  align-items: flex-start;
+  margin-top: 5%;
   width: 80%;
 }
 main .HISTORY .con .year ul li {
@@ -377,11 +386,11 @@ main .HISTORY .con .year ul li strong {
   font-family: "acumin-pro-condensed";
   font-size: 40px;
   color: rgb(255, 95, 0);
-  width: 8%;
+  width: 10%;
 }
 main .HISTORY .con .year ul .month {
   width: 100%;
-  padding: 0 0 2% 2%;
+  padding: 0 0 2% 3%;
   border-left: 2px solid rgb(255, 95, 0);
   position: relative;
 }
@@ -405,4 +414,267 @@ main .HISTORY .con .year ul .month::before strong {
 }
 main .HISTORY .con .year ul .month::before p {
   font-family: "Pretendard Medium";
-}/*# sourceMappingURL=subpage.css.map */
+}
+main .link {
+  width: 60%;
+  margin: 12% 20%;
+  padding: 4%;
+  border-top: 1px solid rgb(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+main .link h4 {
+  font-family: "acumin-pro-condensed";
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(255, 95, 0);
+  text-align: center;
+  margin-bottom: 5%;
+}
+main .link .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .link .icon span {
+  display: inline-block;
+  height: 50px;
+  border: 1px solid rgb(255, 95, 0);
+}
+main .link .icon .box img {
+  width: 100px;
+}
+main .RELATED_VIDEOS {
+  width: 65%;
+  margin: 0 20%;
+}
+main .RELATED_VIDEOS h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-weight: 900;
+  font-style: italic;
+  color: rgb(255, 95, 0);
+  margin-bottom: 4%;
+}
+main .RELATED_VIDEOS div {
+  display: flex;
+  justify-content: space-between;
+}
+main .RELATED_VIDEOS div .thumb figure {
+  width: 384px;
+  height: 216px;
+  position: relative;
+}
+main .RELATED_VIDEOS div .thumb figure img {
+  border-radius: 10px;
+}
+main .RELATED_VIDEOS div .thumb figure div {
+  border-radius: 10px;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+main .RELATED_VIDEOS div .thumb figure div svg {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 20%;
+  height: 20%;
+}
+main .RELATED_VIDEOS div .thumb figure figcaption {
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+}
+main .RELATED_VIDEOS div .thumb figure figcaption svg {
+  width: 8%;
+}
+main .RELATED_VIDEOS div .thumb figure figcaption p {
+  width: inherit;
+  font-family: "Pretendard ExtraBold";
+  font-size: 24px;
+  margin-left: 0.5%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .RELATED_STORIES {
+  margin-top: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+main .RELATED_STORIES h3 {
+  font-family: "acumin-pro-condensed";
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(255, 95, 0);
+  margin: 1% 20%;
+}
+main .RELATED_STORIES .content-g {
+  width: 65%;
+  width: 65%;
+  margin: 0 20%;
+  display: flex;
+  justify-content: space-between;
+}
+main .RELATED_STORIES .content-g .content {
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  margin: 40px 0 0 0;
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+main .RELATED_STORIES .content-g .content:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  overflow: hidden;
+}
+main .RELATED_STORIES .content-g .content figure img {
+  width: 350px;
+  height: 200px;
+}
+main .RELATED_STORIES .content-g .content figure .text {
+  font-family: "Proxima Nova Extrabold";
+}
+main .RELATED_STORIES .content-g .content figure .text p {
+  font-family: "Pretendard ExtraBold";
+  position: absolute;
+  left: 5%;
+  top: 60%;
+}
+main .RELATED_STORIES .content-g .content figure .text ul li {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+main .RELATED_STORIES .content-g .content figure .text ul li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  margin: 3px 0;
+  padding: 5.5px 12px 5.5px 12px;
+  color: white;
+  background-color: rgb(255, 130, 0);
+  border-radius: 38px;
+  font-family: "Proxima Nova Extrabold";
+}
+main .RELATED_STORIES button {
+  margin: 3% 20%;
+}
+
+footer {
+  padding: 5% 18%;
+  background-color: rgb(255, 95, 0);
+  color: white;
+}
+footer .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .text .link div {
+  margin-bottom: 10px;
+}
+footer .text .link div:nth-of-type(1) span:nth-of-type(1) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(1) span:nth-of-type(2) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(1) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(2) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(3) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(4) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) span:nth-of-type(5) {
+  margin: 0 10px;
+  font-size: 10px;
+  border: 0.5px solid #fff;
+}
+footer .text .link div:nth-of-type(2) a:nth-of-type(2) {
+  font-family: "Pretendard ExtraBold";
+  font-size: 15px;
+  line-height: 15px;
+}
+footer .text .link div a {
+  color: white;
+  font-family: "Pretendard Medium";
+  font-size: 14px;
+  line-height: 14px;
+}
+footer .text .link div svg {
+  width: 6px;
+  vertical-align: middle;
+  margin: 0 6px;
+}
+footer .text form select {
+  width: 180px;
+  padding: 5px 0;
+  appearance: none;
+  color: white;
+  border-width: 0;
+  border-bottom: 2px solid white;
+  font-size: 14px;
+  font-family: "Proxima Nova Extrabold";
+  background-color: transparent;
+  background: url(../icons/arrow_drop.svg) no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+footer .text form select option {
+  background: rgb(255, 95, 0);
+  color: #fff;
+  padding: 3px 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+footer .b-text strong {
+  display: block;
+  padding-top: 110px;
+  font-size: 160px;
+  font-family: "Proxima Nova Extrabold";
+}
+footer .b-text div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .b-text div p {
+  font-family: "Pretendard Medium";
+  font-size: 14px;
+  font-weight: 500;
+}
+footer .b-text div figure {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .b-text div figure a {
+  margin: 0 10px;
+}/*# sourceMappingURL=ovenbreak.css.map */
