@@ -1,0 +1,724 @@
+@media (min-width: 720px) and (max-width: 1023px) {
+
+    .bi {
+        .head {
+            position: fixed;
+            left: 0%;
+            top: 0%;
+            z-index: 1;
+            width: 100%;
+            height: 40px;
+            padding: 0 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: "Proxima Nova Extrabold";
+            font-weight: 800;
+    
+            &:hover .bar {
+                display: block;
+            }
+    
+            &::after {
+                display: block;
+                content: "";
+                clear: both;
+            }
+    
+            h2 {
+                font-size: 20px;
+                display: inline-block;
+                color: white;
+            }
+    
+            li {
+                position: relative;
+                float: left;
+    
+                a {
+                    display: block;
+                    padding: 0 15px;
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: white;
+                }
+    
+                .bar {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+    
+                    li {
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    main {
+        .vi {width: 100%;
+            figure {
+                width: 100%;
+                position: relative;
+    
+                video {
+                    object-fit: cover;
+                }
+    
+                figcaption {
+                    position: absolute;
+                    left: 10%;
+                    bottom: 8%;
+                    white-space: pre-line;
+                    font-family: "acumin-pro-condensed";
+                    font-style: italic;
+                    font-size: 128px;
+                    font-weight: 900;
+                    line-height: 102px;
+                    letter-spacing: -2px;
+                    color: rgb(255, 95, 0);
+    
+                    span {
+                        color: white;
+                        text-shadow: 3px 3px 0 rgb(255, 95, 0);
+                    }
+                }
+    
+                .scroll {
+                    position: absolute;
+                    right: 20%;
+                    bottom: 8%;
+    
+                    p {
+                        position: relative;
+                        width: 24px;
+                        height: 42px;
+                        margin: 0 auto;
+                        border: 2px solid white;
+                        border-radius: 20px;
+    
+                        img {
+                            position: absolute;
+                            left: 5px;
+                            top: 5px;
+                            margin: 0 auto;
+                        }
+                    }
+    
+                    span {
+                        font-size: 10px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    
+    
+    
+    
+        .vision {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 50px 0;
+    
+            b {
+                white-space: pre-line;
+                font-size: 24px;
+                font-family: "Pretendard ExtraBold";
+    
+                span {
+                    color: rgb(255, 95, 0);
+                }
+            }
+    
+            p {
+                width: 609px;
+                height: 322px;
+                animation: ani 2s linear infinite;
+    
+                @keyframes ani {
+                    @for $i from 0 through 46 {
+                        #{$i * 2.0833%} {
+                            background-size: 600px;
+    
+                            @if ($i < 10) {
+                                background-image: url("../main_page/vision/home-hero-sq-00" + #{$i} + ".webp");
+                            }
+    
+                            @else {
+                                background-image: url("../main_page/vision/home-hero-sq-0" + #{$i} + ".webp");
+                            }
+                        }
+                    }
+    
+                    100% {
+                        background-size: 600px;
+                        background-image: url("../main_page/vision/home-hero-sq-047.webp");
+                    }
+                }
+            }
+        }
+    
+        .LATEST_NEWS {
+            margin-top: 150px;
+            width: 100%;
+            overflow: hidden;
+    
+            h3 {
+                font-family: "acumin-pro-condensed";
+                font-size: 90px;
+                font-style: italic;
+                font-weight: 900;
+                color: rgb(255, 95, 0);
+                margin: 1% 18%;
+            }
+    
+            .slider {
+                animation-name: infiniteScroll;
+                animation-duration: 40s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+    
+                &:hover {
+                    animation-play-state: paused;
+                }
+    
+                @keyframes infiniteScroll {
+                    0% {
+                        transform: translateX(0%);
+                    }
+    
+                    100% {
+                        transform: translateX(calc(-370px * 12));
+                    }
+                }
+    
+                div {
+                    position: relative;
+                    display: flex;
+                    overflow: hidden;
+                    justify-content: space-between;
+                    width: calc(370px * 24);
+    
+                    .content {
+                        border: 1px solid rgb(220, 220, 220);
+                        border-radius: 10px;
+                        margin: 40px 0 0 0;
+                        width: 350px;
+                        height: 400px;
+    
+                        &:hover {
+                            transform: translateY(-20px);
+                            box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+                            transition: .5s;
+                            overflow: hidden;
+                        }
+    
+                        figure {
+                            img {
+                                width: 350px;
+                                height: 200px;
+                            }
+    
+    
+                            .text {
+                                font-family: "Proxima Nova Extrabold";
+    
+                                p {
+                                    font-family: "Pretendard ExtraBold";
+                                    position: absolute;
+                                    left: 5%;
+                                    top: 60%;
+                                }
+    
+                                ul {
+                                    li {
+                                        position: absolute;
+                                        left: 5%;
+                                        bottom: 5%;
+    
+                                        a {
+                                            font-size: 12px;
+                                            display: inline-block;
+                                            margin: 3px 0;
+                                            padding: 5.5px 12px 5.5px 12px;
+                                            color: white;
+                                            background-color: rgb(255, 130, 0);
+                                            border-radius: 38px;
+                                            font-family: "Proxima Nova Extrabold";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            button {
+                margin: 1% 18%;
+            }
+        }
+    
+        .OUR_GAMES {
+            margin-top: 150px;
+    
+            h3 {
+                font-family: "acumin-pro-condensed";
+                font-size: 90px;
+                font-style: italic;
+                font-weight: 900;
+                color: rgb(255, 95, 0);
+                margin: 1% 18%;
+            }
+    
+            .list {
+                margin: 1% 18%;
+    
+                div {
+                    margin-bottom: 30px;
+                    position: relative;
+    
+                    video {
+                        border-radius: 10px;
+    
+                        // object-fit: cover;
+                        source {}
+                    }
+    
+                    .text_box {
+                        color: white;
+                        position: absolute;
+                        left: 5%;
+                        top: 10%;
+                        text-align: center;
+    
+                        p {
+                            img {
+                                width: 270px;
+                            }
+                        }
+    
+                        figcaption {
+                            font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
+                            font-size: 24px;
+                            font-weight: 900;
+                            margin-top: 10px;
+    
+                            p {
+                                white-space: pre-line;
+                                font-family: "Pretendard SemiBold";
+                                font-size: 14.5px;
+                                line-height: 1.5;
+                                margin: 10px 0;
+                            }
+    
+                            .icon {
+                                img {
+                                    margin: 10px;
+                                }
+                            }
+                        }
+                    }
+    
+                    a {
+                        position: absolute;
+                        right: -16px;
+                        top: 25px;
+                        padding: 16px;
+                        background-color: rgb(255, 95, 0);
+                        transform-origin: 100% 100%;
+                        transform: skew(-10deg);
+    
+                        span {
+                            color: white;
+                            font-family: "Proxima Nova Extrabold";
+                        }
+                    }
+                }
+    
+    
+            }
+        }
+    
+        .STUDIOS {
+            margin-top: 150px;
+    
+            h3 {
+                font-family: "acumin-pro-condensed";
+                font-size: 90px;
+                font-style: italic;
+                font-weight: 900;
+                color: rgb(255, 95, 0);
+                margin: 1% 18%;
+            }
+    
+            div {
+                width: 100%;
+                padding: 0 16%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .s-content {
+                    width: 350px;
+                    text-align: center;
+                    padding: 20px;
+                    margin: auto 15px;
+                    border-radius: 10px;
+    
+                    &:nth-of-type(1) {
+                        background-color: #ffe7c4;
+                    }
+    
+                    &:nth-of-type(2) {
+                        background-color: #ff4347;
+                    }
+    
+                    &:nth-of-type(3) {
+                        background-color: #202121;
+                    }
+    
+                    &:nth-of-type(1) figcaption {
+                        color: rgb(90, 27, 0);
+                        border-top: 1px solid rgb(211, 80, 4);
+                    }
+    
+                    &:nth-of-type(2) figcaption {
+                        color: white;
+                        border-top: 1px solid white;
+                    }
+    
+                    &:nth-of-type(3) figcaption {
+                        color: white;
+                        border-top: 1px solid white;
+                    }
+    
+                    a {padding: 0 10px;
+                        figure {
+                            img {
+                                margin: 30px;
+                            }
+    
+                            figcaption {
+                                white-space: pre-line;
+    
+                                b {
+                                    font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
+                                    font-size: 24px;
+                                }
+    
+                                p {
+                                    font-family: "Pretendard SemiBold";
+                                    font-size: 16px;
+                                    margin-top: 30px;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        .OUR_STORIES {
+            margin-top: 150px;
+    
+            h3 {
+                font-family: "acumin-pro-condensed";
+                font-size: 90px;
+                font-style: italic;
+                font-weight: 900;
+                color: rgb(255, 95, 0);
+                margin: 1% 18%;
+            }
+    
+            .os-content {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                div {
+                    position: relative;
+                    margin: 10px 16px;
+    
+                    figure {
+                        width: 270px;
+                        height: 270px;
+                        object-fit: contain;
+                        border-radius: 10px;
+                        overflow: hidden;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+    
+                    figcaption {
+                        position: absolute;
+                        left: 5%;
+                        bottom: 5%;
+                        white-space: pre-line;
+    
+                        p {
+                            font-family: "Pretendard ExtraBold";
+                            color: white;
+                            font-size: 16px;
+                        }
+    
+                        a {
+                            font-size: 12px;
+                            display: inline-block;
+                            margin: 3px 0;
+                            padding: 5.5px 12px 5.5px 12px;
+                            color: white;
+                            background-color: rgb(255, 130, 0);
+                            border-radius: 38px;
+                            font-family: "Proxima Nova Extrabold";
+                        }
+                    }
+                }
+            }
+    
+            button {
+                margin: 3% 18%;
+            }
+        }
+    
+        .icon_g {
+            margin-top: 150px;
+            margin: 1% 18%;
+    
+            span {
+                display: block;
+                width: 100%;
+                border: 1px solid rgb(229, 229, 229);
+            }
+    
+            .icon {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 8% 0;
+    
+                .i-content {
+                    text-align: center;
+                    width: 30%;
+    
+                    figure {
+                        margin: 0 auto;
+    
+                        svg {}
+    
+                        figcaption {
+                            h5 {
+                                margin: 0;
+                                font-family: "Proxima Nova Extrabold";
+                                font-size: 28px;
+                                line-height: 1.5;
+                            }
+    
+                            p {
+                                white-space: pre-line;
+                                font-family: "Pretendard SemiBold";
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .card {
+            margin: 10% 18%;
+            position: relative;
+    
+            figure {
+                width: 100%;
+                background-color: rgb(248, 232, 218);
+                padding: 80px;
+                border-radius: 8px;
+    
+                img {
+                    position: absolute;
+                    right: 12%;
+                    bottom: 0;
+                }
+    
+                figcaption {
+    
+    
+                    h4 {
+                        white-space: pre-line;
+                        font-family: "acumin-pro-condensed";
+                        color: #ff5f00;
+                        line-height: 58px;
+                        font-weight: 900;
+                        font-size: 72px;
+                        font-style: italic;
+                    }
+    
+                    p {
+                        font-family: "Pretendard Medium";
+                        font-size: 16px;
+                        margin: 30px 0;
+                    }
+    
+                    button {}
+                }
+            }
+        }
+    }
+    
+    footer {
+        padding: 5% 18%;
+        background-color: rgb(255, 95, 0);
+        color: white;
+    
+        .text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .link {
+                div {
+                    margin-bottom: 10px;
+    
+                    &:nth-of-type(1) span:nth-of-type(1) {
+                        margin: 0 10px;
+                        font-size: 10px;
+                        border: 0.5px solid #fff;
+                    }
+    
+                    &:nth-of-type(1) span:nth-of-type(2) {
+                        margin: 0 10px;
+                        font-size: 10px;
+                        border: 0.5px solid #fff;
+                    }
+    
+                    &:nth-of-type(2) span:nth-of-type(1) {
+                        margin: 0 10px;
+                        font-size: 10px;
+                        border: 0.5px solid #fff;
+                    }
+    
+                    &:nth-of-type(2) span:nth-of-type(2) {
+                        margin: 0 10px;
+                        font-size: 10px;
+                        border: 0.5px solid #fff;
+                    }
+    
+                    &:nth-of-type(2) span:nth-of-type(3) {
+                        margin: 0 10px;
+                        font-size: 10px;
+                        border: 0.5px solid #fff;
+                    }
+    
+                    &:nth-of-type(2) span:nth-of-type(4) {
+                        margin: 0 10px;
+                        font-size: 10px;
+                        border: 0.5px solid #fff;
+                    }
+    
+                    &:nth-of-type(2) span:nth-of-type(5) {
+                        margin: 0 10px;
+                        font-size: 10px;
+                        border: 0.5px solid #fff;
+                    }
+    
+                    &:nth-of-type(2) a:nth-of-type(2) {
+                        font-family: "Pretendard ExtraBold";
+                        font-size: 15px;
+                        line-height: 15px;
+                    }
+    
+                    a {
+                        color: white;
+                        font-family: "Pretendard Medium";
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+    
+                    svg {
+                        width: 6px;
+                        vertical-align: middle;
+                        margin: 0 6px;
+                    }
+                }
+            }
+    
+            form {
+                select {
+                    width: 180px;
+                    padding: 5px 0;
+                    appearance: none;
+                    color: white;
+                    border-width: 0;
+                    border-bottom: 2px solid white;
+                    font-size: 14px;
+                    font-family: "Proxima Nova Extrabold";
+                    background-color: transparent;
+                    background: url(../icons/arrow_drop.svg) no-repeat 95% 50%;
+    
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+    
+                    option {
+                        background: rgb(255, 95, 0);
+                        color: #fff;
+                        padding: 3px 0;
+                        appearance: none;
+                    }
+                }
+            }
+        }
+    
+        .b-text {
+            strong {
+                display: block;
+                padding-top: 110px;
+                font-size: 160px;
+                font-family: "Proxima Nova Extrabold";
+            }
+    
+            div {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+    
+                p {
+                    font-family: "Pretendard Medium";
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+    
+                figure {
+                    object-fit: contain;
+    
+                    a {
+                        margin: 0 10px;
+    
+                        img {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {}
+
+@media (min-width: 1280px){}
