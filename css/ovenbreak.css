@@ -2,6 +2,10 @@ body, p, figure, h2, h3, h4, h5, div {
   margin: 0px;
 }
 
+body {
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
   text-transform: uppercase;
