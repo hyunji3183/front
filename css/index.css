@@ -69,7 +69,7 @@ ul, li {
     z-index: 1;
     width: 100%;
     height: 40px;
-    padding: 0 20%;
+    padding: 0 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,14 +121,14 @@ ul, li {
   }
   main .vi figure figcaption {
     position: absolute;
-    left: 20%;
-    bottom: 8%;
+    left: 7%;
+    bottom: 7%;
     white-space: pre-line;
     font-family: "acumin-pro-condensed";
     font-style: italic;
-    font-size: 128px;
+    font-size: 17.7777777778vw;
     font-weight: 900;
-    line-height: 102px;
+    line-height: 0.84375;
     letter-spacing: -2px;
     color: rgb(255, 95, 0);
   }
@@ -137,6 +137,7 @@ ul, li {
     text-shadow: 3px 3px 0 rgb(255, 95, 0);
   }
   main .vi figure .scroll {
+    display: none;
     position: absolute;
     right: 20%;
     bottom: 8%;
@@ -160,216 +161,267 @@ ul, li {
     color: white;
   }
   main .vision {
+    margin-top: 10vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
     width: 100%;
-    margin: 50px 0;
   }
   main .vision b {
+    width: 100vw;
     white-space: pre-line;
-    font-size: 24px;
+    text-align: center;
+    font-size: 5vw;
+    line-height: 1.3333333333;
+    padding: 0 15.9444444444vw;
     font-family: "Pretendard ExtraBold";
   }
   main .vision b span {
     color: rgb(255, 95, 0);
   }
   main .vision p {
-    width: 609px;
-    height: 322px;
+    width: 100vw;
+    height: 70vw;
     animation: ani 2s linear infinite;
   }
   @keyframes ani {
     0% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-000.webp");
     }
     2.0833% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-001.webp");
     }
     4.1666% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-002.webp");
     }
     6.2499% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-003.webp");
     }
     8.3332% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-004.webp");
     }
     10.4165% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-005.webp");
     }
     12.4998% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-006.webp");
     }
     14.5831% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-007.webp");
     }
     16.6664% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-008.webp");
     }
     18.7497% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-009.webp");
     }
     20.833% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-010.webp");
     }
     22.9163% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-011.webp");
     }
     24.9996% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-012.webp");
     }
     27.0829% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-013.webp");
     }
     29.1662% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-014.webp");
     }
     31.2495% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-015.webp");
     }
     33.3328% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-016.webp");
     }
     35.4161% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-017.webp");
     }
     37.4994% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-018.webp");
     }
     39.5827% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-019.webp");
     }
     41.666% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-020.webp");
     }
     43.7493% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-021.webp");
     }
     45.8326% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-022.webp");
     }
     47.9159% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-023.webp");
     }
     49.9992% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-024.webp");
     }
     52.0825% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-025.webp");
     }
     54.1658% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-026.webp");
     }
     56.2491% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-027.webp");
     }
     58.3324% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-028.webp");
     }
     60.4157% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-029.webp");
     }
     62.499% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-030.webp");
     }
     64.5823% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-031.webp");
     }
     66.6656% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-032.webp");
     }
     68.7489% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-033.webp");
     }
     70.8322% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-034.webp");
     }
     72.9155% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-035.webp");
     }
     74.9988% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-036.webp");
     }
     77.0821% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-037.webp");
     }
     79.1654% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-038.webp");
     }
     81.2487% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-039.webp");
     }
     83.332% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-040.webp");
     }
     85.4153% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-041.webp");
     }
     87.4986% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-042.webp");
     }
     89.5819% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-043.webp");
     }
     91.6652% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-044.webp");
     }
     93.7485% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-045.webp");
     }
     95.8318% {
-      background-size: 600px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
       background-image: url("../main_page/vision/home-hero-sq-046.webp");
     }
     100% {
-      background-size: 600px;
+      background-size: 100vw;
       background-image: url("../main_page/vision/home-hero-sq-047.webp");
     }
   }
@@ -377,14 +429,16 @@ ul, li {
     margin-top: 150px;
     width: 100%;
     overflow: hidden;
+    padding: 0 5.5555555556vw;
   }
   main .LATEST_NEWS h3 {
     font-family: "acumin-pro-condensed";
-    font-size: 90px;
+    font-size: 13.3333333333vw;
+    line-height: 0.7916666667;
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    margin: 1% 18%;
+    padding: 10vw 0;
   }
   main .LATEST_NEWS .slider {
     animation-name: infiniteScroll;
@@ -395,27 +449,19 @@ ul, li {
   main .LATEST_NEWS .slider:hover {
     animation-play-state: paused;
   }
-  @keyframes infiniteScroll {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-4440px);
-    }
-  }
   main .LATEST_NEWS .slider div {
     position: relative;
     display: flex;
     overflow: hidden;
     justify-content: space-between;
-    width: 8880px;
+    width: 2232vw;
   }
   main .LATEST_NEWS .slider div .content {
     border: 1px solid rgb(220, 220, 220);
     border-radius: 10px;
-    margin: 40px 0 0 0;
-    width: 350px;
-    height: 400px;
+    margin-right: 2vw;
+    width: 90vw;
+    height: 80vh;
   }
   main .LATEST_NEWS .slider div .content:hover {
     transform: translateY(-20px);
@@ -424,49 +470,55 @@ ul, li {
     overflow: hidden;
   }
   main .LATEST_NEWS .slider div .content figure img {
-    width: 350px;
-    height: 200px;
+    width: 90vw;
+    height: 40vh;
   }
   main .LATEST_NEWS .slider div .content figure .text {
+    width: 90vw;
+    height: 40vh;
     font-family: "Proxima Nova Extrabold";
+    padding: 5.5555555556vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   main .LATEST_NEWS .slider div .content figure .text p {
+    height: 25vh;
     font-family: "Pretendard ExtraBold";
-    position: absolute;
-    left: 5%;
-    top: 60%;
-  }
-  main .LATEST_NEWS .slider div .content figure .text ul li {
-    position: absolute;
-    left: 5%;
-    bottom: 5%;
+    font-size: 5vw;
+    line-height: 1.3333333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   main .LATEST_NEWS .slider div .content figure .text ul li a {
-    font-size: 12px;
+    font-size: 2.7777777778vw;
     display: inline-block;
-    margin: 3px 0;
-    padding: 5.5px 12px 5.5px 12px;
+    padding: 1.3888888889vw 3.3333333333vw;
+    margin-right: 1.1111111111vw;
+    margin-top: 1.6666666667vw;
     color: white;
     background-color: rgb(255, 130, 0);
     border-radius: 38px;
     font-family: "Proxima Nova Extrabold";
   }
   main .LATEST_NEWS button {
-    margin: 1% 18%;
+    border-radius: 10vw;
+    height: 11.1111111111vw;
+    padding: 2.2222222222vw 6.6666666667vw;
+    font-size: 3.8888888889vw;
+    margin: 10vw 0;
   }
   main .OUR_GAMES {
-    margin-top: 150px;
+    margin-top: 200px;
+    padding: 0 5.5555555556vw;
   }
   main .OUR_GAMES h3 {
     font-family: "acumin-pro-condensed";
-    font-size: 90px;
+    font-size: 13.3333333333vw;
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    margin: 1% 18%;
-  }
-  main .OUR_GAMES .list {
-    margin: 1% 18%;
   }
   main .OUR_GAMES .list div {
     margin-bottom: 30px;
@@ -474,28 +526,33 @@ ul, li {
   }
   main .OUR_GAMES .list div video {
     border-radius: 10px;
+    width: 90vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    vertical-align: middle;
   }
   main .OUR_GAMES .list div .text_box {
     color: white;
     position: absolute;
-    left: 5%;
-    top: 10%;
+    left: 8%;
+    bottom: 10%;
     text-align: center;
   }
   main .OUR_GAMES .list div .text_box p img {
-    width: 270px;
+    width: 100%;
   }
   main .OUR_GAMES .list div .text_box figcaption {
     font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
-    font-size: 24px;
+    font-size: 5vw;
     font-weight: 900;
-    margin-top: 10px;
+    margin-top: 3vw;
   }
   main .OUR_GAMES .list div .text_box figcaption p {
     white-space: pre-line;
     font-family: "Pretendard SemiBold";
-    font-size: 14.5px;
-    line-height: 1.5;
+    font-size: 3.8888888889vw;
+    line-height: 1.4285714286;
     margin: 10px 0;
   }
   main .OUR_GAMES .list div .text_box figcaption .icon img {
@@ -505,7 +562,7 @@ ul, li {
     position: absolute;
     right: -16px;
     top: 25px;
-    padding: 16px;
+    padding: 3.6111111111vw 5.2777777778vw;
     background-color: rgb(255, 95, 0);
     transform-origin: 100% 100%;
     transform: skew(-10deg);
@@ -513,6 +570,14 @@ ul, li {
   main .OUR_GAMES .list div a span {
     color: white;
     font-family: "Proxima Nova Extrabold";
+    font-size: 3.8888888889vw;
+  }
+  main .OUR_GAMES .list button {
+    border-radius: 10vw;
+    height: 11.1111111111vw;
+    padding: 2.2222222222vw 6.6666666667vw;
+    font-size: 3.8888888889vw;
+    margin: 10vw 0;
   }
   main .STUDIOS {
     padding: 18.0555555556vw 0;
@@ -524,8 +589,7 @@ ul, li {
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    padding: 5vw;
-    margin: 6vw 0;
+    padding: 11vw 5vw 11vw 5vw;
   }
   main .STUDIOS div {
     width: 100vw;
@@ -539,7 +603,7 @@ ul, li {
     width: 100%;
     height: 90vw;
     text-align: center;
-    padding: 1.953125vw;
+    padding: 5vw;
     margin-bottom: 5vw;
     border-radius: 10px;
   }
@@ -564,21 +628,34 @@ ul, li {
     color: white;
     border-top: 1px solid white;
   }
+  main .STUDIOS div .s-content a {
+    height: 80vw;
+  }
+  main .STUDIOS div .s-content a figure {
+    display: flex;
+    flex-wrap: wrap;
+  }
   main .STUDIOS div .s-content a figure img {
-    margin: 30px;
+    height: 40vw;
+    width: 100%;
+    padding: 5.8333333333vw 5vw 11.1111111111vw;
   }
   main .STUDIOS div .s-content a figure figcaption {
+    display: inline-block;
+    height: 45vw;
+    width: 100%;
+    padding: 5.5555555556vw 0 6.6666666667vw;
     white-space: pre-line;
   }
   main .STUDIOS div .s-content a figure figcaption b {
     font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
-    font-size: 24px;
+    font-size: 6.6666666667vw;
   }
   main .STUDIOS div .s-content a figure figcaption p {
     font-family: "Pretendard SemiBold";
-    font-size: 16px;
+    font-size: 3.8888888889vw;
     margin-top: 30px;
-    line-height: 24px;
+    line-height: 1.4285714286;
   }
   main .OUR_STORIES {
     padding: 18.0555555556vw 0 17.7777777778vw;
@@ -600,6 +677,7 @@ ul, li {
   }
   main .OUR_STORIES .os-content div {
     position: relative;
+    margin-right: 3.5555555556vw;
   }
   main .OUR_STORIES .os-content div figure {
     width: 85vw;
@@ -640,6 +718,7 @@ ul, li {
     font-size: 3.8888888889vw;
     padding: 2.2222222222vw 6.6666666667vw;
     margin-left: 5.5555555556vw;
+    margin-top: 10vw;
   }
   main .icon_g span {
     display: block;
@@ -769,12 +848,6 @@ ul, li {
     margin: 0 20px;
     font-size: 2.2222222222vw;
     border: 0.5px solid #fff;
-  }
-  footer .text .link div:nth-of-type(2) span:nth-of-type(5) {
-    margin: 0 20px;
-    font-size: 2.2222222222vw;
-    border: 0.5px solid;
-    color: transparent;
   }
   footer .text .link div:nth-of-type(2) a:nth-of-type(2) {
     font-family: "Pretendard ExtraBold";
@@ -2442,7 +2515,7 @@ ul, li {
     z-index: 1;
     width: 100%;
     height: 40px;
-    padding: 0 20%;
+    padding: 0 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2489,12 +2562,14 @@ ul, li {
     position: relative;
   }
   main .vi figure video {
+    width: 100%;
+    height: 50%;
     -o-object-fit: cover;
        object-fit: cover;
   }
   main .vi figure figcaption {
     position: absolute;
-    left: 20%;
+    left: 8%;
     bottom: 8%;
     white-space: pre-line;
     font-family: "acumin-pro-condensed";
@@ -2502,7 +2577,6 @@ ul, li {
     font-size: 128px;
     font-weight: 900;
     line-height: 102px;
-    letter-spacing: -2px;
     color: rgb(255, 95, 0);
   }
   main .vi figure figcaption span {
@@ -2511,7 +2585,7 @@ ul, li {
   }
   main .vi figure .scroll {
     position: absolute;
-    right: 20%;
+    right: 8%;
     bottom: 8%;
   }
   main .vi figure .scroll p {
@@ -2747,7 +2821,7 @@ ul, li {
     }
   }
   main .LATEST_NEWS {
-    margin-top: 150px;
+    padding: 0 80px;
     width: 100%;
     overflow: hidden;
   }
@@ -2757,7 +2831,7 @@ ul, li {
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    margin: 1% 18%;
+    margin: 4% 0;
   }
   main .LATEST_NEWS .slider {
     animation-name: infiniteScroll;
@@ -2825,10 +2899,11 @@ ul, li {
     font-family: "Proxima Nova Extrabold";
   }
   main .LATEST_NEWS button {
-    margin: 1% 18%;
+    margin-top: 4%;
   }
   main .OUR_GAMES {
     margin-top: 150px;
+    padding: 0 80px;
   }
   main .OUR_GAMES h3 {
     font-family: "acumin-pro-condensed";
@@ -2836,10 +2911,7 @@ ul, li {
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    margin: 1% 18%;
-  }
-  main .OUR_GAMES .list {
-    margin: 1% 18%;
+    margin: 4% 0;
   }
   main .OUR_GAMES .list div {
     margin-bottom: 30px;
@@ -2867,7 +2939,7 @@ ul, li {
   main .OUR_GAMES .list div .text_box figcaption p {
     white-space: pre-line;
     font-family: "Pretendard SemiBold";
-    font-size: 14.5px;
+    font-size: 16px;
     line-height: 1.5;
     margin: 10px 0;
   }
@@ -2889,27 +2961,27 @@ ul, li {
   }
   main .STUDIOS {
     margin-top: 150px;
+    padding: 0 80px;
   }
   main .STUDIOS h3 {
     font-family: "acumin-pro-condensed";
     font-size: 90px;
     font-style: italic;
     font-weight: 900;
+    margin: 4% 0;
     color: rgb(255, 95, 0);
-    margin: 1% 18%;
   }
   main .STUDIOS div {
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 16vw;
+    justify-content: space-between;
   }
   main .STUDIOS div .s-content {
-    width: 22vw;
+    width: 27vw;
     height: 30%;
     text-align: center;
-    padding: 1.953125vw;
+    padding: 1.5vw;
     border-radius: 10px;
   }
   main .STUDIOS div .s-content:nth-of-type(1) {
@@ -2951,6 +3023,7 @@ ul, li {
   }
   main .OUR_STORIES {
     margin-top: 150px;
+    padding: 0 80px;
   }
   main .OUR_STORIES h3 {
     font-family: "acumin-pro-condensed";
@@ -2958,7 +3031,6 @@ ul, li {
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    margin: 1% 18%;
   }
   main .OUR_STORIES .os-content {
     width: 100%;
@@ -2971,8 +3043,8 @@ ul, li {
     margin: 10px 16px;
   }
   main .OUR_STORIES .os-content div figure {
-    width: 270px;
-    height: 270px;
+    width: 257px;
+    height: 257px;
     -o-object-fit: contain;
        object-fit: contain;
     border-radius: 10px;
@@ -3006,15 +3078,15 @@ ul, li {
     font-family: "Proxima Nova Extrabold";
   }
   main .OUR_STORIES button {
-    margin: 3% 18%;
+    margin: 3% 0;
   }
   main .icon_g {
-    margin-top: 150px;
-    margin: 1% 18%;
+    padding: 96px 0;
   }
   main .icon_g span {
     display: block;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     border: 1px solid rgb(229, 229, 229);
   }
   main .icon_g .icon {
@@ -3043,33 +3115,34 @@ ul, li {
     line-height: 1.5;
   }
   main .card {
-    margin: 10% 18%;
     position: relative;
+    padding: 0 80px;
+    margin: 96px 0;
   }
   main .card figure {
     width: 100%;
     background-color: rgb(248, 232, 218);
-    padding: 80px;
+    padding: 52px 80px 58px;
     border-radius: 8px;
   }
   main .card figure img {
     position: absolute;
-    right: 12%;
+    right: 16%;
     bottom: 0;
   }
   main .card figure figcaption h4 {
     white-space: pre-line;
     font-family: "acumin-pro-condensed";
     color: #ff5f00;
-    line-height: 58px;
     font-weight: 900;
     font-size: 72px;
+    line-height: 0.8055555556;
     font-style: italic;
   }
   main .card figure figcaption p {
     font-family: "Pretendard Medium";
     font-size: 16px;
-    margin: 30px 0;
+    margin: 20px 0 30px;
   }
   footer {
     padding: 91px 80px 77px 80px;
