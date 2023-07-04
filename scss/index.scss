@@ -1,15 +1,15 @@
 @import "_reset";
-@import "indexmedia";
+
 
 .bi {
     .head {
         position: fixed;
-        left: 0%;
+        left: 6%;
         top: 0%;
         z-index: 1;
         width: 100%;
         height: 40px;
-        padding: 0 20%;
+        padding: 0 8%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -66,6 +66,7 @@ main {
     .vi {
         figure {
             width: 100%;
+            // height: 44.27vw;
             position: relative;
 
             video {
@@ -74,7 +75,7 @@ main {
 
             figcaption {
                 position: absolute;
-                left: 20%;
+                left: 8%;
                 bottom: 8%;
                 white-space: pre-line;
                 font-family: "acumin-pro-condensed";
@@ -82,7 +83,6 @@ main {
                 font-size: 128px;
                 font-weight: 900;
                 line-height: 102px;
-                letter-spacing: -2px;
                 color: rgb(255, 95, 0);
 
                 span {
@@ -93,7 +93,7 @@ main {
 
             .scroll {
                 position: absolute;
-                right: 20%;
+                right: 8%;
                 bottom: 8%;
 
                 p {
@@ -149,7 +149,9 @@ main {
 
                         @if ($i < 10) {
                             background-image: url("../main_page/vision/home-hero-sq-00" + #{$i} + ".webp");
-                        } @else {
+                        }
+
+                        @else {
                             background-image: url("../main_page/vision/home-hero-sq-0" + #{$i} + ".webp");
                         }
                     }
@@ -164,7 +166,7 @@ main {
     }
 
     .LATEST_NEWS {
-        margin-top: 150px;
+        padding: 0 80px;
         width: 100%;
         overflow: hidden;
 
@@ -174,7 +176,7 @@ main {
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
-            margin: 1% 18%;
+            margin: 4% 0;
         }
 
         .slider {
@@ -259,12 +261,13 @@ main {
         }
 
         button {
-            margin: 1% 18%;
+            margin-top: 4%;
         }
     }
 
     .OUR_GAMES {
         margin-top: 150px;
+        padding: 0 80px;
 
         h3 {
             font-family: "acumin-pro-condensed";
@@ -272,11 +275,11 @@ main {
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
-            margin: 1% 18%;
+            padding: 0 12.25vw;
         }
 
         .list {
-            margin: 1% 18%;
+            padding: 0 12.25vw;
 
             div {
                 margin-bottom: 30px;
@@ -286,8 +289,7 @@ main {
                     border-radius: 10px;
 
                     // object-fit: cover;
-                    source {
-                    }
+                    source {}
                 }
 
                 .text_box {
@@ -312,7 +314,7 @@ main {
                         p {
                             white-space: pre-line;
                             font-family: "Pretendard SemiBold";
-                            font-size: 14.5px;
+                            font-size: 16px;
                             line-height: 1.5;
                             margin: 10px 0;
                         }
@@ -345,28 +347,32 @@ main {
 
     .STUDIOS {
         margin-top: 150px;
+        padding: 0 80px;
+        margin: 0 12.5vw;
 
         h3 {
             font-family: "acumin-pro-condensed";
             font-size: 90px;
             font-style: italic;
             font-weight: 900;
+            margin: 4% 0;
             color: rgb(255, 95, 0);
-            margin: 1% 18%;
         }
 
         div {
             width: 100%;
-            padding: 0 16%;
+            margin: 0 auto;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            // margin: 0 1em;
 
             .s-content {
-                width: 350px;
+                width: 26%;
+                height: 30%;
                 text-align: center;
-                padding: 20px;
-                margin: auto 15px;
+                padding: 1.5vw;
+                margin: 0 auto;
                 border-radius: 10px;
 
                 &:nth-of-type(1) {
@@ -397,7 +403,6 @@ main {
                 }
 
                 a {
-                    padding: 0 10px;
                     figure {
                         img {
                             margin: 30px;
@@ -425,7 +430,8 @@ main {
     }
 
     .OUR_STORIES {
-        margin-top: 150px;
+        padding: 150px 80px 0;
+        margin: 0 12.5vw;
 
         h3 {
             font-family: "acumin-pro-condensed";
@@ -433,22 +439,21 @@ main {
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
-            margin: 1% 18%;
         }
 
         .os-content {
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
 
             div {
                 position: relative;
                 margin: 10px 16px;
 
                 figure {
-                    width: 270px;
-                    height: 270px;
+                    width: 14vw;
+                    height: 14vw;
                     object-fit: contain;
                     border-radius: 10px;
                     overflow: hidden;
@@ -456,46 +461,47 @@ main {
                     img {
                         width: 100%;
                         height: 100%;
+                        object-fit: cover;
                     }
 
+                    figcaption {
+                        position: absolute;
+                        left: 5%;
+                        bottom: 5%;
+                        white-space: pre-line;
 
-                figcaption {
-                    position: absolute;
-                    left: 5%;
-                    bottom: 5%;
-                    white-space: pre-line;
+                        p {
+                            font-family: "Pretendard ExtraBold";
+                            color: white;
+                            font-size: 16px;
+                        }
 
-                    p {
-                        font-family: "Pretendard ExtraBold";
-                        color: white;
-                        font-size: 16px;
-                    }
-
-                    a {
-                        font-size: 12px;
-                        display: inline-block;
-                        margin: 3px 0;
-                        padding: 5.5px 12px 5.5px 12px;
-                        color: white;
-                        background-color: rgb(255, 130, 0);
-                        border-radius: 38px;
-                        font-family: "Proxima Nova Extrabold";
+                        a {
+                            font-size: 12px;
+                            display: inline-block;
+                            margin: 3px 0;
+                            padding: 5.5px 12px 5.5px 12px;
+                            color: white;
+                            background-color: rgb(255, 130, 0);
+                            border-radius: 38px;
+                            font-family: "Proxima Nova Extrabold";
+                        }
                     }
                 }
             }
-}
         }
 
         button {
-            margin: 3% 18%;
+            margin: 3% 0;
         }
     }
 
     .icon_g {
-        margin-top: 150px;
-        margin: 1% 18%;
+        padding: 96px 80px;
+        margin: 0 12.5vw;
 
         span {
+            text-align: center;
             display: block;
             width: 100%;
             border: 1px solid rgb(229, 229, 229);
@@ -513,10 +519,8 @@ main {
                 width: 30%;
 
                 figure {
-                    margin: 0 auto;
 
-                    svg {
-                    }
+                    svg {}
 
                     figcaption {
                         h5 {
@@ -538,18 +542,19 @@ main {
     }
 
     .card {
-        margin: 10% 18%;
         position: relative;
+        padding: 0 80px;
+        margin: 5vw 12.5vw;
 
         figure {
             width: 100%;
             background-color: rgb(248, 232, 218);
-            padding: 80px;
+            padding: 52px 80px 58px;
             border-radius: 8px;
 
             img {
                 position: absolute;
-                right: 12%;
+                right: 16%;
                 bottom: 0;
             }
 
@@ -558,27 +563,26 @@ main {
                     white-space: pre-line;
                     font-family: "acumin-pro-condensed";
                     color: #ff5f00;
-                    line-height: 58px;
                     font-weight: 900;
                     font-size: 72px;
+                    line-height: 0.8055555555555556;
                     font-style: italic;
                 }
 
                 p {
                     font-family: "Pretendard Medium";
                     font-size: 16px;
-                    margin: 30px 0;
+                    margin: 20px 0 30px;
                 }
 
-                button {
-                }
+                button {}
             }
         }
     }
 }
 
 footer {
-    padding: 5% 18%;
+    padding: 5vw 12.5vw;
     background-color: rgb(255, 95, 0);
     color: white;
 
@@ -698,6 +702,7 @@ footer {
                 font-family: "Pretendard Medium";
                 font-size: 14px;
                 font-weight: 500;
+                text-transform: uppercase;
             }
 
             figure {
@@ -706,10 +711,12 @@ footer {
                 a {
                     margin: 0 10px;
 
-                    img {
-                    }
+                    img {}
                 }
             }
         }
     }
 }
+
+
+@import "_indexmedia";
