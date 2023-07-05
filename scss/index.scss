@@ -1,15 +1,14 @@
 @import "_reset";
 
-
 .bi {
     .head {
         position: fixed;
-        left: 6%;
+        left: 0%;
         top: 0%;
         z-index: 1;
         width: 100%;
         height: 40px;
-        padding: 0 8%;
+        padding: 1% 16%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -18,6 +17,23 @@
 
         &:hover .bar {
             display: block;
+            // transition: 1s;
+            // animation-name: headerOn;
+            // animation-duration: 1s;
+            // animation-iteration-count: infinite;
+            // animation-timing-function: linear;
+            // animation-fill-mode: forwards;
+
+            // @keyframes headerOn {
+            //     0% {
+            //         transform: translateY(-100%);
+            //     }
+
+            //     100% {
+            //         transform: translateY(0%);
+            //     }
+            // }
+
         }
 
         &::after {
@@ -30,32 +46,54 @@
             font-size: 20px;
             display: inline-block;
             color: white;
+            width: 14%;
         }
 
         li {
             position: relative;
             float: left;
+            width: 11%;
+
+            &:nth-of-type(2) .bar li:nth-of-type(1) a {
+                color: #ffd500;
+                font-size: 14px;
+            }
+
+            &:nth-of-type(2) .bar li:nth-of-type(6) a {
+                margin-top: 10px;
+                color: #ffd500;
+                font-size: 14px;
+            }
 
             a {
                 display: block;
-                padding: 0 15px;
                 height: 20px;
                 line-height: 20px;
                 font-size: 14px;
                 color: white;
+                span {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
             }
 
             .bar {
                 display: none;
+                height: 450px;
+                width: 100%;
                 position: absolute;
                 left: 0;
                 right: 0;
-                text-align: center;
 
                 li {
-                    
+                    display: block;
+                    width: 100%;
+
                     a {
                         display: block;
+                        width: 100%;
+                        margin-top: 6px;
+                        font-size: 12px;
                     }
                 }
             }
@@ -76,7 +114,7 @@ main {
 
             figcaption {
                 position: absolute;
-                left: 8%;
+                left: 20%;
                 bottom: 8%;
                 white-space: pre-line;
                 font-family: "acumin-pro-condensed";
@@ -93,27 +131,52 @@ main {
             }
 
             .scroll {
+                width: 36px;
                 position: absolute;
-                right: 8%;
+                right: 20%;
                 bottom: 8%;
 
                 p {
-                    position: relative;
-                    width: 24px;
-                    height: 42px;
                     margin: 0 auto;
+                    width: 26px;
+                    height: 42px;
                     border: 2px solid white;
                     border-radius: 20px;
 
-                    img {
-                        position: absolute;
-                        left: 5px;
-                        top: 5px;
-                        margin: 0 auto;
+                    span {
+                        display: inline-block;
+                        position: relative;
+                        width: 24px;
+                        height: 20px;
+                        margin: 8px auto 0;
+                        overflow: hidden;
+
+                        img {
+                            position: absolute;
+                            left: 6px;
+                            top: 5px;
+                            margin: 0 auto;
+
+                            animation-name: down-ani;
+                            animation-duration: 1s;
+                            animation-iteration-count: infinite;
+                            animation-timing-function: linear;
+
+                            @keyframes down-ani {
+                                0% {
+                                    transform: translate3d(0%, -100%, 0);
+                                }
+
+                                100% {
+                                    transform: translate3d(0%, 100%, 0);
+                                }
+                            }
+                        }
                     }
                 }
 
                 span {
+                    display: inline-block;
                     font-size: 10px;
                     color: white;
                 }
@@ -150,9 +213,7 @@ main {
 
                         @if ($i < 10) {
                             background-image: url("../main_page/vision/home-hero-sq-00" + #{$i} + ".webp");
-                        }
-
-                        @else {
+                        } @else {
                             background-image: url("../main_page/vision/home-hero-sq-0" + #{$i} + ".webp");
                         }
                     }
@@ -291,7 +352,8 @@ main {
                     border-radius: 10px;
 
                     // object-fit: cover;
-                    source {}
+                    source {
+                    }
                 }
 
                 .text_box {
@@ -364,14 +426,12 @@ main {
             width: 100%;
             padding: 0px 12.25vw;
             display: flex;
-            align-items: stretch;
             justify-content: space-between;
-            
+            align-items: stretch;
             // margin: 0 1em;
 
             .s-content {
                 width: 32%;
-                height: 30%;
                 text-align: center;
                 padding: 1.5vw;
                 margin: 0;
@@ -412,7 +472,7 @@ main {
                 }
 
                 a {
-                        margin: 0 auto;
+                    margin: 0 auto;
 
                     figure {
                         img {
@@ -421,18 +481,20 @@ main {
                         }
 
                         figcaption {
-                            white-space: pre-line;
+                            padding: 10px;
 
                             b {
                                 font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
                                 font-size: 24px;
+                                margin-top: 10px;
                             }
 
                             p {
                                 font-family: "Pretendard SemiBold";
                                 font-size: 16px;
-                                margin-top: 30px;
+                                margin-top: 10px;
                                 line-height: 1.5;
+                                word-break: keep-all;
                             }
                         }
                     }
@@ -538,8 +600,8 @@ main {
                 width: 30%;
 
                 figure {
-
-                    svg {}
+                    svg {
+                    }
 
                     figcaption {
                         h5 {
@@ -594,7 +656,8 @@ main {
                     margin: 20px 0 30px;
                 }
 
-                button {}
+                button {
+                }
             }
         }
     }
@@ -732,12 +795,12 @@ footer {
                 a {
                     margin: 0 10px;
 
-                    img {}
+                    img {
+                    }
                 }
             }
         }
     }
 }
-
 
 @import "_indexmedia";
