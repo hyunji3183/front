@@ -53,6 +53,7 @@
                 text-align: center;
 
                 li {
+                    
                     a {
                         display: block;
                     }
@@ -166,7 +167,7 @@ main {
     }
 
     .LATEST_NEWS {
-        padding: 0 80px;
+        padding: 5vw 0;
         width: 100%;
         overflow: hidden;
 
@@ -176,7 +177,8 @@ main {
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
-            margin: 4% 0;
+            margin: 2vw 12.5vw;
+            padding: 0 80px;
         }
 
         .slider {
@@ -261,7 +263,7 @@ main {
         }
 
         button {
-            margin-top: 4%;
+            margin: 30px 16.5vw;
         }
     }
 
@@ -348,31 +350,31 @@ main {
     .STUDIOS {
         margin-top: 150px;
         padding: 0 80px;
-        margin: 0 12.5vw;
 
         h3 {
+            padding: 2vw 12.25vw;
             font-family: "acumin-pro-condensed";
             font-size: 90px;
             font-style: italic;
             font-weight: 900;
-            margin: 4% 0;
             color: rgb(255, 95, 0);
         }
 
         div {
             width: 100%;
-            margin: 0 auto;
+            padding: 0px 12.25vw;
             display: flex;
-            align-items: center;
+            align-items: stretch;
             justify-content: space-between;
+            
             // margin: 0 1em;
 
             .s-content {
-                width: 26%;
+                width: 32%;
                 height: 30%;
                 text-align: center;
                 padding: 1.5vw;
-                margin: 0 auto;
+                margin: 0;
                 border-radius: 10px;
 
                 &:nth-of-type(1) {
@@ -402,10 +404,20 @@ main {
                     border-top: 1px solid white;
                 }
 
+                &:hover {
+                    transform: translateY(-20px);
+                    box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+                    transition: 0.5s;
+                    overflow: hidden;
+                }
+
                 a {
+                        margin: 0 auto;
+
                     figure {
                         img {
-                            margin: 30px;
+                            padding: 23px 0 49px;
+                            width: 80%;
                         }
 
                         figcaption {
@@ -420,7 +432,7 @@ main {
                                 font-family: "Pretendard SemiBold";
                                 font-size: 16px;
                                 margin-top: 30px;
-                                line-height: 24px;
+                                line-height: 1.5;
                             }
                         }
                     }
@@ -430,8 +442,7 @@ main {
     }
 
     .OUR_STORIES {
-        padding: 150px 80px 0;
-        margin: 0 12.5vw;
+        padding: 0 12.5vw;
 
         h3 {
             font-family: "acumin-pro-condensed";
@@ -439,9 +450,11 @@ main {
             font-style: italic;
             font-weight: 900;
             color: rgb(255, 95, 0);
+            padding: 100px 80px 30px;
         }
 
         .os-content {
+            padding: 0 80px;
             width: 100%;
             display: flex;
             align-items: center;
@@ -450,6 +463,12 @@ main {
             div {
                 position: relative;
                 margin: 10px 16px;
+                &:hover {
+                    transform: translateY(-20px);
+                    box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+                    transition: 0.5s;
+                    overflow: hidden;
+                }
 
                 figure {
                     width: 14vw;
@@ -492,7 +511,7 @@ main {
         }
 
         button {
-            margin: 3% 0;
+            margin: 30px 80px;
         }
     }
 
@@ -587,6 +606,7 @@ footer {
     color: white;
 
     .text {
+        padding: 0 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -685,6 +705,7 @@ footer {
     }
 
     .b-text {
+        padding: 0 80px;
         strong {
             display: block;
             padding-top: 110px;

@@ -64,7 +64,6 @@
     }
 
     main {
-        width: 100vw;
         .vi {
             figure {
                 width: 100%;
@@ -132,7 +131,7 @@
             margin: 30px 0;
 
             b {
-                width: 45vw;
+                width: 43vw;
                 white-space: pre-line;
                 text-align: left;
                 font-size: 1.875vw;
@@ -185,6 +184,7 @@
                 font-weight: 900;
                 color: rgb(255, 95, 0);
                 padding: 0 6.25vw;
+                margin: 0;
             }
 
             .slider {
@@ -212,13 +212,13 @@
                     display: flex;
                     overflow: hidden;
                     justify-content: space-around;
-                    width: calc(370px * 24);
+                    width: calc(28vw * 24);
 
                     .content {
                         border: 1px solid rgb(220, 220, 220);
                         border-radius: 10px;
                         margin: 40px 0 0 0;
-                        width: 28vw;
+                        width: 26vw;
                         height: 30vw;
 
                         &:hover {
@@ -287,17 +287,21 @@
 
         .OUR_GAMES {
             margin-top: 150px;
+            padding: 96px 0;
 
             h3 {
                 font-family: "acumin-pro-condensed";
                 font-size: 7.03125vw;
                 font-style: italic;
                 font-weight: 900;
+                padding: 0 6.25vw;
+                margin: 2vw 0;
                 color: rgb(255, 95, 0);
 
             }
 
             .list {
+                padding: 0 6.25vw;
 
                 div {
                     margin-bottom: 30px;
@@ -326,6 +330,7 @@
                         figcaption {
                             font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
                             font-size: 1.875vw;
+                            line-height: 1.5;
                             font-weight: 900;
                             margin-top: 10px;
 
@@ -338,7 +343,7 @@
 
                             .icon {
                                 img {
-                                    margin: 8px;
+                                    margin: 4px;
                                 }
                             }
                         }
@@ -369,7 +374,8 @@
         }
 
         .STUDIOS {
-            margin-top: 150px;
+            margin: 0;
+            padding: 0 6.25vw;
 
             h3 {
                 font-family: "acumin-pro-condensed";
@@ -377,21 +383,23 @@
                 font-style: italic;
                 font-weight: 900;
                 color: rgb(255, 95, 0);
-                margin: 5vw 6.25vw;
+                padding: 2vw 0;
+                margin: 0;
             }
 
             div {
-                width: 100vw;
+                width: 87vw;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 0 6.25vw;
+                padding: 0;
 
                 .s-content {
+                    margin: 0;
                     width: 27vw;
-                    height: 30%;
+                    height: 20%;
                     text-align: center;
-                    padding: 1.953125vw;
+                    padding: 20px;
                     border-radius: 10px;
                     display: inline-block;
 
@@ -422,16 +430,25 @@
                         border-top: 1px solid white;
                     }
 
+                    &:hover {
+                        transform: translateY(-20px);
+                        box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+                        transition: 0.5s;
+                        overflow: hidden;
+                    }
+                    
+
                     a {
                         figure {
                             img {
-                                padding: 23px 0 49px;
-                                width: 90%;
+                                margin: 0;
+                                padding: 23px 0 45px;
+                                width: 80%;
                             }
 
                             figcaption {
-                                height: 20vh;
-                                padding: 2.34375vw 0;
+                                height: 18vh;
+                                padding: 24px 0;
                                 white-space: pre-line;
 
                                 b {
@@ -442,7 +459,7 @@
                                 p {
                                     font-family: "Pretendard SemiBold";
                                     font-size: 1.25vw;
-                                    margin: 5% 0%;
+                                    margin-top: 5%;
                                     line-height: 1.5;
                                 }
                             }
@@ -453,7 +470,8 @@
         }
 
         .OUR_STORIES {
-            margin-top: 150px;
+            margin: 0;
+            padding: 0 6.25vw;
 
             h3 {
                 font-family: "acumin-pro-condensed";
@@ -461,18 +479,25 @@
                 font-style: italic;
                 font-weight: 900;
                 color: rgb(255, 95, 0);
-                padding: 0 6.25vw;
+                padding: 2vw 0;
             }
 
             .os-content {
                 width: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
+                padding: 0;
 
                 div {
                     position: relative;
-                    margin: 10px 16px;
+                    margin: 0;
+                    &:hover {
+                        transform: translateY(-20px);
+                        box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+                        transition: 0.5s;
+                        overflow: hidden;
+                    }
 
                     figure {
                         width: 20vw;
@@ -515,16 +540,17 @@
             }
 
             button {
-                margin: 3% 18% 0 6.25vw;
                 padding: 12px 24px;
                 font-size: 1.25vw;
                 line-height: 1.5;
+                margin: 30px 0;
             }
         }
 
         .icon_g {
+            padding: 96px 30px;
             margin-top: 150px;
-            margin: 10vw 5.25vw;
+            margin: 0;
 
             span {
                 display: block;
@@ -550,13 +576,15 @@
                             h5 {
                                 margin: 0;
                                 font-family: "Proxima Nova Extrabold";
-                                font-size: 28px;
-                                line-height: 1.5;
+                                font-size: 2.1875vw;
+                                line-height: 1.2857142857142858;
                             }
 
                             p {
                                 white-space: pre-line;
                                 font-family: "Pretendard SemiBold";
+                                font-size: 1.25vw;
+                                ;
                                 line-height: 1.5;
                             }
                         }
@@ -566,8 +594,9 @@
         }
 
         .card {
-            margin: 7.5vw 6.25vw;
+            margin: 0;
             position: relative;
+            padding: 7.5vw 6.25vw;
 
             figure {
                 width: 100%;
@@ -577,8 +606,8 @@
 
                 img {
                     position: absolute;
-                    right: 12%;
-                    bottom: 0;
+                    right: 15%;
+                    bottom: 15%;
                 }
 
                 figcaption {
@@ -595,10 +624,14 @@
                     p {
                         font-family: "Pretendard Medium";
                         font-size: 16px;
+                        line-height: 1.5;
                         margin: 30px 0;
                     }
 
-                    button {}
+                    button {
+                        font-size: 1.25vw;
+                        line-height: 1.5;
+                    }
                 }
             }
         }
@@ -712,7 +745,8 @@
             strong {
                 display: block;
                 padding-top: 110px;
-                font-size: 160px;
+                letter-spacing: -5px;
+                font-size: 13vw;
                 font-family: "Proxima Nova Extrabold";
             }
 
@@ -875,7 +909,7 @@
             margin: 3% auto;
 
             b {
-                width: 30%;
+                width: 28%;
                 line-height: 1.5;
                 white-space: pre-line;
                 font-size: 2.34375vw;
@@ -919,6 +953,7 @@
             margin-top: 100px;
             width: 100vw;
             overflow: hidden;
+            padding: 0 3.125vw;
 
             h3 {
                 font-family: "acumin-pro-condensed";
@@ -926,7 +961,8 @@
                 font-style: italic;
                 font-weight: 900;
                 color: rgb(255, 95, 0);
-                margin: 1% 3%;
+                margin: 1% 0%;
+                padding: 0;
             }
 
             .slider {
@@ -954,14 +990,14 @@
                     display: flex;
                     overflow: hidden;
                     justify-content: space-between;
-                    width: calc(220px * 24);
+                    width: calc(32vw * 24);
 
                     .content {
                         border: 1px solid rgb(220, 220, 220);
                         border-radius: 10px;
                         margin-top: 30px;
-                        width: 200px;
-                        height: 240px;
+                        width: 30vw;
+                        height: 34vw;
 
                         &:hover {
                             transform: translateY(-20px);
@@ -972,15 +1008,15 @@
 
                         figure {
                             img {
-                                width: 200px;
-                                height: 110px;
+                                width: 30vw;
+                                height: 15vw;
                             }
 
                             .text {
                                 font-family: "Proxima Nova Extrabold";
 
                                 p {
-                                    font-size: 11px;
+                                    font-size: 1.5625vw;
                                     font-family: "Pretendard ExtraBold";
                                     position: absolute;
                                     left: 5%;
@@ -994,9 +1030,9 @@
                                         bottom: 5%;
 
                                         a {
-                                            font-size: 10px;
+                                            font-size: 1.171875vw;
                                             display: inline-block;
-                                            padding: 3px 12px;
+                                            padding: 0.48828125vw 1.171875vw;
                                             color: white;
                                             background-color: rgb(255, 130, 0);
                                             border-radius: 38px;
@@ -1011,13 +1047,14 @@
             }
 
             button {
-                font-size: 11px;
-                padding: 8px 20px;
+                font-size: 1.5625vw;
+                padding: 1.171875vw 2.34375vw;
                 margin: 3% 3%;
             }
         }
 
         .OUR_GAMES {
+            padding: 10vw 3.125vw;
             margin-top: 150px;
 
             h3 {
@@ -1026,11 +1063,12 @@
                 font-style: italic;
                 font-weight: 900;
                 color: rgb(255, 95, 0);
-                margin: 1% 3%;
+                margin: 1% 0%;
+                padding: 0;
             }
 
             .list {
-                margin: 1% 3%;
+                padding: 0;
 
                 div {
                     width: 100%;
@@ -1074,7 +1112,7 @@
 
                             .icon {
                                 img {
-                                    width: 8%;
+                                    width: 5%;
                                     margin: 5px;
                                 }
                             }
@@ -1123,6 +1161,7 @@
 
             div {
                 margin: 0 auto;
+                padding: 0;
                 width: 95vw;
                 display: flex;
                 align-items: center;
@@ -1172,7 +1211,7 @@
                             }
 
                             figcaption {
-                                height: 20vh;
+                                height: 16vh;
                                 padding: 2.34375vw 0;
                                 white-space: normal;
 
@@ -1207,6 +1246,7 @@
                 font-weight: 900;
                 color: rgb(255, 95, 0);
                 margin-left: 3vw;
+                padding: 0;
             }
 
             .os-content {
@@ -1356,7 +1396,7 @@
 
                     button {
                         font-size: 1.5625vw;
-                        padding: 16px 20px;
+                        padding: 1.171875vw 2.34375vw;
                     }
                 }
             }
@@ -1375,90 +1415,97 @@
             align-items: center;
 
             .link {
-                width: 70%;
+                width: 85%;
 
                 div {
                     margin-bottom: 10px;
 
                     &:nth-of-type(1) span:nth-of-type(1) {
                         display: inline-block;
-                        height: 8px;
+                        margin: 0 5px;
+                        height: 10px;
                         font-size: 4px;
                         border: 0.1px solid #fff;
                     }
 
                     &:nth-of-type(1) span:nth-of-type(2) {
                         display: inline-block;
-                        height: 8px;
+                        margin: 0 5px;
+                        height: 10px;
                         font-size: 4px;
                         border: 0.1px solid #fff;
                     }
 
                     &:nth-of-type(2) span:nth-of-type(1) {
                         display: inline-block;
-                        height: 8px;
+                        margin: 0 5px;
+                        height: 10px;
                         font-size: 4px;
                         border: 0.1px solid #fff;
                     }
 
                     &:nth-of-type(2) span:nth-of-type(2) {
                         display: inline-block;
-                        height: 8px;
+                        margin: 0 5px;
+                        height: 10px;
                         font-size: 4px;
                         border: 0.1px solid #fff;
                     }
 
                     &:nth-of-type(2) span:nth-of-type(3) {
                         display: inline-block;
-                        height: 8px;
+                        margin: 0 5px;
+                        height: 10px;
                         font-size: 4px;
                         border: 0.1px solid #fff;
                     }
 
                     &:nth-of-type(2) span:nth-of-type(4) {
                         display: inline-block;
-                        height: 8px;
+                        margin: 0 5px;
+                        height: 10px;
                         font-size: 4px;
                         border: 0.1px solid #fff;
                     }
 
                     &:nth-of-type(2) span:nth-of-type(5) {
                         display: inline-block;
-                        height: 8px;
+                        margin: 0 5px;
+                        height: 10px;
                         font-size: 4px;
                         border: 0.1px solid #fff;
                     }
 
                     &:nth-of-type(2) a:nth-of-type(2) {
                         font-family: "Pretendard ExtraBold";
-                        font-size: 10px;
+                        font-size: 1.46484375vw;
                         line-height: 10px;
                     }
 
                     a {
                         color: white;
                         font-family: "Pretendard Medium";
-                        font-size: 10px;
-                        margin-right: 6px;
+                        font-size: 1.3671875vw;
+                        margin-right: 4px;
                     }
 
                     svg {
-                        width: 6px;
+                        width: 8px;
                         vertical-align: middle;
-                        margin-right: 6px;
+                        margin-right: 4px;
                     }
                 }
             }
 
             form {
                 select {
-                    width: 130px;
+                    width: 100%;
                     padding: 5px 0;
                     appearance: none;
                     color: white;
                     border-width: 0;
                     border-bottom: 2px solid white;
-                    font-size: 10px;
+                    font-size: 1.3671875vw;
                     font-family: "Proxima Nova Extrabold";
                     background-color: transparent;
                     background: url(../icons/arrow_drop.svg) no-repeat 95% 50%;
@@ -1480,7 +1527,8 @@
             strong {
                 display: block;
                 padding-top: 90px;
-                font-size: 90px;
+                letter-spacing: -5px;
+                font-size: 13vw;
                 font-family: "Proxima Nova Extrabold";
             }
 
@@ -1492,21 +1540,21 @@
 
                 p {
                     font-family: "Pretendard Medium";
-                    font-size: 10px;
+                    font-size: 1.3671875vw;
                     font-weight: 500;
-                    line-height: 18px;
+                    line-height: 1.5714285714285714;
                     text-transform: uppercase;
                 }
 
                 figure {
-                    width: 15%;
+                    width: 20%;
                     object-fit: contain;
 
                     a {
                         margin: 0 5px;
 
                         img {
-                            width: 15%;
+                            width: 20%;
                         }
                     }
                 }
@@ -1581,7 +1629,7 @@
         .vi {
             figure {
                 width: 100%;
-                
+
                 position: relative;
 
                 video {
@@ -1749,7 +1797,7 @@
                             img {
                                 width: 90vw;
                                 height: 40vh;
-                                
+
                             }
 
                             .text {
@@ -1762,7 +1810,7 @@
                                 flex-wrap: wrap;
 
                                 p {
-                                    height: 25vh;
+                                    width: 80vw;
                                     font-family: "Pretendard ExtraBold";
                                     font-size: 5vw;
                                     line-height: 1.3333333333333333;
@@ -1816,6 +1864,7 @@
 
             .list {
                 padding: 0;
+
                 div {
                     height: fit-content;
                     margin-bottom: 30px;
@@ -2069,6 +2118,7 @@
 
         .icon_g {
             margin: 0;
+
             span {
                 display: block;
                 width: 100%;
@@ -2329,5 +2379,3 @@
         }
     }
 }
-
-

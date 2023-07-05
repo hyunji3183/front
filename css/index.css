@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 body, p, figure, h2, h3, h4, h5, div {
   margin: 0px;
 }
@@ -59,6 +61,9 @@ ul, li {
   font-size: 15.5px;
   padding: 16px 24px;
   border-radius: 36px;
+}
+* button::after {
+  content: "material-symbols-outlined";
 }
 
 .bi .head {
@@ -373,7 +378,7 @@ main .vision p {
   }
 }
 main .LATEST_NEWS {
-  padding: 0 80px;
+  padding: 5vw 0;
   width: 100%;
   overflow: hidden;
 }
@@ -383,7 +388,8 @@ main .LATEST_NEWS h3 {
   font-style: italic;
   font-weight: 900;
   color: rgb(255, 95, 0);
-  margin: 4% 0;
+  margin: 2vw 12.5vw;
+  padding: 0 80px;
 }
 main .LATEST_NEWS .slider {
   animation-name: infiniteScroll;
@@ -451,7 +457,7 @@ main .LATEST_NEWS .slider div .content figure .text ul li a {
   font-family: "Proxima Nova Extrabold";
 }
 main .LATEST_NEWS button {
-  margin-top: 4%;
+  margin: 30px 16.5vw;
 }
 main .OUR_GAMES {
   margin-top: 150px;
@@ -517,29 +523,28 @@ main .OUR_GAMES .list div a span {
 main .STUDIOS {
   margin-top: 150px;
   padding: 0 80px;
-  margin: 0 12.5vw;
 }
 main .STUDIOS h3 {
+  padding: 2vw 12.25vw;
   font-family: "acumin-pro-condensed";
   font-size: 90px;
   font-style: italic;
   font-weight: 900;
-  margin: 4% 0;
   color: rgb(255, 95, 0);
 }
 main .STUDIOS div {
   width: 100%;
-  margin: 0 auto;
+  padding: 0px 12.25vw;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 }
 main .STUDIOS div .s-content {
-  width: 26%;
+  width: 32%;
   height: 30%;
   text-align: center;
   padding: 1.5vw;
-  margin: 0 auto;
+  margin: 0;
   border-radius: 10px;
 }
 main .STUDIOS div .s-content:nth-of-type(1) {
@@ -563,8 +568,18 @@ main .STUDIOS div .s-content:nth-of-type(3) figcaption {
   color: white;
   border-top: 1px solid white;
 }
+main .STUDIOS div .s-content:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  overflow: hidden;
+}
+main .STUDIOS div .s-content a {
+  margin: 0 auto;
+}
 main .STUDIOS div .s-content a figure img {
-  margin: 30px;
+  padding: 23px 0 49px;
+  width: 80%;
 }
 main .STUDIOS div .s-content a figure figcaption {
   white-space: pre-line;
@@ -577,11 +592,10 @@ main .STUDIOS div .s-content a figure figcaption p {
   font-family: "Pretendard SemiBold";
   font-size: 16px;
   margin-top: 30px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 main .OUR_STORIES {
-  padding: 150px 80px 0;
-  margin: 0 12.5vw;
+  padding: 0 12.5vw;
 }
 main .OUR_STORIES h3 {
   font-family: "acumin-pro-condensed";
@@ -589,8 +603,10 @@ main .OUR_STORIES h3 {
   font-style: italic;
   font-weight: 900;
   color: rgb(255, 95, 0);
+  padding: 100px 80px 30px;
 }
 main .OUR_STORIES .os-content {
+  padding: 0 80px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -599,6 +615,12 @@ main .OUR_STORIES .os-content {
 main .OUR_STORIES .os-content div {
   position: relative;
   margin: 10px 16px;
+}
+main .OUR_STORIES .os-content div:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  overflow: hidden;
 }
 main .OUR_STORIES .os-content div figure {
   width: 14vw;
@@ -636,7 +658,7 @@ main .OUR_STORIES .os-content div figure figcaption a {
   font-family: "Proxima Nova Extrabold";
 }
 main .OUR_STORIES button {
-  margin: 3% 0;
+  margin: 30px 80px;
 }
 main .icon_g {
   padding: 96px 80px;
@@ -706,6 +728,7 @@ footer {
   color: white;
 }
 footer .text {
+  padding: 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -785,6 +808,9 @@ footer .text form select option {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+footer .b-text {
+  padding: 0 80px;
 }
 footer .b-text strong {
   display: block;
@@ -872,6 +898,9 @@ ul, li {
   padding: 16px 24px;
   border-radius: 36px;
 }
+* button::after {
+  content: "material-symbols-outlined";
+}
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .bi .head {
@@ -922,9 +951,6 @@ ul, li {
   }
   .bi .head li .bar li a {
     display: block;
-  }
-  main {
-    width: 100vw;
   }
   main .vi figure {
     width: 100%;
@@ -984,7 +1010,7 @@ ul, li {
     margin: 30px 0;
   }
   main .vision b {
-    width: 45vw;
+    width: 43vw;
     white-space: pre-line;
     text-align: left;
     font-size: 1.875vw;
@@ -1206,6 +1232,7 @@ ul, li {
     font-weight: 900;
     color: rgb(255, 95, 0);
     padding: 0 6.25vw;
+    margin: 0;
   }
   main .LATEST_NEWS .slider {
     animation-name: infiniteScroll;
@@ -1229,13 +1256,13 @@ ul, li {
     display: flex;
     overflow: hidden;
     justify-content: space-around;
-    width: 8880px;
+    width: 672vw;
   }
   main .LATEST_NEWS .slider div .content {
     border: 1px solid rgb(220, 220, 220);
     border-radius: 10px;
     margin: 40px 0 0 0;
-    width: 28vw;
+    width: 26vw;
     height: 30vw;
   }
   main .LATEST_NEWS .slider div .content:hover {
@@ -1290,13 +1317,19 @@ ul, li {
   }
   main .OUR_GAMES {
     margin-top: 150px;
+    padding: 96px 0;
   }
   main .OUR_GAMES h3 {
     font-family: "acumin-pro-condensed";
     font-size: 7.03125vw;
     font-style: italic;
     font-weight: 900;
+    padding: 0 6.25vw;
+    margin: 2vw 0;
     color: rgb(255, 95, 0);
+  }
+  main .OUR_GAMES .list {
+    padding: 0 6.25vw;
   }
   main .OUR_GAMES .list div {
     margin-bottom: 30px;
@@ -1318,6 +1351,7 @@ ul, li {
   main .OUR_GAMES .list div .text_box figcaption {
     font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
     font-size: 1.875vw;
+    line-height: 1.5;
     font-weight: 900;
     margin-top: 10px;
   }
@@ -1328,7 +1362,7 @@ ul, li {
     line-height: 1.5;
   }
   main .OUR_GAMES .list div .text_box figcaption .icon img {
-    margin: 8px;
+    margin: 4px;
   }
   main .OUR_GAMES .list div a {
     position: absolute;
@@ -1349,7 +1383,8 @@ ul, li {
     padding: 12px 24px;
   }
   main .STUDIOS {
-    margin-top: 150px;
+    margin: 0;
+    padding: 0 6.25vw;
   }
   main .STUDIOS h3 {
     font-family: "acumin-pro-condensed";
@@ -1357,20 +1392,22 @@ ul, li {
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    margin: 5vw 6.25vw;
+    padding: 2vw 0;
+    margin: 0;
   }
   main .STUDIOS div {
-    width: 100vw;
+    width: 87vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 6.25vw;
+    padding: 0;
   }
   main .STUDIOS div .s-content {
+    margin: 0;
     width: 27vw;
-    height: 30%;
+    height: 20%;
     text-align: center;
-    padding: 1.953125vw;
+    padding: 20px;
     border-radius: 10px;
     display: inline-block;
   }
@@ -1395,13 +1432,20 @@ ul, li {
     color: white;
     border-top: 1px solid white;
   }
+  main .STUDIOS div .s-content:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    overflow: hidden;
+  }
   main .STUDIOS div .s-content a figure img {
-    padding: 23px 0 49px;
-    width: 90%;
+    margin: 0;
+    padding: 23px 0 45px;
+    width: 80%;
   }
   main .STUDIOS div .s-content a figure figcaption {
-    height: 20vh;
-    padding: 2.34375vw 0;
+    height: 18vh;
+    padding: 24px 0;
     white-space: pre-line;
   }
   main .STUDIOS div .s-content a figure figcaption b {
@@ -1411,11 +1455,12 @@ ul, li {
   main .STUDIOS div .s-content a figure figcaption p {
     font-family: "Pretendard SemiBold";
     font-size: 1.25vw;
-    margin: 5% 0%;
+    margin-top: 5%;
     line-height: 1.5;
   }
   main .OUR_STORIES {
-    margin-top: 150px;
+    margin: 0;
+    padding: 0 6.25vw;
   }
   main .OUR_STORIES h3 {
     font-family: "acumin-pro-condensed";
@@ -1423,17 +1468,24 @@ ul, li {
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    padding: 0 6.25vw;
+    padding: 2vw 0;
   }
   main .OUR_STORIES .os-content {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0;
   }
   main .OUR_STORIES .os-content div {
     position: relative;
-    margin: 10px 16px;
+    margin: 0;
+  }
+  main .OUR_STORIES .os-content div:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    overflow: hidden;
   }
   main .OUR_STORIES .os-content div figure {
     width: 20vw;
@@ -1471,14 +1523,15 @@ ul, li {
     font-family: "Proxima Nova Extrabold";
   }
   main .OUR_STORIES button {
-    margin: 3% 18% 0 6.25vw;
     padding: 12px 24px;
     font-size: 1.25vw;
     line-height: 1.5;
+    margin: 30px 0;
   }
   main .icon_g {
+    padding: 96px 30px;
     margin-top: 150px;
-    margin: 10vw 5.25vw;
+    margin: 0;
   }
   main .icon_g span {
     display: block;
@@ -1499,17 +1552,19 @@ ul, li {
   main .icon_g .icon .i-content figure figcaption h5 {
     margin: 0;
     font-family: "Proxima Nova Extrabold";
-    font-size: 28px;
-    line-height: 1.5;
+    font-size: 2.1875vw;
+    line-height: 1.2857142857;
   }
   main .icon_g .icon .i-content figure figcaption p {
     white-space: pre-line;
     font-family: "Pretendard SemiBold";
+    font-size: 1.25vw;
     line-height: 1.5;
   }
   main .card {
-    margin: 7.5vw 6.25vw;
+    margin: 0;
     position: relative;
+    padding: 7.5vw 6.25vw;
   }
   main .card figure {
     width: 100%;
@@ -1519,8 +1574,8 @@ ul, li {
   }
   main .card figure img {
     position: absolute;
-    right: 12%;
-    bottom: 0;
+    right: 15%;
+    bottom: 15%;
   }
   main .card figure figcaption h4 {
     white-space: pre-line;
@@ -1534,7 +1589,12 @@ ul, li {
   main .card figure figcaption p {
     font-family: "Pretendard Medium";
     font-size: 16px;
+    line-height: 1.5;
     margin: 30px 0;
+  }
+  main .card figure figcaption button {
+    font-size: 1.25vw;
+    line-height: 1.5;
   }
   footer {
     width: 100vw;
@@ -1626,7 +1686,8 @@ ul, li {
   footer .b-text strong {
     display: block;
     padding-top: 110px;
-    font-size: 160px;
+    letter-spacing: -5px;
+    font-size: 13vw;
     font-family: "Proxima Nova Extrabold";
   }
   footer .b-text div {
@@ -1760,7 +1821,7 @@ ul, li {
     margin: 3% auto;
   }
   main .vision b {
-    width: 30%;
+    width: 28%;
     line-height: 1.5;
     white-space: pre-line;
     font-size: 2.34375vw;
@@ -1973,6 +2034,7 @@ ul, li {
     margin-top: 100px;
     width: 100vw;
     overflow: hidden;
+    padding: 0 3.125vw;
   }
   main .LATEST_NEWS h3 {
     font-family: "acumin-pro-condensed";
@@ -1980,7 +2042,8 @@ ul, li {
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    margin: 1% 3%;
+    margin: 1% 0%;
+    padding: 0;
   }
   main .LATEST_NEWS .slider {
     animation-name: infiniteScroll;
@@ -2004,14 +2067,14 @@ ul, li {
     display: flex;
     overflow: hidden;
     justify-content: space-between;
-    width: 5280px;
+    width: 768vw;
   }
   main .LATEST_NEWS .slider div .content {
     border: 1px solid rgb(220, 220, 220);
     border-radius: 10px;
     margin-top: 30px;
-    width: 200px;
-    height: 240px;
+    width: 30vw;
+    height: 34vw;
   }
   main .LATEST_NEWS .slider div .content:hover {
     transform: translateY(-20px);
@@ -2020,14 +2083,14 @@ ul, li {
     overflow: hidden;
   }
   main .LATEST_NEWS .slider div .content figure img {
-    width: 200px;
-    height: 110px;
+    width: 30vw;
+    height: 15vw;
   }
   main .LATEST_NEWS .slider div .content figure .text {
     font-family: "Proxima Nova Extrabold";
   }
   main .LATEST_NEWS .slider div .content figure .text p {
-    font-size: 11px;
+    font-size: 1.5625vw;
     font-family: "Pretendard ExtraBold";
     position: absolute;
     left: 5%;
@@ -2039,20 +2102,21 @@ ul, li {
     bottom: 5%;
   }
   main .LATEST_NEWS .slider div .content figure .text ul li a {
-    font-size: 10px;
+    font-size: 1.171875vw;
     display: inline-block;
-    padding: 3px 12px;
+    padding: 0.48828125vw 1.171875vw;
     color: white;
     background-color: rgb(255, 130, 0);
     border-radius: 38px;
     font-family: "Proxima Nova Extrabold";
   }
   main .LATEST_NEWS button {
-    font-size: 11px;
-    padding: 8px 20px;
+    font-size: 1.5625vw;
+    padding: 1.171875vw 2.34375vw;
     margin: 3% 3%;
   }
   main .OUR_GAMES {
+    padding: 10vw 3.125vw;
     margin-top: 150px;
   }
   main .OUR_GAMES h3 {
@@ -2061,10 +2125,11 @@ ul, li {
     font-style: italic;
     font-weight: 900;
     color: rgb(255, 95, 0);
-    margin: 1% 3%;
+    margin: 1% 0%;
+    padding: 0;
   }
   main .OUR_GAMES .list {
-    margin: 1% 3%;
+    padding: 0;
   }
   main .OUR_GAMES .list div {
     width: 100%;
@@ -2099,7 +2164,7 @@ ul, li {
     margin: 10px 0;
   }
   main .OUR_GAMES .list div .text_box figcaption .icon img {
-    width: 8%;
+    width: 5%;
     margin: 5px;
   }
   main .OUR_GAMES .list div a {
@@ -2137,6 +2202,7 @@ ul, li {
   }
   main .STUDIOS div {
     margin: 0 auto;
+    padding: 0;
     width: 95vw;
     display: flex;
     align-items: center;
@@ -2177,7 +2243,7 @@ ul, li {
     margin: 0;
   }
   main .STUDIOS div .s-content a figure figcaption {
-    height: 20vh;
+    height: 16vh;
     padding: 2.34375vw 0;
     white-space: normal;
   }
@@ -2204,6 +2270,7 @@ ul, li {
     font-weight: 900;
     color: rgb(255, 95, 0);
     margin-left: 3vw;
+    padding: 0;
   }
   main .OUR_STORIES .os-content {
     width: 100vw;
@@ -2330,7 +2397,7 @@ ul, li {
   }
   main .card figure figcaption button {
     font-size: 1.5625vw;
-    padding: 16px 20px;
+    padding: 1.171875vw 2.34375vw;
   }
   footer {
     padding: 8.88671875vw 3.125vw 7.51953125vw;
@@ -2344,77 +2411,84 @@ ul, li {
     align-items: center;
   }
   footer .text .link {
-    width: 70%;
+    width: 85%;
   }
   footer .text .link div {
     margin-bottom: 10px;
   }
   footer .text .link div:nth-of-type(1) span:nth-of-type(1) {
     display: inline-block;
-    height: 8px;
+    margin: 0 5px;
+    height: 10px;
     font-size: 4px;
     border: 0.1px solid #fff;
   }
   footer .text .link div:nth-of-type(1) span:nth-of-type(2) {
     display: inline-block;
-    height: 8px;
+    margin: 0 5px;
+    height: 10px;
     font-size: 4px;
     border: 0.1px solid #fff;
   }
   footer .text .link div:nth-of-type(2) span:nth-of-type(1) {
     display: inline-block;
-    height: 8px;
+    margin: 0 5px;
+    height: 10px;
     font-size: 4px;
     border: 0.1px solid #fff;
   }
   footer .text .link div:nth-of-type(2) span:nth-of-type(2) {
     display: inline-block;
-    height: 8px;
+    margin: 0 5px;
+    height: 10px;
     font-size: 4px;
     border: 0.1px solid #fff;
   }
   footer .text .link div:nth-of-type(2) span:nth-of-type(3) {
     display: inline-block;
-    height: 8px;
+    margin: 0 5px;
+    height: 10px;
     font-size: 4px;
     border: 0.1px solid #fff;
   }
   footer .text .link div:nth-of-type(2) span:nth-of-type(4) {
     display: inline-block;
-    height: 8px;
+    margin: 0 5px;
+    height: 10px;
     font-size: 4px;
     border: 0.1px solid #fff;
   }
   footer .text .link div:nth-of-type(2) span:nth-of-type(5) {
     display: inline-block;
-    height: 8px;
+    margin: 0 5px;
+    height: 10px;
     font-size: 4px;
     border: 0.1px solid #fff;
   }
   footer .text .link div:nth-of-type(2) a:nth-of-type(2) {
     font-family: "Pretendard ExtraBold";
-    font-size: 10px;
+    font-size: 1.46484375vw;
     line-height: 10px;
   }
   footer .text .link div a {
     color: white;
     font-family: "Pretendard Medium";
-    font-size: 10px;
-    margin-right: 6px;
+    font-size: 1.3671875vw;
+    margin-right: 4px;
   }
   footer .text .link div svg {
-    width: 6px;
+    width: 8px;
     vertical-align: middle;
-    margin-right: 6px;
+    margin-right: 4px;
   }
   footer .text form select {
-    width: 130px;
+    width: 100%;
     padding: 5px 0;
     appearance: none;
     color: white;
     border-width: 0;
     border-bottom: 2px solid white;
-    font-size: 10px;
+    font-size: 1.3671875vw;
     font-family: "Proxima Nova Extrabold";
     background-color: transparent;
     background: url(../icons/arrow_drop.svg) no-repeat 95% 50%;
@@ -2432,7 +2506,8 @@ ul, li {
   footer .b-text strong {
     display: block;
     padding-top: 90px;
-    font-size: 90px;
+    letter-spacing: -5px;
+    font-size: 13vw;
     font-family: "Proxima Nova Extrabold";
   }
   footer .b-text div {
@@ -2443,13 +2518,13 @@ ul, li {
   }
   footer .b-text div p {
     font-family: "Pretendard Medium";
-    font-size: 10px;
+    font-size: 1.3671875vw;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.5714285714;
     text-transform: uppercase;
   }
   footer .b-text div figure {
-    width: 15%;
+    width: 20%;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -2457,7 +2532,7 @@ ul, li {
     margin: 0 5px;
   }
   footer .b-text div figure a img {
-    width: 15%;
+    width: 20%;
   }
 }
 @media (max-width: 719px) {
@@ -2883,7 +2958,7 @@ ul, li {
     flex-wrap: wrap;
   }
   main .LATEST_NEWS .slider div .content figure .text p {
-    height: 25vh;
+    width: 80vw;
     font-family: "Pretendard ExtraBold";
     font-size: 5vw;
     line-height: 1.3333333333;
