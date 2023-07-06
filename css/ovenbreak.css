@@ -73,7 +73,7 @@ ul, li {
   z-index: 1;
   width: 100%;
   height: 40px;
-  padding: 0 20%;
+  padding: 1% 16%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,28 +92,50 @@ ul, li {
   font-size: 20px;
   display: inline-block;
   color: white;
+  width: 14%;
 }
 .bi .head li {
   position: relative;
   float: left;
+  width: 11%;
+}
+.bi .head li:nth-of-type(2) .bar li:nth-of-type(1) a {
+  color: #ffd500;
+  font-size: 14px;
+}
+.bi .head li:nth-of-type(2) .bar li:nth-of-type(6) a {
+  margin-top: 10px;
+  color: #ffd500;
+  font-size: 14px;
 }
 .bi .head li a {
   display: block;
-  padding: 0 15px;
   height: 20px;
   line-height: 20px;
   font-size: 14px;
   color: white;
 }
+.bi .head li a span {
+  font-size: 12px;
+  font-weight: bold;
+}
 .bi .head li .bar {
   display: none;
+  height: 450px;
+  width: 100%;
   position: absolute;
   left: 0;
   right: 0;
-  text-align: center;
+}
+.bi .head li .bar li {
+  display: block;
+  width: 100%;
 }
 .bi .head li .bar li a {
   display: block;
+  width: 100%;
+  margin-top: 6px;
+  font-size: 12px;
 }
 
 main .vi figure {
@@ -363,9 +385,10 @@ main .WORLD_WIDE_FANDOM .count h4 {
 }
 main .HISTORY {
   width: 100%;
-  padding-left: 20%;
+  padding: 0 12.5vw;
 }
 main .HISTORY h3 {
+  padding: 0 80px;
   font-family: "acumin-pro-condensed";
   font-size: 90px;
   font-weight: 900;
@@ -373,21 +396,42 @@ main .HISTORY h3 {
   color: rgb(255, 95, 0);
 }
 main .HISTORY p {
+  padding: 0 80px;
   color: rgb(51, 51, 51);
   font-size: 16px;
   font-family: "Pretendard SemiBold";
 }
 main .HISTORY .con {
+  padding-bottom: 187px;
   display: flex;
   align-items: flex-end;
 }
 main .HISTORY .con .picture {
-  width: 30%;
+  width: 40%;
+}
+main .HISTORY .con .picture p {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+main .HISTORY .con .picture p img {
+  animation: history;
+  animation-iteration-count: infinite;
+  animation-timing-function: 3s;
+  animation-duration: leaner;
+}
+@keyframes history {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
 }
 main .HISTORY .con .year {
   align-items: flex-start;
   margin-top: 5%;
-  width: 80%;
+  width: 70%;
 }
 main .HISTORY .con .year ul li {
   display: flex;
@@ -396,11 +440,12 @@ main .HISTORY .con .year ul li strong {
   font-family: "acumin-pro-condensed";
   font-size: 40px;
   color: rgb(255, 95, 0);
-  width: 10%;
+  width: 15%;
 }
 main .HISTORY .con .year ul .month {
-  width: 100%;
-  padding: 0 0 2% 3%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0 2% 5%;
   border-left: 2px solid rgb(255, 95, 0);
   position: relative;
 }
@@ -426,9 +471,9 @@ main .HISTORY .con .year ul .month::before p {
   font-family: "Pretendard Medium";
 }
 main .link {
-  width: 60%;
-  margin: 12% 20%;
-  padding: 4%;
+  width: 68%;
+  margin: 120px 16vw 96px;
+  padding: 4vw;
   border-top: 1px solid rgb(229, 229, 229);
   border-bottom: 1px solid rgb(229, 229, 229);
 }
@@ -438,12 +483,16 @@ main .link h4 {
   font-weight: 800;
   color: rgb(255, 95, 0);
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 22px;
 }
 main .link .icon {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+main .link .icon p {
+  width: 15%;
 }
 main .link .icon span {
   display: inline-block;
@@ -454,8 +503,8 @@ main .link .icon .box img {
   width: 100px;
 }
 main .RELATED_VIDEOS {
-  width: 65%;
-  margin: 0 20%;
+  padding: 77px 12.5vw 96px;
+  width: 100%;
 }
 main .RELATED_VIDEOS h3 {
   font-family: "acumin-pro-condensed";
@@ -464,17 +513,26 @@ main .RELATED_VIDEOS h3 {
   font-style: italic;
   color: rgb(255, 95, 0);
   margin-bottom: 4%;
+  padding: 0 80px;
 }
 main .RELATED_VIDEOS div {
+  width: 100%;
+  padding: 0 80px;
   display: flex;
   justify-content: space-between;
 }
+main .RELATED_VIDEOS div .thumb {
+  width: 32%;
+  padding: 0;
+}
 main .RELATED_VIDEOS div .thumb figure {
-  width: 384px;
-  height: 216px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 main .RELATED_VIDEOS div .thumb figure img {
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 main .RELATED_VIDEOS div .thumb figure div {
@@ -511,7 +569,8 @@ main .RELATED_VIDEOS div .thumb figure figcaption p {
   text-overflow: ellipsis;
 }
 main .RELATED_STORIES {
-  margin-top: 150px;
+  margin: 77px 0 96px;
+  padding: 0 12.5vw;
   width: 100%;
   overflow: hidden;
 }
@@ -521,23 +580,23 @@ main .RELATED_STORIES h3 {
   font-style: italic;
   font-weight: 900;
   color: rgb(255, 95, 0);
-  margin: 1% 20%;
+  padding: 0 80px;
 }
 main .RELATED_STORIES .content-g {
-  width: 65%;
-  width: 65%;
-  margin: 0 20%;
+  margin-top: 64px;
+  padding: 0 80px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
 main .RELATED_STORIES .content-g .content {
+  position: relative;
   border: 1px solid rgb(220, 220, 220);
   border-radius: 10px;
-  margin: 40px 0 0 0;
-  width: 350px;
+  width: 32%;
   height: 400px;
   overflow: hidden;
-  position: relative;
 }
 main .RELATED_STORIES .content-g .content:hover {
   transform: translateY(-20px);
@@ -545,9 +604,12 @@ main .RELATED_STORIES .content-g .content:hover {
   transition: 0.5s;
   overflow: hidden;
 }
+main .RELATED_STORIES .content-g .content figure {
+  height: 100%;
+}
 main .RELATED_STORIES .content-g .content figure img {
-  width: 350px;
-  height: 200px;
+  width: 100%;
+  height: 50%;
 }
 main .RELATED_STORIES .content-g .content figure .text {
   font-family: "Proxima Nova Extrabold";
@@ -564,7 +626,6 @@ main .RELATED_STORIES .content-g .content figure .text ul li {
   bottom: 5%;
 }
 main .RELATED_STORIES .content-g .content figure .text ul li a {
-  text-transform: uppercase;
   font-size: 12px;
   display: inline-block;
   margin: 3px 0;
@@ -575,15 +636,16 @@ main .RELATED_STORIES .content-g .content figure .text ul li a {
   font-family: "Proxima Nova Extrabold";
 }
 main .RELATED_STORIES button {
-  margin: 3% 20%;
+  margin: 30px 16.5vw;
 }
 
 footer {
-  padding: 5% 18%;
+  padding: 5vw 12.5vw;
   background-color: rgb(255, 95, 0);
   color: white;
 }
 footer .text {
+  padding: 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -664,6 +726,9 @@ footer .text form select option {
      -moz-appearance: none;
           appearance: none;
 }
+footer .b-text {
+  padding: 0 80px;
+}
 footer .b-text strong {
   display: block;
   padding-top: 110px;
@@ -680,6 +745,7 @@ footer .b-text div p {
   font-family: "Pretendard Medium";
   font-size: 14px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 footer .b-text div figure {
   -o-object-fit: contain;

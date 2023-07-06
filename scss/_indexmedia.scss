@@ -94,7 +94,7 @@
                         a {
                             display: block;
                             width: 100%;
-                            margin-top: 3px;
+                            margin-top: 10px;
                             font-size: 1vw;
                         }
                     }
@@ -351,7 +351,7 @@
         }
 
         .OUR_GAMES {
-            margin-top: 150px;
+            margin-top: 0;
             padding: 96px 0;
 
             h3 {
@@ -371,6 +371,12 @@
                 div {
                     margin-bottom: 30px;
                     position: relative;
+                    .shadow{
+                        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+                        border-radius: 10px;
+                        position: absolute;
+                        left: 0; top: 0;
+                        z-index: 1;}
 
                     video {
                         border-radius: 10px;
@@ -1167,6 +1173,12 @@
                     width: 100%;
                     margin-bottom: 20px;
                     position: relative;
+                    .shadow{
+                        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+                        border-radius: 10px;
+                        position: absolute;
+                        left: 0; top: 0;
+                        z-index: 1;}
 
                     video {
                         border-radius: 10px;
@@ -1964,7 +1976,15 @@
                     height: fit-content;
                     margin-bottom: 30px;
                     position: relative;
-                    // background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+                    .shadow{
+                        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+                        border-radius: 10px;
+                        position: absolute;
+                        left: 0; top: 0;
+                        z-index: 1;
+                        height: 100vh;
+                        width: 90vw;
+                    }
 
                     video {
                         border-radius: 10px;
@@ -1983,11 +2003,13 @@
                         position: absolute;
                         left: 8%;
                         top: 50%;
+                        z-index: 2;
                         text-align: center;
 
                         p {
+                        
                             img {
-                                width: 100%;
+                                width: 80%;
                             }
                         }
 
@@ -2298,7 +2320,7 @@
 
                     button {
                         font-size: 3.888888888888889vw;
-                        padding: 2.2222222222222223vw 6.666666666666667vw;
+                        paddig: 2.2222222222222223vw 6.666666666666667vw;
                         height: 11.11111111111111vw;
                     }
                 }

@@ -522,6 +522,14 @@ main .OUR_GAMES .list div {
   margin-bottom: 30px;
   position: relative;
 }
+main .OUR_GAMES .list div .shadow {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
 main .OUR_GAMES .list div video {
   border-radius: 10px;
 }
@@ -768,7 +776,7 @@ main .card figure figcaption p {
   margin: 20px 0 30px;
 }
 footer {
-  padding: 5vw 12.5vw;
+  padding: 5vw 0;
   background-color: rgb(255, 95, 0);
   color: white;
 }
@@ -1019,7 +1027,7 @@ ul, li {
   .bi .head li .bar li a {
     display: block;
     width: 100%;
-    margin-top: 3px;
+    margin-top: 10px;
     font-size: 1vw;
   }
   main .vi figure {
@@ -1407,7 +1415,7 @@ ul, li {
     margin: 3vw 6.25vw;
   }
   main .OUR_GAMES {
-    margin-top: 150px;
+    margin-top: 0;
     padding: 96px 0;
   }
   main .OUR_GAMES h3 {
@@ -1425,6 +1433,14 @@ ul, li {
   main .OUR_GAMES .list div {
     margin-bottom: 30px;
     position: relative;
+  }
+  main .OUR_GAMES .list div .shadow {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
   }
   main .OUR_GAMES .list div video {
     border-radius: 10px;
@@ -2252,6 +2268,14 @@ ul, li {
     width: 100%;
     margin-bottom: 20px;
     position: relative;
+  }
+  main .OUR_GAMES .list div .shadow {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
   }
   main .OUR_GAMES .list div video {
     border-radius: 10px;
@@ -3126,6 +3150,16 @@ ul, li {
     margin-bottom: 30px;
     position: relative;
   }
+  main .OUR_GAMES .list div .shadow {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 90vw;
+  }
   main .OUR_GAMES .list div video {
     border-radius: 10px;
     width: 90vw;
@@ -3142,10 +3176,11 @@ ul, li {
     position: absolute;
     left: 8%;
     top: 50%;
+    z-index: 2;
     text-align: center;
   }
   main .OUR_GAMES .list div .text_box p img {
-    width: 100%;
+    width: 80%;
   }
   main .OUR_GAMES .list div .text_box figcaption {
     font-family: "Pretendard Black", Dotum, 돋움, 굴림, arial;
@@ -3401,7 +3436,7 @@ ul, li {
   }
   main .card figure figcaption button {
     font-size: 3.8888888889vw;
-    padding: 2.2222222222vw 6.6666666667vw;
+    paddig: 2.2222222222vw 6.6666666667vw;
     height: 11.1111111111vw;
   }
   footer {

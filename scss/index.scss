@@ -347,6 +347,12 @@ main {
             div {
                 margin-bottom: 30px;
                 position: relative;
+                .shadow{
+                    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+                    border-radius: 10px;
+                    position: absolute;
+                    left: 0; top: 0;
+                    z-index: 1;}
 
                 video {
                     border-radius: 10px;
@@ -664,7 +670,7 @@ main {
 }
 
 footer {
-    padding: 5vw 12.5vw;
+    padding: 5vw 0;
     background-color: rgb(255, 95, 0);
     color: white;
 
