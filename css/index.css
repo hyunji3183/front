@@ -776,7 +776,7 @@ main .card figure figcaption p {
   margin: 20px 0 30px;
 }
 footer {
-  padding: 5vw 0;
+  padding: 5vw 12.5vw;
   background-color: rgb(255, 95, 0);
   color: white;
 }
