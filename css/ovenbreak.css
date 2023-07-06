@@ -166,13 +166,17 @@ main .vi figure figcaption a {
 }
 main .store {
   width: 100%;
+  padding: 96px 12.5vw;
 }
 main .store figure {
-  width: 45%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 6% 28%;
+  justify-content: center;
+  padding: 0 80px;
+}
+main .store figure p {
+  margin: 0px 32px 0px 0px;
 }
 main .store figure p img {
   border-radius: 10px;
@@ -223,10 +227,14 @@ main .store figure figcaption .app_icon a span {
   color: white;
   margin-left: 5px;
 }
+main .about {
+  padding: 0 12.5vw;
+}
 main .about figure {
   text-align: center;
 }
 main .about figure figcaption {
+  padding: 0 80px;
   white-space: pre-line;
   margin-bottom: 60px;
 }
@@ -237,6 +245,17 @@ main .about figure figcaption h2 {
 main .about figure figcaption p {
   font-family: "Pretendard SemiBold";
   font-size: 16px;
+  line-height: 1.5;
+}
+main .about figure div {
+  padding: 0 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+main .about figure div img {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
 }
 main .story {
   margin-top: 150px;
@@ -297,12 +316,13 @@ main .trailer figure figcaption {
   text-align: center;
 }
 main .trailer figure figcaption strong {
+  display: inline-block;
   font-family: "Pretendard Black";
   font-size: 32px;
   color: white;
+  margin-bottom: 42px;
 }
 main .trailer figure figcaption a {
-  margin-top: 2%;
   display: inline-block;
   font-family: "Proxima Nova Extrabold";
   font-size: 16px;
@@ -312,9 +332,9 @@ main .trailer figure figcaption a {
   border-radius: 36px;
 }
 main .FEATURES {
-  background-color: #2B0F0C;
+  background-color: #2b0f0c;
   color: white;
-  margin: 5% 20%;
+  padding: 84px 12.5vw 96px;
 }
 main .FEATURES h3 {
   font-family: "acumin-pro-condensed";
@@ -322,10 +342,11 @@ main .FEATURES h3 {
   font-weight: 900;
   font-style: italic;
   line-height: 72px;
-  margin-bottom: 6%;
+  padding: 0 80px;
+  margin-bottom: 92px;
 }
 main .FEATURES .content {
-  margin-bottom: 10%;
+  padding: 20px 80px;
 }
 main .FEATURES .content:nth-of-type(1) .text p {
   font-family: "Proxima Nova Extrabold";
@@ -351,17 +372,17 @@ main .FEATURES .content div video {
   border: 1px solid rgb(51, 51, 51);
 }
 main .WORLD_WIDE_FANDOM {
-  background-color: #2B0F0C;
+  background-color: #2b0f0c;
   color: white;
-  margin: 10% 20%;
-  border: 1px solid 0;
+  padding: 0 12.5vw;
   height: -moz-fit-content;
   height: fit-content;
 }
-main .WORLD_WIDE_FANDOM div {
-  margin-bottom: 10%;
+main .WORLD_WIDE_FANDOM .title {
+  padding: 86px 80px 116px;
+  border-top: 1px solid rgb(51, 51, 51);
 }
-main .WORLD_WIDE_FANDOM div h3 {
+main .WORLD_WIDE_FANDOM .title h3 {
   font-family: "acumin-pro-condensed";
   font-size: 90px;
   font-weight: 900;
@@ -369,9 +390,13 @@ main .WORLD_WIDE_FANDOM div h3 {
   line-height: 72px;
   margin-bottom: 3%;
 }
-main .WORLD_WIDE_FANDOM div p {
+main .WORLD_WIDE_FANDOM .title p {
   font-family: "Pretendard SemiBold";
   line-height: 16px;
+}
+main .WORLD_WIDE_FANDOM .count {
+  padding: 0 80px 192px;
+  border-bottom: 1px solid rgb(51, 51, 51);
 }
 main .WORLD_WIDE_FANDOM .count p {
   font-family: "Pretendard ExtraBold";
@@ -388,7 +413,7 @@ main .HISTORY {
   padding: 0 12.5vw;
 }
 main .HISTORY h3 {
-  padding: 0 80px;
+  padding: 187px 80px 0;
   font-family: "acumin-pro-condensed";
   font-size: 90px;
   font-weight: 900;
@@ -416,16 +441,19 @@ main .HISTORY .con .picture p {
 }
 main .HISTORY .con .picture p img {
   animation: history;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-timing-function: 3s;
-  animation-duration: leaner;
+  animation-duration: 2.7s;
 }
 @keyframes history {
   0% {
-    transform: translateY(10%);
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0%);
   }
   100% {
-    transform: translateY(-10%);
+    transform: translateY(-5%);
   }
 }
 main .HISTORY .con .year {
@@ -440,7 +468,7 @@ main .HISTORY .con .year ul li strong {
   font-family: "acumin-pro-condensed";
   font-size: 40px;
   color: rgb(255, 95, 0);
-  width: 15%;
+  min-width: 6vw;
 }
 main .HISTORY .con .year ul .month {
   width: -moz-fit-content;
@@ -467,12 +495,14 @@ main .HISTORY .con .year ul .month::before strong {
   color: rgb(255, 95, 0);
   text-transform: uppercase;
 }
-main .HISTORY .con .year ul .month::before p {
+main .HISTORY .con .year ul .month::before .sub {
+  display: inline-block;
   font-family: "Pretendard Medium";
+  padding: 0;
 }
 main .link {
   width: 68%;
-  margin: 120px 16vw 96px;
+  margin: 0 16vw;
   padding: 4vw;
   border-top: 1px solid rgb(229, 229, 229);
   border-bottom: 1px solid rgb(229, 229, 229);
@@ -486,13 +516,15 @@ main .link h4 {
   margin-bottom: 22px;
 }
 main .link .icon {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 main .link .icon p {
-  width: 15%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 main .link .icon span {
   display: inline-block;
@@ -636,7 +668,7 @@ main .RELATED_STORIES .content-g .content figure .text ul li a {
   font-family: "Proxima Nova Extrabold";
 }
 main .RELATED_STORIES button {
-  margin: 30px 16.5vw;
+  margin: 30px 80px;
 }
 
 footer {
