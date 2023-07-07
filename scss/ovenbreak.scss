@@ -651,7 +651,7 @@ main {
                         }
 
                         p {
-                            width: inherit;
+                            width: 100%;
                             font-family: "Pretendard ExtraBold";
                             font-size: 24px;
                             margin-left: 0.5%;
@@ -888,3 +888,6 @@ footer {
         }
     }
 }
+
+
+@import "_ovenbreakmedia";
