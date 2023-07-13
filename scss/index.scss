@@ -15,32 +15,32 @@
         font-family: "Proxima Nova Extrabold";
         font-weight: 800;
 
-        &:hover .bar {
-            display: block;
-            // transition: 1s;
-            // animation-name: headerOn;
-            // animation-duration: 1s;
-            // animation-iteration-count: infinite;
-            // animation-timing-function: linear;
-            // animation-fill-mode: forwards;
+        // &:hover .bar {
+        //     display: block;
+        //     transition: 1s;
+        //     animation-name: headerOn;
+        //     animation-duration: 1s;
+        //     animation-iteration-count: infinite;
+        //     animation-timing-function: linear;
+        //     animation-fill-mode: forwards;
 
-            // @keyframes headerOn {
-            //     0% {
-            //         transform: translateY(-100%);
-            //     }
+        //     @keyframes headerOn {
+        //         0% {
+        //             transform: translateY(-100%);
+        //         }
 
-            //     100% {
-            //         transform: translateY(0%);
-            //     }
-            // }
+        //         100% {
+        //             transform: translateY(0%);
+        //         }
+        //     }
 
-        }
+        // }
 
-        &::after {
-            display: block;
-            content: "";
-            clear: both;
-        }
+        // &::after {
+        //     display: block;
+        //     content: "";
+        //     clear: both;
+        // }
 
         h2 {
             font-size: 20px;
