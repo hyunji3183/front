@@ -229,9 +229,28 @@ main .oven .content .c_img img {
   width: 100%;
 }
 main .oven .content .c_img p {
+  width: -moz-fit-content;
+  width: fit-content;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+main .oven .content .c_img p img {
+  animation: move;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2.7s;
+}
+@keyframes move {
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
 }
 main .WE_CREATE {
   margin: 1% 20%;

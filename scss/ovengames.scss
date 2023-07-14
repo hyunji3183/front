@@ -206,11 +206,31 @@ main {
                 }
 
                 p {
+                    width: fit-content;
                     position: absolute;
                     left: 0;
                     bottom: 0;
 
-                    img {}
+                    img {
+                        animation: move;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: infinite;
+                        animation-duration: 2.7s;
+
+                        @keyframes move {
+                            0% {
+                                transform: translateY(-5%);
+                            }
+
+                            50% {
+                                transform: translateY(0%);
+                            }
+
+                            100% {
+                                transform: translateY(-5%);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -247,6 +267,7 @@ main {
                 border-radius: 10px;
                 overflow: hidden;
                 margin-right: 3%;
+
                 &:hover {
                     transform: translateY(-20px);
                     box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
@@ -303,6 +324,7 @@ main {
             }
         }
     }
+
     .card {
         margin: 10% 18%;
         position: relative;

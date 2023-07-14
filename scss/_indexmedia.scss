@@ -16,7 +16,7 @@
             justify-content: space-between;
             font-family: "Proxima Nova Extrabold";
             font-weight: 800;
-    
+
             &:hover .bar {
                 display: block;
                 // transition: 1s;
@@ -25,60 +25,61 @@
                 // animation-iteration-count: infinite;
                 // animation-timing-function: linear;
                 // animation-fill-mode: forwards;
-    
+
                 // @keyframes headerOn {
                 //     0% {
                 //         transform: translateY(-100%);
                 //     }
-    
+
                 //     100% {
                 //         transform: translateY(0%);
                 //     }
                 // }
-    
+
             }
-    
+
             &::after {
                 display: block;
                 content: "";
                 clear: both;
             }
-    
+
             h2 {
                 font-size: 1.5vw;
                 display: inline-block;
                 color: white;
                 width: 14%;
             }
-    
+
             li {
                 position: relative;
                 float: left;
                 width: 11%;
-    
+
                 &:nth-of-type(2) .bar li:nth-of-type(1) a {
                     color: #ffd500;
                     font-size: 1.09375vw;
                 }
-    
+
                 &:nth-of-type(2) .bar li:nth-of-type(6) a {
                     margin-top: 10px;
                     color: #ffd500;
                     font-size: 1.09375vw;
                 }
-    
+
                 a {
                     display: block;
                     height: 20px;
                     line-height: 20px;
                     font-size: 1.09375vw;
                     color: white;
+
                     span {
                         font-size: 1vw;
                         font-weight: bold;
                     }
                 }
-    
+
                 .bar {
                     display: none;
                     height: 450px;
@@ -86,11 +87,11 @@
                     position: absolute;
                     left: 0;
                     right: 0;
-    
+
                     li {
                         display: block;
                         width: 100%;
-    
+
                         a {
                             display: block;
                             width: 100%;
@@ -139,14 +140,14 @@
                     position: absolute;
                     right: 5%;
                     bottom: 8%;
-    
+
                     p {
                         margin: 0 auto;
                         width: 20px;
                         height: 32px;
                         border: 2px solid white;
                         border-radius: 20px;
-    
+
                         span {
                             display: inline-block;
                             position: relative;
@@ -154,23 +155,23 @@
                             height: 20px;
                             margin: 3px auto 0;
                             overflow: hidden;
-    
+
                             img {
                                 position: absolute;
                                 left: 3px;
                                 top: 5px;
                                 margin: 0 auto;
-    
+
                                 animation-name: down-ani;
                                 animation-duration: 1s;
                                 animation-iteration-count: infinite;
                                 animation-timing-function: linear;
-    
+
                                 @keyframes down-ani {
                                     0% {
                                         transform: translate3d(0%, -100%, 0);
                                     }
-    
+
                                     100% {
                                         transform: translate3d(0%, 100%, 0);
                                     }
@@ -178,7 +179,7 @@
                             }
                         }
                     }
-    
+
                     span {
                         display: inline-block;
                         font-size: 10px;
@@ -253,10 +254,12 @@
             }
 
             .slider {
-                animation-name: infiniteScroll;
-                animation-duration: 40s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
+                overflow: hidden;
+                padding: 20px 0;
+                // animation-name: infiniteScroll;
+                // animation-duration: 40s;
+                // animation-iteration-count: infinite;
+                // animation-timing-function: linear;
 
                 &:hover {
                     animation-play-state: paused;
@@ -272,19 +275,24 @@
                     }
                 }
 
+                .swiper-wrapper {
+                    transition-timing-function: linear;
+                }
+
                 div {
                     position: relative;
                     display: flex;
-                    overflow: hidden;
                     justify-content: space-around;
-                    width: calc(28vw * 24);
+                    width: 100%;
 
                     .content {
                         border: 1px solid rgb(220, 220, 220);
                         border-radius: 10px;
-                        margin: 40px 0 0 0;
-                        width: 26vw;
+                        margin: 0;
+                        width: 50vw;
                         height: 30vw;
+                        flex-shrink: 0;
+                        overflow: hidden;
 
                         &:hover {
                             transform: translateY(-20px);
@@ -295,12 +303,13 @@
 
                         figure {
                             img {
-                                width: 30vw;
+                                width: 100%;
                                 height: 15vw;
                             }
 
                             .text {
                                 font-family: "Proxima Nova Extrabold";
+                                width: 30vw;
                                 height: 15vw;
 
                                 p {
@@ -371,12 +380,15 @@
                 div {
                     margin-bottom: 30px;
                     position: relative;
-                    .shadow{
-                        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+
+                    .shadow {
+                        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
                         border-radius: 10px;
                         position: absolute;
-                        left: 0; top: 0;
-                        z-index: 1;}
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                    }
 
                     video {
                         border-radius: 10px;
@@ -507,7 +519,7 @@
                         transition: 0.5s;
                         overflow: hidden;
                     }
-                    
+
 
                     a {
                         figure {
@@ -563,6 +575,7 @@
                 div {
                     position: relative;
                     margin: 0;
+
                     &:hover {
                         transform: translateY(-20px);
                         box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.3);
@@ -816,6 +829,7 @@
 
         .b-text {
             padding: 0;
+
             strong {
                 display: block;
                 padding-top: 110px;
@@ -951,14 +965,14 @@
                     position: absolute;
                     right: 5%;
                     bottom: 8%;
-    
+
                     p {
                         margin: 0 auto;
                         width: 20px;
                         height: 32px;
                         border: 2px solid white;
                         border-radius: 20px;
-    
+
                         span {
                             display: inline-block;
                             position: relative;
@@ -966,23 +980,23 @@
                             height: 20px;
                             margin: 3px auto 0;
                             overflow: hidden;
-    
+
                             img {
                                 position: absolute;
                                 left: 3px;
                                 top: 5px;
                                 margin: 0 auto;
-    
+
                                 animation-name: down-ani;
                                 animation-duration: 1s;
                                 animation-iteration-count: infinite;
                                 animation-timing-function: linear;
-    
+
                                 @keyframes down-ani {
                                     0% {
                                         transform: translate3d(0%, -100%, 0);
                                     }
-    
+
                                     100% {
                                         transform: translate3d(0%, 100%, 0);
                                     }
@@ -990,7 +1004,7 @@
                             }
                         }
                     }
-    
+
                     span {
                         display: inline-block;
                         font-size: 10px;
@@ -1173,12 +1187,15 @@
                     width: 100%;
                     margin-bottom: 20px;
                     position: relative;
-                    .shadow{
-                        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+
+                    .shadow {
+                        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
                         border-radius: 10px;
                         position: absolute;
-                        left: 0; top: 0;
-                        z-index: 1;}
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                    }
 
                     video {
                         border-radius: 10px;
@@ -1631,6 +1648,7 @@
 
         .b-text {
             padding: 0;
+
             strong {
                 display: block;
                 padding-top: 90px;
@@ -1976,11 +1994,13 @@
                     height: fit-content;
                     margin-bottom: 30px;
                     position: relative;
-                    .shadow{
-                        background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%);
+
+                    .shadow {
+                        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%);
                         border-radius: 10px;
                         position: absolute;
-                        left: 0; top: 0;
+                        left: 0;
+                        top: 0;
                         z-index: 1;
                         height: 100vh;
                         width: 90vw;
@@ -2007,7 +2027,7 @@
                         text-align: center;
 
                         p {
-                        
+
                             img {
                                 width: 80%;
                             }

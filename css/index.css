@@ -81,14 +81,6 @@ ul, li {
   font-family: "Proxima Nova Extrabold";
   font-weight: 800;
 }
-.bi .head:hover .bar {
-  display: block;
-}
-.bi .head::after {
-  display: block;
-  content: "";
-  clear: both;
-}
 .bi .head h2 {
   font-size: 20px;
   display: inline-block;
@@ -436,10 +428,8 @@ main .LATEST_NEWS h3 {
   padding: 0 80px;
 }
 main .LATEST_NEWS .slider {
-  animation-name: infiniteScroll;
-  animation-duration: 40s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  overflow: hidden;
+  padding: 30px 0;
 }
 main .LATEST_NEWS .slider:hover {
   animation-play-state: paused;
@@ -452,19 +442,23 @@ main .LATEST_NEWS .slider:hover {
     transform: translateX(-4440px);
   }
 }
+main .LATEST_NEWS .slider .swiper-wrapper {
+  transition-timing-function: linear;
+}
 main .LATEST_NEWS .slider div {
   position: relative;
   display: flex;
-  overflow: hidden;
   justify-content: space-between;
-  width: 8880px;
+  width: 100%;
 }
 main .LATEST_NEWS .slider div .content {
   border: 1px solid rgb(220, 220, 220);
   border-radius: 10px;
-  margin: 40px 0 0 0;
+  margin: 0;
   width: 350px;
   height: 400px;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 main .LATEST_NEWS .slider div .content:hover {
   transform: translateY(-20px);
@@ -473,7 +467,7 @@ main .LATEST_NEWS .slider div .content:hover {
   overflow: hidden;
 }
 main .LATEST_NEWS .slider div .content figure img {
-  width: 350px;
+  width: 100%;
   height: 200px;
 }
 main .LATEST_NEWS .slider div .content figure .text {
@@ -786,48 +780,11 @@ footer .text {
   justify-content: space-between;
   align-items: center;
 }
+footer .text .link {
+  width: 80%;
+}
 footer .text .link div {
   margin-bottom: 10px;
-}
-footer .text .link div:nth-of-type(1) span:nth-of-type(1) {
-  margin: 0 10px;
-  font-size: 10px;
-  border: 0.5px solid #fff;
-}
-footer .text .link div:nth-of-type(1) span:nth-of-type(2) {
-  margin: 0 10px;
-  font-size: 10px;
-  border: 0.5px solid #fff;
-}
-footer .text .link div:nth-of-type(2) span:nth-of-type(1) {
-  margin: 0 10px;
-  font-size: 10px;
-  border: 0.5px solid #fff;
-}
-footer .text .link div:nth-of-type(2) span:nth-of-type(2) {
-  margin: 0 10px;
-  font-size: 10px;
-  border: 0.5px solid #fff;
-}
-footer .text .link div:nth-of-type(2) span:nth-of-type(3) {
-  margin: 0 10px;
-  font-size: 10px;
-  border: 0.5px solid #fff;
-}
-footer .text .link div:nth-of-type(2) span:nth-of-type(4) {
-  margin: 0 10px;
-  font-size: 10px;
-  border: 0.5px solid #fff;
-}
-footer .text .link div:nth-of-type(2) span:nth-of-type(5) {
-  margin: 0 10px;
-  font-size: 10px;
-  border: 0.5px solid #fff;
-}
-footer .text .link div:nth-of-type(2) a:nth-of-type(2) {
-  font-family: "Pretendard ExtraBold";
-  font-size: 15px;
-  line-height: 15px;
 }
 footer .text .link div a {
   color: white;
@@ -835,10 +792,8 @@ footer .text .link div a {
   font-size: 14px;
   line-height: 14px;
 }
-footer .text .link div svg {
-  width: 6px;
-  vertical-align: middle;
-  margin: 0 6px;
+footer .text .link div .material-symbols-outlined {
+  font-size: 10px;
 }
 footer .text form select {
   width: 180px;
@@ -1334,10 +1289,8 @@ ul, li {
     margin: 0;
   }
   main .LATEST_NEWS .slider {
-    animation-name: infiniteScroll;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    overflow: hidden;
+    padding: 20px 0;
   }
   main .LATEST_NEWS .slider:hover {
     animation-play-state: paused;
@@ -1350,19 +1303,23 @@ ul, li {
       transform: translateX(-4440px);
     }
   }
+  main .LATEST_NEWS .slider .swiper-wrapper {
+    transition-timing-function: linear;
+  }
   main .LATEST_NEWS .slider div {
     position: relative;
     display: flex;
-    overflow: hidden;
     justify-content: space-around;
-    width: 672vw;
+    width: 100%;
   }
   main .LATEST_NEWS .slider div .content {
     border: 1px solid rgb(220, 220, 220);
     border-radius: 10px;
-    margin: 40px 0 0 0;
-    width: 26vw;
+    margin: 0;
+    width: 50vw;
     height: 30vw;
+    flex-shrink: 0;
+    overflow: hidden;
   }
   main .LATEST_NEWS .slider div .content:hover {
     transform: translateY(-20px);
@@ -1371,11 +1328,12 @@ ul, li {
     overflow: hidden;
   }
   main .LATEST_NEWS .slider div .content figure img {
-    width: 30vw;
+    width: 100%;
     height: 15vw;
   }
   main .LATEST_NEWS .slider div .content figure .text {
     font-family: "Proxima Nova Extrabold";
+    width: 30vw;
     height: 15vw;
   }
   main .LATEST_NEWS .slider div .content figure .text p {
